@@ -1,0 +1,63 @@
+/* _____HEADERS_____ */
+.headerWhite {
+    background-color: $HD-palette-white;
+    width: 100%;
+    height: 150px;
+    user-select: none;
+}
+
+.logo {
+    width: 150px;
+    position: relative;
+    margin-left: 2vw;
+    user-select: none;
+}
+
+.flexBoxHeaderPages {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+}
+
+.linkTitulo {
+    font-size: 2.5rem;
+    position: absolute;
+    text-decoration: none;
+    color: $HD-palette-orange;
+    -webkit-text-stroke: 0.03vw $HD-palette-white;
+    font-family: $HD-font-family;
+    user-select: none;
+}
+
+.linkTituloPaginas {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: $HD-palette-orange;
+    -webkit-text-stroke: 0.04vw $HD-palette-black;
+    font-family: $HD-font-family;
+}
+
+/* --------------- IDs --------------- */
+#imagenHeaderIndex {
+    background-image: url("../media/index0.jpg");
+    background-size: 90vw 50%;
+    background-position: center top;
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    min-height: 180px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: auto;
+}
+
+#flexBoxHeaderIndex {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 10vh 0;
+}
+/* _____HEADERS_____ */

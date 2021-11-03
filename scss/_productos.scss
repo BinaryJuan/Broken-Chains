@@ -1,0 +1,115 @@
+/* _____PRODUCTOS_____ */
+.flexBoxProducto {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 78vw;
+    margin: 2vh auto;
+    background-color: $HD-palette-white;
+    position: relative;
+    min-height: 150px;
+    max-height: 205px;
+}
+    .flexBoxProducto p {
+        color: $HD-palette-black;
+        height: 2.5vh;
+    }
+        .flexBoxProducto p a {
+            color: $HD-palette-black;
+            position: relative;
+            font-size: 1vw;
+            background-color: $HD-palette-orange;
+            border: 1.8px solid $HD-palette-black;
+            padding: 0.5vh 0.7vw;
+            margin-left: 60vw;
+            text-align: center;
+            text-decoration: none;
+            width: 90px;
+            box-sizing: content-box;
+        }
+            .flexBoxProducto p a:hover {
+                color: $HD-palette-white;
+            }
+
+    .flexBoxProducto img {
+        width: 10vw;
+        height: auto;
+        object-fit: contain;
+    }
+    .flexBoxProductoSub {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: 150px;
+        max-height: 205px;
+    }
+        .tituloProducto {
+            font-size: 1.5rem;
+            padding-top: 0.5vh;
+            margin-bottom: 0.5vh;
+        }
+        .precioProducto {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-top: 0.8vh;
+        }
+        .entregaProducto {
+            color: #00a650;
+            font-size: 0.9rem;
+            font-weight: bold;
+            background-color: #e6f7ee;
+            width: 100px;
+            height: fit-content;
+            margin-top: 2vh;
+            margin-bottom: 5vh;
+            text-align: center;
+        }
+        .h2TipoProducto {
+            text-align: center;
+            margin-top: 3vh;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            align-self: flex-start;
+            margin-left: 1vw;
+            justify-content: center;
+            width: 9vw;
+        }
+            .h2TipoProducto h2 {
+                color: rgb(73, 73, 73);
+                font-size: 1vw;
+                border: 2px solid $HD-palette-orange;
+                padding: 0.8vh 0.7vw;
+                background-color: $HD-palette-white;
+            }
+
+.divHrProductos {
+    width: 78vw;
+    margin: 0 auto 0 auto;
+    color: $HD-palette-orange;
+    background-color: $HD-palette-orange;
+    height: 3px;
+    position: relative;
+    display: block;
+    border-radius: 2vw;
+}
+
+@for $i from 1 through 15 {
+    .animacionP#{$i} {  
+        animation-name: opacidadAnimacion;
+        animation-duration: (1s + ($i / 5));
+    }
+}
+
+@for $i from 1 through 12 {
+    .animacionH#{$i} {  
+        animation-name: opacidadAnimacion;
+        animation-duration: (1s + ($i / 5));
+    }
+}
+/* --------------- IDs --------------- */
+#flexBoxProductos {
+    display: flex;
+    flex-direction: column;
+}
+/* _____PRODUCTOS_____ */

@@ -1,0 +1,155 @@
+/* _____CONTACTO_____ */
+.formInput {
+    width: 20vw;
+    height: 3vh;
+    margin-bottom: 1vh;
+    font-size: 1rem;
+}
+    .formInput:focus {
+        background-color: rgb(235, 235, 235);
+        outline: none;
+        border: 0.15vw solid $HD-palette-orange;
+    }
+
+.botonesForm {
+    font-size: 1rem;
+    padding: 0.5vh 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0.1vw solid $HD-palette-orange;
+    background-color: $HD-palette-orange;
+    font-weight: bold;
+    margin-right: 1vw;
+    cursor: pointer;
+}
+
+.checkboxFormato {
+    -webkit-appearance: none;
+    background-color: $HD-palette-white;
+    border: 0.1px solid #cacece;
+    margin-top: 0.2vh;
+    padding: 0.36vw;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    border: 0.1px solid $HD-palette-orange;
+    cursor: pointer;
+    margin-right: 0.3vw;
+}
+    .checkboxFormato:checked {
+        background-color: #e7a870;
+        border: 0.1px solid $HD-palette-orange;
+        color: #99a1a7;
+    }
+        .checkboxFormato:checked:after {
+            content: '\2714';
+            font-size: 0.8rem;
+            position: absolute;
+            top: -0.2vh;
+            left: 0.08vw;
+            color: $HD-palette-black;
+            font-weight: bold;
+        }
+
+.divHrContacto {
+    width: 5vw;
+    height: 0.3vh;
+    background-color: $HD-palette-orange;
+    margin: 1vh auto;
+    border-radius: 2vw;
+}
+
+.divHrContactoSub {
+    width: 7vw;
+    background-color: $HD-palette-orange;
+    margin: 1vh auto;
+    height: 0.3vh;
+    border-radius: 2vw;
+}
+
+/* --------------- IDs --------------- */
+#gridContacto {
+    display: grid;
+    grid-template-areas: 
+    "form datos";
+    margin: 10vh 5vw;
+    color: $HD-palette-white;
+}
+    #contactoForm {
+        grid-area: form;
+        width: 30vw;
+        text-align: center;
+        background-color: $HD-grey-darker;
+        padding: 3vh 0;
+    }
+        #contactoForm h2 {
+            font-size: 2rem;
+        }
+        #contactoForm div {
+            font-weight: bold;
+            margin-top: 1vh;
+            margin-bottom: 0.5vh;
+            font-size: 1rem;
+        }
+        #contactoForm textarea {
+            width: 20vw;
+            height: 20vh;
+            resize: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1rem;
+        }
+            #contactoForm textarea:focus {
+                background-color: $HD-palette-white;
+                outline: none;
+                border: 0.15vw solid $HD-palette-orange;
+            }
+        #contactoForm label {
+            font-weight: bold;
+            font-size: 1rem;
+        }
+        #contactoForm select {
+            background-color: $HD-palette-white;
+            width: 6vw;
+            height: 2vh;
+            font-size: 0.9rem;
+        }
+            #contactoForm select option {
+                background-color: $HD-palette-orange;
+                font-size: 0.9rem;
+            }
+
+    #espacioDatos {
+        grid-area: datos;
+        text-align: center;
+        margin-top: 5vh;
+        width: 30vw;
+        height: 52vh;
+        background-color: $HD-grey-darker;
+        margin-left: 20vw;
+        padding: 4vh 0;
+    }
+        #espacioDatos h2 {
+            font-size: 2rem;
+        }
+        #espacioDatos p {
+            font-size: 1.25rem;
+        }
+        #espacioDatos img {
+            width: 2vw;
+        }
+        #espacioDatos ul {
+            list-style: none;
+        }
+            #espacioDatos ul li {
+                display: inline-block;
+                margin: 0 2vw;
+            }
+                #espacioDatos ul li img {
+                    background-color: $HD-palette-white;
+                    border-radius: 100%;
+                    width: 5vw;
+                }
+                    #espacioDatos ul li img:hover {
+                        background-color: $HD-palette-orange;
+                        border-radius: 100%;
+                    }
+/* _____CONTACTO_____ */

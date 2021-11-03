@@ -1,0 +1,161 @@
+/* _____INDEX_____ */
+.imagenCarrusel {
+    width: 70vw;
+    height: 70vh;
+    height: auto;
+}
+
+.divHrIndex {
+    width: 50vw;
+    height: 0.2vh;
+    color: $HD-palette-orange;
+    background-color: $HD-palette-orange;
+    margin: 2vh auto 6vw auto;
+    position: relative;
+    display: block;
+    border-radius: 2vw;
+}
+
+.flexBoxIndexArticle {
+    display: flex;
+    position: static;
+    flex-wrap: nowrap;
+    margin-bottom: 20vh;
+}
+    .flexBoxIndexArticle div img {
+        margin: 0 0 0 2vw;
+        border: 0.15vw solid $HD-palette-orange;
+        width: 40vw;
+        transition: opacity 1s;
+    }
+    .flexBoxIndexArticle div h3 {
+        color: $HD-palette-white;
+        font-size: 3rem;
+        margin: -25vh 0 0 0;
+        text-align: center;
+        visibility: hidden;
+        position: relative;
+    }
+        .flexBoxIndexArticle div img:hover {
+            opacity: 65%;
+        }
+    .flexBoxIndexArticle p {
+        color: $HD-palette-white;
+        width: 45vw;
+        font-size: 1.5rem;
+        margin: 0 1vw 0 6vw;
+    }
+        .flexBoxIndexArticle p a {
+            background-color: $HD-palette-orange;
+            color: $HD-palette-black;
+            border: 0.1vw solid $HD-palette-black;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 1vh 1vw;
+            user-select: none;
+        }
+            .flexBoxIndexArticle p a:hover {
+                color: $HD-palette-white;
+                border: 0.1vw solid $HD-palette-white;
+            }
+.h2WhiteLeft {
+    color: $HD-palette-white;
+    margin: 0px 0px 2vh 5.5vw;
+    font-size: 2rem;
+}
+.h2WhiteRight {
+    color: $HD-palette-white;
+    margin: 17vh 0 2vh 47vw;
+    font-size: 2rem;
+}
+
+.h3WhiteIndex {
+    color: $HD-palette-white;
+    font-size: 1.75rem;
+    text-align: center;
+    margin: 2vh;
+    user-select: none;
+}
+
+.compradoResenias {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1rem;
+    padding-left: 1vw;
+    text-decoration: none;
+    color: $HD-palette-white;
+    white-space: nowrap;
+}
+
+/* --------------- IDs --------------- */
+#flexBoxIndexCero {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+    #flexBoxIndexCero img {
+        width: 67vw;
+    }
+
+#lemaFrase {
+    color: $HD-palette-white;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center;
+    animation-name: opacidadAnimacion;
+    animation-duration: 3s;
+    user-select: none;
+}
+
+#gridResenias {
+    display: grid;
+    grid-template-columns: repeat(4 ,0.3fr);
+    column-gap: 1vw;
+    width: 70%;
+    height: auto;
+    justify-content: center;
+    position: relative;
+    align-content: center;
+    margin: 0 auto 0 auto;
+}
+    #gridResenias div {
+        color: $HD-palette-white;
+        background-color: $HD-grey-darker;
+        font-size: 1.15rem;
+        border: 0.1vw solid $HD-palette-white;
+        text-align: center;
+        width: 20vw;
+        height: auto;
+        padding: 2vh;
+        user-select: none;
+        display: inline;
+    }
+        #gridResenias div strong {
+            white-space: nowrap;
+        }
+            #gridResenias div:hover {
+                transform: scale(1.05, 1.05);
+                transition: 1s;
+                border: 0.1vw solid $HD-palette-orange;
+            }
+    #gridResenias div img {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        object-fit: cover;
+        margin-right: 0.5vw;
+        display: inline;
+    }
+
+#iFrameFormato {
+    width: 40vw;
+    height: 50vh;
+    margin-left: 2vw;
+    border: 0.2vw solid $HD-palette-orange;
+}
+/* _____INDEX_____ */

@@ -1,0 +1,192 @@
+/* _____NOSOTROS_____ */
+#nosotrosFondo {
+    background-color: $HD-palette-black;
+    overflow: hidden;
+}
+
+#gridNosotros {
+    display: grid;
+    grid-template-areas: 
+        "negocio negocio"
+        "bolson bolsonimg"
+        "atencion atencionImg"
+        "instalaciones instalacionesImg"
+        "calidad empresas"
+        ;
+    justify-content: center;
+}
+    #nuestroNegocio {
+        grid-area: negocio;
+        text-align: center;
+        color: $HD-palette-white;
+        background-color: $HD-grey-darker;
+        margin-top: 4vh;
+        margin-bottom: 4vh;
+        padding-bottom: 5vh;
+        border: 0.09vw solid $HD-palette-white;
+    }
+        #nuestroNegocio h2 {
+            font-size: 2.3rem;
+            padding-top: 10vh;
+            margin-bottom: 1vh;
+        }
+        #nuestroNegocio p {
+            font-size: 1.25rem;
+            text-align: left;
+            margin-left: 3vw;
+            margin-bottom: 1.4vh;
+            padding: 0 2vw;
+            width: 60vw;
+        }
+        #nuestroNegocio img {
+            border: 0.02vw solid $HD-palette-orange;
+            user-select: none;
+            width: 30vw;
+            height: 35vh;
+        }
+    #elBolson {
+        grid-area: bolson;
+        background-color: $HD-palette-white;
+        animation-name: opacidadAnimacion;
+        animation-timing-function: ease-in;
+        animation-duration: 2s;
+        animation-delay: 0s;
+    }
+        #elBolson h2 {
+            padding-top: 3vh;
+            padding-left: 2vw;
+            font-size: 2rem;
+        }
+        #elBolson p {
+            font-size: 1.15rem;
+            text-align: left;
+            margin-bottom: 2vh;
+            padding: 0 2vw;
+            width: 25vw;
+        }
+    #elBolsonImg {
+        grid-area: bolsonimg;
+        background-color: $HD-palette-white;
+        text-align: center;
+        padding: 3vh 2vw 3vh 7vw;
+        border-right: 0.09vw solid $HD-palette-black;
+        animation-name: opacidadAnimacion;
+        animation-timing-function: ease-in;
+        animation-duration: 2s;
+        animation-delay: 0s;
+    }
+        #elBolsonImg img {
+            width: 30vw;
+            border: 0.02vw solid $HD-palette-orange;
+            user-select: none;
+        }
+    #estandarCalidad {
+        grid-area: calidad;
+        color: $HD-palette-white;
+        background-color: $HD-grey-darker;
+        animation-name: opacidadAnimacion;
+        animation-timing-function: ease-in;
+        animation-duration: 2s;
+        animation-delay: 0s;
+        margin-bottom: 4vh;
+    }
+        #estandarCalidad h2 {
+            padding-top: 3vh;
+            padding-left: 2vw;
+            font-size: 2rem;
+        }
+        #estandarCalidad p {
+            font-size: 1.15rem;
+            text-align: left;
+            margin-bottom: 2vh;
+            padding: 0 2vw;
+            width: 25vw;
+        }
+    #empresasAsociadas {
+        grid-area: empresas;
+        color: $HD-palette-white;
+        background-color: $HD-grey-darker;
+        padding-left: 15.5vw;
+        animation-name: opacidadAnimacion;
+        animation-timing-function: ease-in;
+        animation-duration: 2s;
+        animation-delay: 0s;
+        margin-bottom: 4vh;
+    }
+        #empresasAsociadas img {
+            padding-top: 1vh;
+            width: 15vw;
+        }
+    #nuestrasInstalaciones {
+        grid-area: instalaciones;
+        background-color: $HD-palette-white;
+        animation-name: opacidadAnimacion;
+        animation-timing-function: ease-in;
+        animation-duration: 2s;
+        animation-delay: 0s;
+    }
+        #nuestrasInstalaciones h2 {
+            padding-top: 3vh;
+            padding-left: 2vw;
+            font-size: 2rem;
+        }
+        #nuestrasInstalaciones p {
+            font-size: 1.15rem;
+            text-align: left;
+            margin-bottom: 2vh;
+            padding: 0 2vw;
+            width: 25vw;
+        }
+    #nuestrasInstalacionesImg {
+        grid-area: instalacionesImg;
+        background-color: $HD-palette-white;
+        text-align: center;
+        padding: 3vh 2vw 0 7vw;
+        animation-name: opacidadAnimacion;
+        animation-timing-function: ease-in;
+        animation-duration: 2s;
+        animation-delay: 0s;
+    }
+        #nuestrasInstalacionesImg img {
+            width: 30vw;
+            border: 0.02vw solid $HD-palette-orange;
+            user-select: none;
+        }
+    #atencionCliente {
+        grid-area: atencion;
+        color: $HD-palette-white;
+        background-color: $HD-grey-darker;
+        animation-name: opacidadAnimacion;
+        animation-timing-function: ease-in;
+        animation-duration: 2s;
+        animation-delay: 0s;
+    }
+        #atencionCliente h2 {
+            padding-top: 3vh;
+            padding-left: 2vw;
+            font-size: 2rem;
+        }
+        #atencionCliente p {
+            font-size: 1.15rem;
+            text-align: left;
+            margin-bottom: 2vh;
+            padding: 0 2vw;
+            width: 25vw;
+        }
+    #atencionClienteImg {
+        grid-area: atencionImg;
+        background-color: $HD-grey-darker;
+        text-align: center;
+        padding: 3vh 2vw 3vh 7vw;
+        animation-name: opacidadAnimacion;
+        animation-timing-function: ease-in;
+        animation-duration: 2s;
+        animation-delay: 0s;
+    }
+        #atencionClienteImg img {
+            width: 30vw;
+            height: 33vh;
+            border: 0.02vw solid $HD-palette-orange;
+            user-select: none;
+        }
+/* _____NOSOTROS_____ */

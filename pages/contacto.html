@@ -1,0 +1,192 @@
+<!--
+Proyecto: "Broken Chains"
+-->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- Etiquetas meta -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- SEO -->
+        <meta name="keywords" content="harley davidson, broken chains, contacto, contactanos, ayuda">
+        <meta name="description" content="Dejanos tus consultas, comentarios y/o recomendaciones."/>
+        <meta name="author" content="Dante Terranova">
+        <!-- Responsive -->
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+        <!-- Título -->
+        <title>Broken Chains | Contacto</title>
+        <!-- Estilos Bootstrap (local) -->
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.css"/>
+        <!-- Estilos propios -->
+        <link rel="stylesheet" href="../css/styles.css" />
+        <!-- Ícono página -->
+        <link rel="shortcut icon" href="../media/logo-icono.ico" />
+        <!-- Links: Google fonts / animaciones -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+
+    <body>
+        <!-- H E A D E R -->
+        <header class="headerWhite">
+            <div class="flexBoxHeaderPages">
+                <div>
+                    <a href="../index.html">
+                        <img class="logo" src="../media/logo.png" alt="logo Broken Chains">
+                    </a>
+                </div>
+                <h1><a class="linkTituloPaginas" href="../index.html">Broken Chains</a></h1>
+            </div>
+        </header>
+        <!-- H E A D E R -->
+        <!-- M A I N -->
+        <main>
+            <!-- BARRA DE NAVEGACIÓN -->
+            <nav class="navBarPages">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="paquetes.html">Paquetes</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li>
+                        <a href="carrito.html">
+                            <img src="../media/carrito.svg" alt="carrito">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- BARRA DE NAVEGACIÓN -->
+            <!-- SECCIÓN 1: CONTACTO -->
+            <section>
+                <!-- ARTÍCULO 1: FORMULARIO CONTACTO -->
+                <article id="gridContacto">
+                    <div id="contactoForm" class="animate__animated animate__fadeIn">
+                        <h2>Contactanos</h2>
+                        <div class="divHrContacto"></div>
+                        <form>
+                            <br>
+                            <label for="nombre"></label>
+                            <input class="formInput" type="text" name="nombre" placeholder="Nombre" min="1" maxlength="30"/>
+                            <br>
+                            <label for="apellido"></label>
+                            <input class="formInput" type="text" name="apellido" placeholder="Apellido" min="1" maxlength="30"/>
+                            <br>
+                            <label for="correo"></label>
+                            <input class="formInput" type="email" name="correo" placeholder="E-mail" min="10" maxlength="30"/>
+                            <br>
+                            <label for="celular"></label>
+                            <input class="formInput" type="tel" name="celular" placeholder="Celular" min="10" maxlength="15"/>
+                            <br>
+                            <br>
+                            <div>Ingrese comentarios o dudas</div>
+                            <textarea rows="10" cols="40"></textarea>
+                            <br>
+                            <br>
+                            <label for="sexo">Sexo:</label>
+                            <select name="sexo" form="contactanosForm">
+                                <option value="F">Femenino</option>
+                                <option value="M">Masculino</option>
+                                <option value="O">Otro</option>
+                                <option value="N">Prefiero no decirlo</option>
+                            </select>
+                            <br>
+                            <input type="checkbox" name="notificar" class="checkboxFormato"/>
+                            <label for="notificar">Deseo recibir notificaciones de ofertas por parte de Broken Chains</label>
+                            <br>
+                            <br>
+                            <input class="botonesForm" type="submit" value="Enviar"/>
+                            <input class="botonesForm" type="reset" value="Borrar datos"/>
+                            <br>
+                            <br>
+                        </form>
+                    </div>
+                    <div id="espacioDatos" class="animate__animated animate__fadeIn">
+                        <h2>Nuestros datos</h2>
+                        <div class="divHrContactoSub"></div>
+                        <br>
+                        <div>
+                            <p>E-mail: broken-chains-info@hotmail.com</p>
+                        </div>
+                        <div>
+                            <p>Teléfono: +54 XXX XXX XXXX</p>
+                        </div>
+                        <br>
+                        <div class="divHrContactoSub"></div>
+                        <br>
+                        <div>
+                            <p>
+                                Horarios de atención:<br>
+                                lúnes a viernes (8:00hs - 18:00hs)<br>
+                                sábados (8:00hs - 13:00hs)
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                <img src="../media/localizacion.svg" alt="ícono localizacion">
+                                C. Eusebio Barría 2498
+                                El Bolsón, Río Negro
+                            </p>
+                        </div>
+                        <div class="divHrContactoSub"></div>
+                        <br>
+                        <div>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="../media/whatsapp.svg" alt="logo whatsapp">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="../media/telegram.svg" alt="logo telegram">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <!-- ARTÍCULO 1: FORMULARIO CONTACTO -->
+            </section>
+            <!-- SECCIÓN 1: CONTACTO -->
+        </main>
+        <!-- M A I N -->
+        <!-- F O O T E R -->
+        <footer class="footerWhite">
+            <div class="gridFooter">
+                <div class="dudasBoton">
+                    <a href="contacto.html">¿Tenés dudas? Contactanos.</a>
+                </div>
+                <div>
+                    <ul class="redesSociales">
+                        <li><a href="https://www.instagram.com/?hl=es" target="_blank"><img src="../media/instagram.svg" alt="logo Instagram"></a></li>
+                        <li><a href="https://es-la.facebook.com/" target="_blank"><img src="../media/facebook.svg" alt="logo Facebook"></a></li>
+                        <li><a href="https://twitter.com/?lang=es" target="_blank"><img src="../media/twitter.svg" alt="logo Twitter"></a></li>
+                        <li><a href="https://www.youtube.com/" target="_blank"><img src="../media/youtube.svg" alt="logo Youtube"></a></li>
+                    </ul>
+                </div>
+                <div class="empresasLogos">
+                    <ul>
+                        <li><img src="../media/logo-harley.svg" alt="logo Harley Davidson"></li>
+                        <li><img src="../media/logo.png" alt="logo Broken Chains"></li>
+                    </ul>
+                </div>
+                <div class="banderaArg">
+                    <img src="../media/bandera-arg.jpg" alt="bandera Argentina">
+                </div>
+                <div class="copyrightF">
+                    <div>
+                        <ul>
+                            <li><img src="../media/copyright.svg" alt="copyright"></li>
+                            <li><p>2021 Broken Chains, todos los derechos reservados.<p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- F O O T E R -->
+    </body>
+</html>

@@ -1,0 +1,159 @@
+/* _____GALERIA_____ */
+.h2Galeria {
+    color: $HD-palette-black;
+    width: 50vw;
+    margin: 18vh auto 0 auto;
+    font-size: 2.5rem;
+    text-align: center;
+    position: relative;
+    background-image: radial-gradient(circle, rgba(244,131,34,1) 0%, rgba(0,0,0,0.8967787798713235) 65%);
+    transition: width 2s;
+    user-select: none;
+}
+    .h2Galeria:hover {
+        width: 70vw;
+    }
+
+.gridGaleriaDiv {
+    width: 30vw;
+    height: 40vh;
+    animation-name: opacidadAnimacion;
+    animation-duration: 2s;
+}
+    .gridGaleriaDiv img {
+        width: 30vw;
+        height: 40vh;
+    }
+    .gridGaleriaDiv:hover .abrirDescripcion {
+        opacity: 1;
+        transition: opacity 2s;
+    }
+    .gridGaleriaDiv:hover img {
+        border: 0.15vw solid $HD-palette-orange;
+        transform: scale(1.05, 1.05);
+        opacity: 70%;
+    }
+
+.descripcionGaleria {
+    position: relative;
+}
+    .headerDescripcion {
+        height: 6vh;
+        color: $HD-palette-white;
+        overflow: hidden;
+        border-radius: 1vw 1vw 0 0;
+        box-shadow: 0 0.2vw 0.4vw 0 rgba(0, 0, 0, 0.4);
+    }
+        .headerDescripcion h3 {
+            font-size: 2.3rem;
+            text-align: center;
+            line-height: 6vh;
+        }
+    .contenidoDescripcion {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 0.1vw solid $HD-palette-orange;
+        border-radius: 1vw;
+        width: 30vw;
+        height: 50vh;
+        box-shadow: 0 0.2vw 1.2vw 0 rgba(0, 0, 0, 0.2);
+        background-color: $HD-grey-darker;
+        opacity: 0;
+        visibility: hidden;
+        user-select: none;
+        transition: opacity 0.6s;
+    }
+        .contenidoDescripcion ul {
+            list-style: none;
+        }
+            .contenidoDescripcion ul li {
+                color: $HD-palette-white;
+                padding-left: 1vw;
+                padding-top: 1vh;
+                font-size: 1.25rem;
+            }
+    .abrirDescripcion {
+        display: block;
+        width: 15vw;
+        background-color: $HD-palette-orange;
+        text-align: center;
+        font-size: 2.4rem;
+        line-height: 5vh;
+        border: 0.1vw solid $HD-palette-black;
+        border-radius: 2vw;
+        cursor: pointer;
+        user-select: none;
+        margin: -38vh 0 0 1vw;
+        opacity: 0;
+    }
+    .cerrarDescripcion {
+        position: absolute;
+        color: $HD-palette-white;
+        font-weight: bold;
+        font-size: 1.5rem;
+        left: 25%;
+        bottom: 6%;
+        border: 0.1vw solid $HD-palette-orange;
+        border-radius: 2vw;
+        background-color: $HD-grey-lighter;
+        padding: 1vh 5vw;
+        transition: color 0.7s;
+        transition: background-color 0.7s;
+    }
+        .cerrarDescripcion:hover {
+            background-color: $HD-palette-white;
+            color: $HD-palette-black;
+            cursor: pointer;
+        }
+
+/* --------------- IDs --------------- */
+#imagenGaleria {
+    display: flex;
+    background-image: url("../media/galeria0.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    height: 64vh;
+    margin-top: -2vh;
+}
+    #imagenGaleria div {
+        color: $HD-palette-white;
+        -webkit-text-stroke: 0.015vw rgb(56, 56, 56);
+        position: relative;
+        font-size: 5vw;
+        width: 100%;
+        font-weight: bold;
+        font-family: $HD-font-family;
+        text-align: center;
+        padding: 25vh 0 0 27vw;
+        width: 45vw;
+        animation-name: opacidadAnimacion;
+        animation-duration: 0.75s;
+        animation-timing-function: ease-in;
+        user-select: none;
+        box-sizing: content-box;
+    }
+
+#gridGaleria {
+    display: grid;
+    grid-template-columns: repeat(3, 0.2fr);
+    grid-template-rows: repeat(3, 1fr);
+    position: relative;
+    row-gap: 5vh;
+    column-gap: 2vw;
+    padding: 6vh 0;
+    justify-content: center;
+    align-items: center;
+}
+
+@for $i from 1 through 9 {
+    #click-#{$i} { display: none; }
+    #click-#{$i}:checked ~ .contenidoDescripcion {
+        opacity: 1;
+        visibility: visible; }
+}
+/* _____GALERIA_____ */

@@ -1,0 +1,73 @@
+/* _____NAVBAR_____ */
+.navBar {
+    width: 100%;
+    opacity: 70%;
+    position: relative;
+    top: 0;
+    user-select: none;
+    margin-bottom: 4vh;
+}
+    .navBar ul {
+        background-color: $HD-palette-orange;
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: space-around;
+        height: 40px;
+    }
+        .navBar ul li {
+            height: 30px;
+            position: relative;
+        }
+            .navBar ul li a {
+                color: $HD-palette-black;
+                display: inline-block;
+                position: absolute;
+                font-weight: bold;
+                text-decoration: none;
+                font-size: 1.5rem;
+            }
+                .navBar ul li a:hover {
+                    color: $HD-palette-white;
+                }
+    .navBar img {
+        width: 40px;
+        height: 40px;
+        margin-top: -5px;
+    }
+
+.navBarPages {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    user-select: none;
+}
+    .navBarPages ul {
+        background-color: $HD-palette-orange;
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: space-around;
+        height: 40px;
+    }
+    .navBarPages ul li {
+        position: relative;
+        height: 30px;
+    }
+        .navBarPages ul li a {
+            color: $HD-palette-black;
+            display: inline-block;
+            position: absolute;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+            .navBarPages ul li a:hover {
+                color: $HD-palette-white;
+            }
+    .navBarPages img {
+        width: 40px;
+        height: 40px;
+        margin-top: -0.6vh;
+    }
+/* _____NAVBAR_____ */

@@ -1,0 +1,2612 @@
+/* _____RESET_____ */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* _____RESET_____ */
+/* _____ETIQUETAS_____ */
+html {
+  background-color: black; }
+
+/* _____ETIQUETAS_____ */
+/* ____PSEUDOELEMENTOS_____ */
+::selection {
+  background-color: #f48322; }
+
+/* ____PSEUDOELEMENTOS_____ */
+/* _____KEYFRAMES_____ */
+@keyframes opacidadAnimacion {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/* _____KEYFRAMES_____ */
+/* _____GENERAL_____ */
+.botonSubir {
+  position: fixed;
+  bottom: 3vh;
+  right: 1vw;
+  z-index: 6; }
+
+.botonSubir img {
+  width: 50px;
+  height: 50px;
+  background-color: #f48322;
+  padding: 0.4vw;
+  border: 0.1vw solid #f8f8ff;
+  border-radius: 50%;
+  opacity: 0.65; }
+
+.botonSubir:hover img {
+  opacity: 0.9; }
+
+.botonSubirPages {
+  position: fixed;
+  bottom: 3vh;
+  right: 2vw;
+  z-index: 6; }
+
+.botonSubirPages img {
+  width: 40px;
+  height: 40px;
+  background-color: #f48322;
+  padding: 0.4vw;
+  border: 0.1vw solid #f8f8ff;
+  border-radius: 50%;
+  opacity: 0.65;
+  box-sizing: content-box; }
+
+.botonSubirPages:hover img {
+  opacity: 0.9; }
+
+.sectionFormato {
+  width: 100%; }
+
+/* _____GENERAL_____ */
+/* _____HEADERS_____ */
+.headerWhite {
+  background-color: #f8f8ff;
+  width: 100%;
+  height: 150px;
+  user-select: none; }
+
+.logo {
+  width: 150px;
+  position: relative;
+  margin-left: 2vw;
+  user-select: none; }
+
+.flexBoxHeaderPages {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  flex-wrap: nowrap; }
+
+.linkTitulo {
+  font-size: 2.5rem;
+  position: absolute;
+  text-decoration: none;
+  color: #f48322;
+  -webkit-text-stroke: 0.03vw #f8f8ff;
+  font-family: "Abril Fatface", cursive;
+  user-select: none; }
+
+.linkTituloPaginas {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: #f48322;
+  -webkit-text-stroke: 0.04vw black;
+  font-family: "Abril Fatface", cursive; }
+
+/* --------------- IDs --------------- */
+#imagenHeaderIndex {
+  background-image: url("../media/index0.jpg");
+  background-size: 90vw 50%;
+  background-position: center top;
+  background-attachment: fixed;
+  position: relative;
+  width: 100%;
+  min-height: 180px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  height: auto; }
+
+#flexBoxHeaderIndex {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 10vh 0; }
+
+/* _____HEADERS_____ */
+/* _____NAVBAR_____ */
+.navBar {
+  width: 100%;
+  opacity: 70%;
+  position: relative;
+  top: 0;
+  user-select: none;
+  margin-bottom: 4vh; }
+
+.navBar ul {
+  background-color: #f48322;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-around;
+  height: 40px; }
+
+.navBar ul li {
+  height: 30px;
+  position: relative; }
+
+.navBar ul li a {
+  color: black;
+  display: inline-block;
+  position: absolute;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.5rem; }
+
+.navBar ul li a:hover {
+  color: #f8f8ff; }
+
+.navBar img {
+  width: 40px;
+  height: 40px;
+  margin-top: -5px; }
+
+.navBarPages {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  user-select: none; }
+
+.navBarPages ul {
+  background-color: #f48322;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-around;
+  height: 40px; }
+
+.navBarPages ul li {
+  position: relative;
+  height: 30px; }
+
+.navBarPages ul li a {
+  color: black;
+  display: inline-block;
+  position: absolute;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.5rem; }
+
+.navBarPages ul li a:hover {
+  color: #f8f8ff; }
+
+.navBarPages img {
+  width: 40px;
+  height: 40px;
+  margin-top: -0.6vh; }
+
+/* _____NAVBAR_____ */
+/* _____INDEX_____ */
+.imagenCarrusel {
+  width: 70vw;
+  height: 70vh;
+  height: auto; }
+
+.divHrIndex {
+  width: 50vw;
+  height: 0.2vh;
+  color: #f48322;
+  background-color: #f48322;
+  margin: 2vh auto 6vw auto;
+  position: relative;
+  display: block;
+  border-radius: 2vw; }
+
+.flexBoxIndexArticle {
+  display: flex;
+  position: static;
+  flex-wrap: nowrap;
+  margin-bottom: 20vh; }
+
+.flexBoxIndexArticle div img {
+  margin: 0 0 0 2vw;
+  border: 0.15vw solid #f48322;
+  width: 40vw;
+  transition: opacity 1s; }
+
+.flexBoxIndexArticle div h3 {
+  color: #f8f8ff;
+  font-size: 3rem;
+  margin: -25vh 0 0 0;
+  text-align: center;
+  visibility: hidden;
+  position: relative; }
+
+.flexBoxIndexArticle div img:hover {
+  opacity: 65%; }
+
+.flexBoxIndexArticle p {
+  color: #f8f8ff;
+  width: 45vw;
+  font-size: 1.5rem;
+  margin: 0 1vw 0 6vw; }
+
+.flexBoxIndexArticle p a {
+  background-color: #f48322;
+  color: black;
+  border: 0.1vw solid black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 1vh 1vw;
+  user-select: none; }
+
+.flexBoxIndexArticle p a:hover {
+  color: #f8f8ff;
+  border: 0.1vw solid #f8f8ff; }
+
+.h2WhiteLeft {
+  color: #f8f8ff;
+  margin: 0px 0px 2vh 5.5vw;
+  font-size: 2rem; }
+
+.h2WhiteRight {
+  color: #f8f8ff;
+  margin: 17vh 0 2vh 47vw;
+  font-size: 2rem; }
+
+.h3WhiteIndex {
+  color: #f8f8ff;
+  font-size: 1.75rem;
+  text-align: center;
+  margin: 2vh;
+  user-select: none; }
+
+.compradoResenias {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1rem;
+  padding-left: 1vw;
+  text-decoration: none;
+  color: #f8f8ff;
+  white-space: nowrap; }
+
+/* --------------- IDs --------------- */
+#flexBoxIndexCero {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5vh;
+  margin-top: 5vh; }
+
+#flexBoxIndexCero img {
+  width: 67vw; }
+
+#lemaFrase {
+  color: #f8f8ff;
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: center;
+  animation-name: opacidadAnimacion;
+  animation-duration: 3s;
+  user-select: none; }
+
+#gridResenias {
+  display: grid;
+  grid-template-columns: repeat(4, 0.3fr);
+  column-gap: 1vw;
+  width: 70%;
+  height: auto;
+  justify-content: center;
+  position: relative;
+  align-content: center;
+  margin: 0 auto 0 auto; }
+
+#gridResenias div {
+  color: #f8f8ff;
+  background-color: #242424;
+  font-size: 1.15rem;
+  border: 0.1vw solid #f8f8ff;
+  text-align: center;
+  width: 20vw;
+  height: auto;
+  padding: 2vh;
+  user-select: none;
+  display: inline; }
+
+#gridResenias div strong {
+  white-space: nowrap; }
+
+#gridResenias div:hover {
+  transform: scale(1.05, 1.05);
+  transition: 1s;
+  border: 0.1vw solid #f48322; }
+
+#gridResenias div img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  object-fit: cover;
+  margin-right: 0.5vw;
+  display: inline; }
+
+#iFrameFormato {
+  width: 40vw;
+  height: 50vh;
+  margin-left: 2vw;
+  border: 0.2vw solid #f48322; }
+
+/* _____INDEX_____ */
+/* _____PRODUCTOS_____ */
+.flexBoxProducto {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  width: 78vw;
+  margin: 2vh auto;
+  background-color: #f8f8ff;
+  position: relative;
+  min-height: 150px;
+  max-height: 205px; }
+
+.flexBoxProducto p {
+  color: black;
+  height: 2.5vh; }
+
+.flexBoxProducto p a {
+  color: black;
+  position: relative;
+  font-size: 1vw;
+  background-color: #f48322;
+  border: 1.8px solid black;
+  padding: 0.5vh 0.7vw;
+  margin-left: 60vw;
+  text-align: center;
+  text-decoration: none;
+  width: 90px;
+  box-sizing: content-box; }
+
+.flexBoxProducto p a:hover {
+  color: #f8f8ff; }
+
+.flexBoxProducto img {
+  width: 10vw;
+  height: auto;
+  object-fit: contain; }
+
+.flexBoxProductoSub {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 150px;
+  max-height: 205px; }
+
+.tituloProducto {
+  font-size: 1.5rem;
+  padding-top: 0.5vh;
+  margin-bottom: 0.5vh; }
+
+.precioProducto {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 0.8vh; }
+
+.entregaProducto {
+  color: #00a650;
+  font-size: 0.9rem;
+  font-weight: bold;
+  background-color: #e6f7ee;
+  width: 100px;
+  height: fit-content;
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+  text-align: center; }
+
+.h2TipoProducto {
+  text-align: center;
+  margin-top: 3vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  margin-left: 1vw;
+  justify-content: center;
+  width: 9vw; }
+
+.h2TipoProducto h2 {
+  color: #494949;
+  font-size: 1vw;
+  border: 2px solid #f48322;
+  padding: 0.8vh 0.7vw;
+  background-color: #f8f8ff; }
+
+.divHrProductos {
+  width: 78vw;
+  margin: 0 auto 0 auto;
+  color: #f48322;
+  background-color: #f48322;
+  height: 3px;
+  position: relative;
+  display: block;
+  border-radius: 2vw; }
+
+.animacionP1 {
+  animation-name: opacidadAnimacion;
+  animation-duration: 1.2s; }
+
+.animacionP2 {
+  animation-name: opacidadAnimacion;
+  animation-duration: 1.4s; }
+
+.animacionP3 {
+  animation-name: opacidadAnimacion;
+  animation-duration: 1.6s; }
+
+.animacionP4 {
+  animation-name: opacidadAnimacion;
+  animation-duration: 1.8s; }
+
+.animacionP5 {
+  animation-name: opacidadAnimacion;
+  animation-duration: 2s; }
+
+.animacionP6 {
+  animation-name: opacidadAnimacion;
+  animation-duration: 2.2s; }
+
+.animacionP7 {
+  animation-name: opacidadAnimacion;
+  animation-duration: 2.4s; }
+
+.animacionP8 {
+  animation-name: opacidadAnimacion;
+  animation-duration: 2.6s; }
+
+.animacionP9 {
+  animation-name: opacidadAnimacion;
+  animation-duration: 2.8s; }
+
+.animacionP10 {
+  animation-name: opacidadAnimacion;
+  animation-duration: 3s; }
+
+.animacionP11 {
+  animation-name: opacidadAnimacion;
+  animation-duration: 3.2s; }
+
+.animacionP12 {
+  animation-name: opacidadAnimacion;
+  animation-duration: 3.4s; }
+
+.animacionP13 {
+  animation-name: opacidadAnimacion;
+  animation-duration: 3.6s; }
+
+.animacionP14 {
+  animation-name: opacidadAnimacion;
+  animation-duration: 3.8s; }
+
+.animacionP15 {
+  animation-name: opacidadAnimacion;
+  animation-duration: 4s; }
+
+.animacionH1 {
+  animation-name: opacidadAnimacion;
+  animation-duration: 1.2s; }
+
+.animacionH2 {
+  animation-name: opacidadAnimacion;
+  animation-duration: 1.4s; }
+
+.animacionH3 {
+  animation-name: opacidadAnimacion;
+  animation-duration: 1.6s; }
+
+.animacionH4 {
+  animation-name: opacidadAnimacion;
+  animation-duration: 1.8s; }
+
+.animacionH5 {
+  animation-name: opacidadAnimacion;
+  animation-duration: 2s; }
+
+.animacionH6 {
+  animation-name: opacidadAnimacion;
+  animation-duration: 2.2s; }
+
+.animacionH7 {
+  animation-name: opacidadAnimacion;
+  animation-duration: 2.4s; }
+
+.animacionH8 {
+  animation-name: opacidadAnimacion;
+  animation-duration: 2.6s; }
+
+.animacionH9 {
+  animation-name: opacidadAnimacion;
+  animation-duration: 2.8s; }
+
+.animacionH10 {
+  animation-name: opacidadAnimacion;
+  animation-duration: 3s; }
+
+.animacionH11 {
+  animation-name: opacidadAnimacion;
+  animation-duration: 3.2s; }
+
+.animacionH12 {
+  animation-name: opacidadAnimacion;
+  animation-duration: 3.4s; }
+
+/* --------------- IDs --------------- */
+#flexBoxProductos {
+  display: flex;
+  flex-direction: column; }
+
+/* _____PRODUCTOS_____ */
+/* _____PAQUETES_____ */
+.h2WhiteCenter {
+  color: #f8f8ff;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 10vh; }
+
+.gridContenedorPaquetes {
+  display: block;
+  width: 90vw;
+  animation-name: opacidadAnimacion;
+  animation-duration: 2s;
+  justify-content: center; }
+
+.gridContenedorPaquetes ul {
+  list-style: none; }
+
+.contenedorSlider {
+  margin: 0 10vw 5vh 0;
+  position: relative; }
+
+.listaSlider {
+  position: relative; }
+
+.listaSlider li {
+  position: absolute;
+  opacity: 0;
+  width: 23.43vw;
+  height: 50.3vh;
+  background-color: #353535;
+  border: 0.1vw solid #f48322;
+  border-radius: 10%;
+  margin: 1.8vh auto 0 1.3vw; }
+
+.listaSlider li:first-child {
+  opacity: 1; }
+
+.listaSlider li:target {
+  opacity: 1; }
+
+.contenedorInformacionP {
+  position: relative;
+  margin: 1vh 0 0 2vw;
+  color: #f8f8ff; }
+
+.contenedorInformacionP h3 {
+  font-size: 2rem; }
+
+.contenedorInformacionP h4 {
+  font-size: 1.5rem; }
+
+.contenedorInformacionP p {
+  font-size: 1rem;
+  width: 10vw;
+  padding: 1vh 0;
+  margin-top: 4.5vh;
+  background-color: #353535;
+  border: 10px solid #f48322;
+  border-radius: 7%;
+  font-weight: bold;
+  text-align: center;
+  color: #f8f8ff; }
+
+.listaInformacionP {
+  position: absolute;
+  width: 30vw;
+  height: 40vh;
+  margin-top: 0.5vh;
+  margin-left: 1vw; }
+
+.listaInformacionP li {
+  height: 3vh;
+  width: 30vw;
+  position: relative;
+  background-color: transparent;
+  opacity: 1;
+  font-size: 1.15rem;
+  list-style: square;
+  border: none; }
+
+.paqueteSeleccion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 10px;
+  width: 95%;
+  z-index: 4;
+  height: auto;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 110vh;
+  margin-left: 3vw;
+  background-color: #353535;
+  border-radius: 2rem;
+  border: 1px solid #f48322; }
+
+.paqueteSeleccion li {
+  width: 180px;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 6px;
+  margin: 0 10px 50px 0;
+  text-align: center;
+  box-sizing: content-box; }
+
+.paqueteSeleccion li:hover a {
+  transform: scale(1.07, 1.07);
+  transition: all 1s; }
+
+.paqueteSeleccion li a {
+  text-decoration: none;
+  display: inline-block;
+  align-items: center;
+  padding-top: 10px;
+  width: 180px;
+  color: #f8f8ff;
+  font-size: 1.15rem;
+  height: 50px;
+  background-color: #242424;
+  border: 1px solid #f48322;
+  border-radius: 2rem;
+  font-weight: bold; }
+
+.botonPaquetes {
+  color: #f8f8ff;
+  padding: 1vh 2vw;
+  font-size: 1.5rem;
+  position: absolute;
+  text-align: center;
+  top: 95vh;
+  margin-left: 41vw;
+  width: 150px;
+  font-weight: bold;
+  background-color: #353535;
+  transition: background-color 1s;
+  border: 0.1vw solid #f48322;
+  border-radius: 2vw;
+  user-select: none;
+  cursor: pointer;
+  box-sizing: content-box; }
+
+.botonPaquetes:hover {
+  color: black;
+  background-color: #f8f8ff; }
+
+.contenedorMembresia {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto 5vh auto;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  user-select: none; }
+
+.flexBoxPaqueteM {
+  background-color: #f8f8ff;
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  height: 50vh;
+  margin: 0 2vw;
+  border: 0.2vw solid black;
+  border-radius: 2.1vw;
+  position: relative; }
+
+.flexBoxPaqueteM h3 {
+  text-align: center;
+  color: black;
+  font-size: 2rem;
+  padding: 3vh 0;
+  background-color: #f48322;
+  overflow: hidden;
+  border-radius: 1.9vw 1.9vw 0 0;
+  box-shadow: 0.1vw 0.1vw 1vh 0 #2c2c2c; }
+
+.flexBoxPaqueteM p {
+  text-align: center;
+  font-size: 1.8rem; }
+
+.flexBoxPaqueteM li p {
+  font-size: 1.15rem; }
+
+.flexBoxPaqueteM ul {
+  margin: 2vh 2vw 0 2vw;
+  list-style: none;
+  text-align: center; }
+
+.flexBoxPaqueteM hr {
+  height: 0.001vh;
+  color: #f48322;
+  margin-bottom: 1vh; }
+
+.botonM {
+  background-color: #f8f8ff;
+  border: 0.15vw solid #f48322;
+  border-radius: 2vw;
+  width: 20vw;
+  height: 6vh;
+  margin: 4vh auto 0 auto;
+  cursor: pointer; }
+
+.botonM p {
+  padding-top: 1vh;
+  font-weight: bold;
+  padding-bottom: 1vh; }
+
+.botonM:hover {
+  background-color: #f48322;
+  color: #f8f8ff;
+  animation-name: opacidadAnimacion;
+  animation-duration: 1s;
+  border: 0.1vw solid black; }
+
+/* -------------------------- */
+#seccionMembresia {
+  margin-top: 90vh; }
+
+#paquete1 {
+  width: 460px;
+  height: 480px;
+  margin-left: 35vw; }
+
+#paquete2 {
+  width: 460px;
+  height: 480px;
+  margin-left: 35vw; }
+
+#paquete3 {
+  width: 460px;
+  height: 480px;
+  margin-left: 35vw; }
+
+#paquete4 {
+  width: 460px;
+  height: 480px;
+  margin-left: 35vw; }
+
+#paquete5 {
+  width: 460px;
+  height: 480px;
+  margin-left: 35vw; }
+
+#paquete6 {
+  width: 460px;
+  height: 480px;
+  margin-left: 35vw; }
+
+#paquete7 {
+  width: 460px;
+  height: 480px;
+  margin-left: 35vw; }
+
+#paquete8 {
+  width: 460px;
+  height: 480px;
+  margin-left: 35vw; }
+
+#paquete9 {
+  width: 460px;
+  height: 480px;
+  margin-left: 35vw; }
+
+/* _____PAQUETES_____ */
+/* _____GALERIA_____ */
+.h2Galeria {
+  color: black;
+  width: 50vw;
+  margin: 18vh auto 0 auto;
+  font-size: 2.5rem;
+  text-align: center;
+  position: relative;
+  background-image: radial-gradient(circle, #f48322 0%, rgba(0, 0, 0, 0.896779) 65%);
+  transition: width 2s;
+  user-select: none; }
+
+.h2Galeria:hover {
+  width: 70vw; }
+
+.gridGaleriaDiv {
+  width: 30vw;
+  height: 40vh;
+  animation-name: opacidadAnimacion;
+  animation-duration: 2s; }
+
+.gridGaleriaDiv img {
+  width: 30vw;
+  height: 40vh; }
+
+.gridGaleriaDiv:hover .abrirDescripcion {
+  opacity: 1;
+  transition: opacity 2s; }
+
+.gridGaleriaDiv:hover img {
+  border: 0.15vw solid #f48322;
+  transform: scale(1.05, 1.05);
+  opacity: 70%; }
+
+.descripcionGaleria {
+  position: relative; }
+
+.headerDescripcion {
+  height: 6vh;
+  color: #f8f8ff;
+  overflow: hidden;
+  border-radius: 1vw 1vw 0 0;
+  box-shadow: 0 0.2vw 0.4vw 0 rgba(0, 0, 0, 0.4); }
+
+.headerDescripcion h3 {
+  font-size: 2.3rem;
+  text-align: center;
+  line-height: 6vh; }
+
+.contenidoDescripcion {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 0.1vw solid #f48322;
+  border-radius: 1vw;
+  width: 30vw;
+  height: 50vh;
+  box-shadow: 0 0.2vw 1.2vw 0 rgba(0, 0, 0, 0.2);
+  background-color: #242424;
+  opacity: 0;
+  visibility: hidden;
+  user-select: none;
+  transition: opacity 0.6s; }
+
+.contenidoDescripcion ul {
+  list-style: none; }
+
+.contenidoDescripcion ul li {
+  color: #f8f8ff;
+  padding-left: 1vw;
+  padding-top: 1vh;
+  font-size: 1.25rem; }
+
+.abrirDescripcion {
+  display: block;
+  width: 15vw;
+  background-color: #f48322;
+  text-align: center;
+  font-size: 2.4rem;
+  line-height: 5vh;
+  border: 0.1vw solid black;
+  border-radius: 2vw;
+  cursor: pointer;
+  user-select: none;
+  margin: -38vh 0 0 1vw;
+  opacity: 0; }
+
+.cerrarDescripcion {
+  position: absolute;
+  color: #f8f8ff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  left: 25%;
+  bottom: 6%;
+  border: 0.1vw solid #f48322;
+  border-radius: 2vw;
+  background-color: #353535;
+  padding: 1vh 5vw;
+  transition: color 0.7s;
+  transition: background-color 0.7s; }
+
+.cerrarDescripcion:hover {
+  background-color: #f8f8ff;
+  color: black;
+  cursor: pointer; }
+
+/* --------------- IDs --------------- */
+#imagenGaleria {
+  display: flex;
+  background-image: url("../media/galeria0.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  height: 64vh;
+  margin-top: -2vh; }
+
+#imagenGaleria div {
+  color: #f8f8ff;
+  -webkit-text-stroke: 0.015vw #383838;
+  position: relative;
+  font-size: 5vw;
+  width: 100%;
+  font-weight: bold;
+  font-family: "Abril Fatface", cursive;
+  text-align: center;
+  padding: 25vh 0 0 27vw;
+  width: 45vw;
+  animation-name: opacidadAnimacion;
+  animation-duration: 0.75s;
+  animation-timing-function: ease-in;
+  user-select: none;
+  box-sizing: content-box; }
+
+#gridGaleria {
+  display: grid;
+  grid-template-columns: repeat(3, 0.2fr);
+  grid-template-rows: repeat(3, 1fr);
+  position: relative;
+  row-gap: 5vh;
+  column-gap: 2vw;
+  padding: 6vh 0;
+  justify-content: center;
+  align-items: center; }
+
+#click-1 {
+  display: none; }
+
+#click-1:checked ~ .contenidoDescripcion {
+  opacity: 1;
+  visibility: visible; }
+
+#click-2 {
+  display: none; }
+
+#click-2:checked ~ .contenidoDescripcion {
+  opacity: 1;
+  visibility: visible; }
+
+#click-3 {
+  display: none; }
+
+#click-3:checked ~ .contenidoDescripcion {
+  opacity: 1;
+  visibility: visible; }
+
+#click-4 {
+  display: none; }
+
+#click-4:checked ~ .contenidoDescripcion {
+  opacity: 1;
+  visibility: visible; }
+
+#click-5 {
+  display: none; }
+
+#click-5:checked ~ .contenidoDescripcion {
+  opacity: 1;
+  visibility: visible; }
+
+#click-6 {
+  display: none; }
+
+#click-6:checked ~ .contenidoDescripcion {
+  opacity: 1;
+  visibility: visible; }
+
+#click-7 {
+  display: none; }
+
+#click-7:checked ~ .contenidoDescripcion {
+  opacity: 1;
+  visibility: visible; }
+
+#click-8 {
+  display: none; }
+
+#click-8:checked ~ .contenidoDescripcion {
+  opacity: 1;
+  visibility: visible; }
+
+#click-9 {
+  display: none; }
+
+#click-9:checked ~ .contenidoDescripcion {
+  opacity: 1;
+  visibility: visible; }
+
+/* _____GALERIA_____ */
+/* _____NOSOTROS_____ */
+#nosotrosFondo {
+  background-color: black;
+  overflow: hidden; }
+
+#gridNosotros {
+  display: grid;
+  grid-template-areas: "negocio negocio" "bolson bolsonimg" "atencion atencionImg" "instalaciones instalacionesImg" "calidad empresas";
+  justify-content: center; }
+
+#nuestroNegocio {
+  grid-area: negocio;
+  text-align: center;
+  color: #f8f8ff;
+  background-color: #242424;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  padding-bottom: 5vh;
+  border: 0.09vw solid #f8f8ff; }
+
+#nuestroNegocio h2 {
+  font-size: 2.3rem;
+  padding-top: 10vh;
+  margin-bottom: 1vh; }
+
+#nuestroNegocio p {
+  font-size: 1.25rem;
+  text-align: left;
+  margin-left: 3vw;
+  margin-bottom: 1.4vh;
+  padding: 0 2vw;
+  width: 60vw; }
+
+#nuestroNegocio img {
+  border: 0.02vw solid #f48322;
+  user-select: none;
+  width: 30vw;
+  height: 35vh; }
+
+#elBolson {
+  grid-area: bolson;
+  background-color: #f8f8ff;
+  animation-name: opacidadAnimacion;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-delay: 0s; }
+
+#elBolson h2 {
+  padding-top: 3vh;
+  padding-left: 2vw;
+  font-size: 2rem; }
+
+#elBolson p {
+  font-size: 1.15rem;
+  text-align: left;
+  margin-bottom: 2vh;
+  padding: 0 2vw;
+  width: 25vw; }
+
+#elBolsonImg {
+  grid-area: bolsonimg;
+  background-color: #f8f8ff;
+  text-align: center;
+  padding: 3vh 2vw 3vh 7vw;
+  border-right: 0.09vw solid black;
+  animation-name: opacidadAnimacion;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-delay: 0s; }
+
+#elBolsonImg img {
+  width: 30vw;
+  border: 0.02vw solid #f48322;
+  user-select: none; }
+
+#estandarCalidad {
+  grid-area: calidad;
+  color: #f8f8ff;
+  background-color: #242424;
+  animation-name: opacidadAnimacion;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  margin-bottom: 4vh; }
+
+#estandarCalidad h2 {
+  padding-top: 3vh;
+  padding-left: 2vw;
+  font-size: 2rem; }
+
+#estandarCalidad p {
+  font-size: 1.15rem;
+  text-align: left;
+  margin-bottom: 2vh;
+  padding: 0 2vw;
+  width: 25vw; }
+
+#empresasAsociadas {
+  grid-area: empresas;
+  color: #f8f8ff;
+  background-color: #242424;
+  padding-left: 15.5vw;
+  animation-name: opacidadAnimacion;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  margin-bottom: 4vh; }
+
+#empresasAsociadas img {
+  padding-top: 1vh;
+  width: 15vw; }
+
+#nuestrasInstalaciones {
+  grid-area: instalaciones;
+  background-color: #f8f8ff;
+  animation-name: opacidadAnimacion;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-delay: 0s; }
+
+#nuestrasInstalaciones h2 {
+  padding-top: 3vh;
+  padding-left: 2vw;
+  font-size: 2rem; }
+
+#nuestrasInstalaciones p {
+  font-size: 1.15rem;
+  text-align: left;
+  margin-bottom: 2vh;
+  padding: 0 2vw;
+  width: 25vw; }
+
+#nuestrasInstalacionesImg {
+  grid-area: instalacionesImg;
+  background-color: #f8f8ff;
+  text-align: center;
+  padding: 3vh 2vw 0 7vw;
+  animation-name: opacidadAnimacion;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-delay: 0s; }
+
+#nuestrasInstalacionesImg img {
+  width: 30vw;
+  border: 0.02vw solid #f48322;
+  user-select: none; }
+
+#atencionCliente {
+  grid-area: atencion;
+  color: #f8f8ff;
+  background-color: #242424;
+  animation-name: opacidadAnimacion;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-delay: 0s; }
+
+#atencionCliente h2 {
+  padding-top: 3vh;
+  padding-left: 2vw;
+  font-size: 2rem; }
+
+#atencionCliente p {
+  font-size: 1.15rem;
+  text-align: left;
+  margin-bottom: 2vh;
+  padding: 0 2vw;
+  width: 25vw; }
+
+#atencionClienteImg {
+  grid-area: atencionImg;
+  background-color: #242424;
+  text-align: center;
+  padding: 3vh 2vw 3vh 7vw;
+  animation-name: opacidadAnimacion;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-delay: 0s; }
+
+#atencionClienteImg img {
+  width: 30vw;
+  height: 33vh;
+  border: 0.02vw solid #f48322;
+  user-select: none; }
+
+/* _____NOSOTROS_____ */
+/* _____CONTACTO_____ */
+.formInput {
+  width: 20vw;
+  height: 3vh;
+  margin-bottom: 1vh;
+  font-size: 1rem; }
+
+.formInput:focus {
+  background-color: #ebebeb;
+  outline: none;
+  border: 0.15vw solid #f48322; }
+
+.botonesForm {
+  font-size: 1rem;
+  padding: 0.5vh 1vw;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 0.1vw solid #f48322;
+  background-color: #f48322;
+  font-weight: bold;
+  margin-right: 1vw;
+  cursor: pointer; }
+
+.checkboxFormato {
+  -webkit-appearance: none;
+  background-color: #f8f8ff;
+  border: 0.1px solid #cacece;
+  margin-top: 0.2vh;
+  padding: 0.36vw;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+  border: 0.1px solid #f48322;
+  cursor: pointer;
+  margin-right: 0.3vw; }
+
+.checkboxFormato:checked {
+  background-color: #e7a870;
+  border: 0.1px solid #f48322;
+  color: #99a1a7; }
+
+.checkboxFormato:checked:after {
+  content: '\2714';
+  font-size: 0.8rem;
+  position: absolute;
+  top: -0.2vh;
+  left: 0.08vw;
+  color: black;
+  font-weight: bold; }
+
+.divHrContacto {
+  width: 5vw;
+  height: 0.3vh;
+  background-color: #f48322;
+  margin: 1vh auto;
+  border-radius: 2vw; }
+
+.divHrContactoSub {
+  width: 7vw;
+  background-color: #f48322;
+  margin: 1vh auto;
+  height: 0.3vh;
+  border-radius: 2vw; }
+
+/* --------------- IDs --------------- */
+#gridContacto {
+  display: grid;
+  grid-template-areas: "form datos";
+  margin: 10vh 5vw;
+  color: #f8f8ff; }
+
+#contactoForm {
+  grid-area: form;
+  width: 30vw;
+  text-align: center;
+  background-color: #242424;
+  padding: 3vh 0; }
+
+#contactoForm h2 {
+  font-size: 2rem; }
+
+#contactoForm div {
+  font-weight: bold;
+  margin-top: 1vh;
+  margin-bottom: 0.5vh;
+  font-size: 1rem; }
+
+#contactoForm textarea {
+  width: 20vw;
+  height: 20vh;
+  resize: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem; }
+
+#contactoForm textarea:focus {
+  background-color: #f8f8ff;
+  outline: none;
+  border: 0.15vw solid #f48322; }
+
+#contactoForm label {
+  font-weight: bold;
+  font-size: 1rem; }
+
+#contactoForm select {
+  background-color: #f8f8ff;
+  width: 6vw;
+  height: 2vh;
+  font-size: 0.9rem; }
+
+#contactoForm select option {
+  background-color: #f48322;
+  font-size: 0.9rem; }
+
+#espacioDatos {
+  grid-area: datos;
+  text-align: center;
+  margin-top: 5vh;
+  width: 30vw;
+  height: 52vh;
+  background-color: #242424;
+  margin-left: 20vw;
+  padding: 4vh 0; }
+
+#espacioDatos h2 {
+  font-size: 2rem; }
+
+#espacioDatos p {
+  font-size: 1.25rem; }
+
+#espacioDatos img {
+  width: 2vw; }
+
+#espacioDatos ul {
+  list-style: none; }
+
+#espacioDatos ul li {
+  display: inline-block;
+  margin: 0 2vw; }
+
+#espacioDatos ul li img {
+  background-color: #f8f8ff;
+  border-radius: 100%;
+  width: 5vw; }
+
+#espacioDatos ul li img:hover {
+  background-color: #f48322;
+  border-radius: 100%; }
+
+/* _____CONTACTO_____ */
+/* _____CARRITO_____ */
+.contenedorCarrito {
+  width: 90%;
+  margin: 1vh 0 2vh 5vw;
+  color: #f8f8ff;
+  display: flex;
+  flex-wrap: nowrap; }
+
+.contenedorCarrito h2 {
+  font-size: 1.5rem;
+  color: #f8f8ff; }
+
+.contenedorCarrito label {
+  font-size: 1.15rem; }
+
+.flexBoxCarrito {
+  display: flex;
+  flex-direction: row;
+  width: 30vw;
+  justify-content: center;
+  background-color: #242424;
+  padding: 2vh 0; }
+
+.contenedorLugar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 20.2vw; }
+
+.contenedorLugar label {
+  font-size: 1.15rem; }
+
+.contenedorLugar select {
+  width: 5.5vw;
+  height: 2vh; }
+
+.contenedorLugar select option {
+  font-size: 1rem; }
+
+.flexBoxCarritoProductos {
+  margin-left: 20vw;
+  width: 20vw;
+  height: 20vh;
+  background-color: #242424;
+  border: 0.1vw solid #f48322;
+  padding: 2vh 2vw 5vh 2vw; }
+
+.flexBoxCarritoProductos ul {
+  margin-top: 1vh;
+  margin-bottom: 0.7vh;
+  list-style: none;
+  font-size: 1rem; }
+
+.flexBoxCarritoProductos p {
+  font-weight: bold;
+  margin-bottom: 0.5vh;
+  font-size: 1.25rem; }
+
+.h2Carrito {
+  color: #f8f8ff;
+  font-size: 1.5rem;
+  margin-left: 4vw;
+  margin-top: 5vh; }
+
+.flexBoxPago {
+  margin: 1vh 0 4vh 5vw; }
+
+.tarjetasPago {
+  margin: 0 0 6vh 3vw;
+  color: #f8f8ff; }
+
+.tarjetasPago ul {
+  list-style: none;
+  margin-left: 10vw; }
+
+.tarjetasPago ul li {
+  display: inline-block;
+  margin-right: 3vw; }
+
+.tarjetasPago img {
+  width: 5vw; }
+
+/* --------------- IDs --------------- */
+#zipFormato {
+  width: 7vw;
+  height: 3vh; }
+
+#zipFormato::placeholder {
+  font-size: 1rem; }
+
+/* _____CARRITO_____ */
+/* _____FOOTER_____ */
+.footerWhite {
+  background-color: #f8f8ff;
+  height: auto;
+  user-select: none; }
+
+.gridFooter {
+  display: grid;
+  grid-template-areas: "dudas redes" "empresas bandera" "copyright copyright"; }
+
+.dudasBoton {
+  grid-area: dudas; }
+
+.dudasBoton a {
+  background-color: #f48322;
+  font-weight: bold;
+  border: 0.15vw solid black;
+  padding: 1.2vh 1vw;
+  text-align: start;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.15rem;
+  margin-left: 1vw;
+  margin-top: 1.5vh;
+  color: black; }
+
+.dudasBoton a:hover {
+  color: #f8f8ff; }
+
+.redesSociales {
+  list-style: none;
+  position: relative;
+  margin-top: 1.5vh;
+  margin-left: 1vw;
+  text-align: end;
+  grid-area: redes; }
+
+.redesSociales li {
+  display: inline-block;
+  position: relative;
+  margin-right: 1vw; }
+
+.redesSociales li img {
+  width: 2vw; }
+
+.empresasLogos {
+  position: relative;
+  text-align: start;
+  padding-left: 2vw;
+  padding-top: 1vh;
+  grid-area: empresas; }
+
+.empresasLogos ul {
+  position: absolute; }
+
+.empresasLogos ul li {
+  display: inline-block;
+  position: relative;
+  margin-right: 1vw;
+  list-style: none; }
+
+.empresasLogos ul img {
+  width: 4vw; }
+
+.banderaArg {
+  text-align: end;
+  padding-right: 1vw;
+  padding-top: 1vh;
+  grid-area: bandera; }
+
+.banderaArg img {
+  width: 3vw;
+  border: 0.1vw solid black; }
+
+.copyrightF {
+  text-align: center;
+  grid-area: copyright; }
+
+.copyrightF li {
+  display: inline-block;
+  position: relative; }
+
+.copyrightF li img {
+  width: 1vw; }
+
+.copyrightF p {
+  font-size: 1rem; }
+
+/* _____FOOTER_____ */
+/* _____RESPONSIVE - TABLET_____ */
+@media (min-width: 600px) and (max-width: 1023px) {
+  /* BEGIN: HEADER */
+  .logo {
+    width: 150px;
+    height: auto;
+    position: relative;
+    padding: 7vh 1vw 0 3vw; }
+  .linkTitulo {
+    font-size: 2rem;
+    position: absolute;
+    padding-top: 4vh; }
+  .headerWhite {
+    height: 200px; }
+  .linkTituloPaginas {
+    font-size: 2rem; }
+  /* END: HEADER */
+  /* BEGIN: MAIN */
+  .navBar {
+    opacity: 75%;
+    width: 100%;
+    height: 40px;
+    position: relative;
+    align-items: center;
+    background-color: #f48322;
+    text-align: center;
+    margin-bottom: 7vh;
+    z-index: 8; }
+  .navBar ul {
+    display: flex;
+    height: 35px;
+    padding-left: 1vw;
+    list-style: none;
+    justify-content: space-between; }
+  .navBar ul li {
+    position: relative;
+    margin: 0 1vw; }
+  .navBar ul li a {
+    color: black;
+    position: relative;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding-top: 0.6vh; }
+  .navBar img {
+    width: 35px;
+    height: 35px;
+    margin-top: -0.9vh; }
+  .navBarPages {
+    height: 40px; }
+  .navBarPages ul {
+    height: 35px;
+    padding-top: 1vh; }
+  .navBarPages ul li {
+    margin-right: 1vw; }
+  .navBarPages ul li a {
+    font-size: 1.2rem; }
+  .navBarPages img {
+    width: 35px;
+    height: 35px;
+    margin-top: -0.9vh; }
+  .botonSubir {
+    bottom: 3vh;
+    right: 1vw; }
+  .botonSubir img {
+    background-color: #f48322;
+    padding: 0.5vw;
+    width: 45px;
+    height: 45px; }
+  .botonSubirPages {
+    bottom: 3vh;
+    right: 1vw; }
+  .botonSubirPages img {
+    background-color: #f48322;
+    padding: 0.5vw;
+    width: 45px;
+    height: 45px; }
+  .imagenCarrusel {
+    width: 80vw;
+    height: 35vh;
+    margin-left: -5.5vw;
+    max-height: 507px;
+    margin-top: -70vh; }
+  .carousel-inner {
+    margin-top: -30vh; }
+  .carousel-control-prev {
+    padding-right: 5vw; }
+  .carousel-control-next {
+    padding-left: 3vw; }
+  .carousel-indicators {
+    top: 85vh;
+    z-index: 5; }
+  .divHrIndex {
+    display: none; }
+  .flexBoxIndexArticle {
+    display: block;
+    flex-wrap: nowrap;
+    margin-bottom: 15vh; }
+  .flexBoxIndexArticle div img {
+    margin: 4vh 0 0 10vw;
+    border: 0.15vw solid #f48322;
+    width: 80vw; }
+  .flexBoxIndexArticle p {
+    color: #f8f8ff;
+    width: 90vw;
+    font-size: 1.25rem;
+    text-align: center; }
+  .flexBoxIndexArticle p a {
+    background-color: #f48322;
+    color: black;
+    border: 0.1vw solid black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.15rem;
+    padding: 1vh 1vw; }
+  .flexBoxIndexArticle p a:hover {
+    color: #f8f8ff;
+    border: 0.1vw solid #f8f8ff; }
+  .h2WhiteLeft {
+    color: #f8f8ff;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 0 1.6vh 3vw; }
+  .h2WhiteRight {
+    color: #f8f8ff;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 0 1.6vh 0vw; }
+  .h3WhiteIndex {
+    color: #f8f8ff;
+    font-size: 2rem;
+    text-align: center;
+    margin: 2vh; }
+  .compradoResenias {
+    font-size: 1.8vw;
+    display: block;
+    width: auto;
+    margin-left: -2vw; }
+  .h2TipoProducto {
+    position: static;
+    margin: 2vh auto;
+    width: 22vw;
+    min-width: 172px; }
+  .h2TipoProducto h2 {
+    font-size: 1.5rem; }
+  .flexBoxProducto {
+    width: 85vw;
+    height: auto;
+    min-width: 550px;
+    min-height: 230px;
+    margin: 2vh auto;
+    overflow: hidden; }
+  .flexBoxProducto img {
+    width: 20vw;
+    object-fit: contain; }
+  .flexBoxProducto p {
+    height: auto; }
+  .flexBoxProducto p a {
+    margin-left: 52vw;
+    margin-top: 4vh;
+    font-size: 1rem;
+    width: 10vw; }
+  .tituloProducto {
+    font-size: 1.25rem; }
+  .precioProducto {
+    font-size: 1.15rem; }
+  .entregaProducto {
+    font-size: 1rem;
+    width: 10vw;
+    text-align: center;
+    height: auto;
+    padding: auto 0; }
+  .divHrProductos {
+    width: 85vw;
+    min-width: 550px; }
+  .h2WhiteCenter {
+    font-size: 2rem; }
+  .gridContenedorPaquetes {
+    margin-left: 8vw; }
+  .contenedorSlider {
+    width: 70vw;
+    margin-left: 0; }
+  .listaSlider li {
+    width: 65vw;
+    margin: 2.5vh 0 0 2.5vw; }
+  .contenedorInformacionP {
+    padding-left: 3vw; }
+  .contenedorInformacionP li {
+    font-size: 1.25rem; }
+  .contenedorInformacionP h3 {
+    font-size: 1.7rem; }
+  .contenedorInformacionP h4 {
+    font-size: 1.4rem; }
+  .paqueteSeleccion {
+    margin-left: 1vw;
+    margin-top: 3vh; }
+  .paqueteSeleccion li {
+    transition: none;
+    width: 14vw;
+    height: 2.5vh; }
+  .paqueteSeleccion li a {
+    font-size: 1rem;
+    margin-left: -3.8vw; }
+  .botonPaquetes {
+    width: 13vw; }
+  .botonPaquetes p {
+    font-size: 1.25rem; }
+  .contenedorMembresia {
+    height: 50vh; }
+  .flexBoxPaqueteM {
+    width: 30vw;
+    height: auto;
+    min-height: 350px; }
+  .flexBoxPaqueteM h3 {
+    font-size: 1.7rem;
+    height: 5vh; }
+  .flexBoxPaqueteM p {
+    font-size: 1.5rem; }
+  .flexBoxPaqueteM ul li p {
+    font-size: 1rem; }
+  .botonM {
+    margin: 2vh auto 0 auto;
+    height: 40px; }
+  .botonM p {
+    margin-top: -0.5vh; }
+  .h2Galeria {
+    margin: 5vh auto 0 auto;
+    width: 80vw;
+    font-size: 1.75rem; }
+  .gridGaleriaDiv {
+    margin: 0 auto 2vh auto;
+    width: 80vw; }
+  .gridGaleriaDiv img {
+    width: 80vw;
+    border: 0.3vw solid #f48322; }
+  .abrirDescripcion {
+    opacity: 1;
+    width: 20vw;
+    font-size: 1.5rem;
+    margin: -38vh 0 0 3vw; }
+  .contenidoDescripcion {
+    width: 70vw;
+    height: 30vh;
+    top: 21vh; }
+  .contenidoDescripcion ul li {
+    font-size: 1rem;
+    margin-left: 1vw; }
+  .headerDescripcion h3 {
+    font-size: 2rem; }
+  .cerrarDescripcion {
+    left: 70%;
+    font-size: 1.25rem; }
+  .divHrContacto {
+    width: 12vw;
+    margin: 1vh auto; }
+  .divHrContactoSub {
+    width: 12vw;
+    margin: 1vh auto; }
+  .formInput {
+    width: 38vw;
+    height: 2.5vh;
+    font-size: 1rem; }
+  .checkboxFormato {
+    padding: 0.6vw; }
+  .checkboxFormato:checked:after {
+    font-size: 0.65rem; }
+  .botonesForm {
+    font-size: 1rem;
+    margin-left: 0.5vw; }
+  .h2Carrito {
+    font-size: 1.75rem; }
+  .flexBoxCarrito {
+    width: 50vw;
+    margin-bottom: 2vh; }
+  .contenedorCarrito label {
+    font-size: 1rem; }
+  .contenedorLugar label {
+    font-size: 1rem; }
+  .contenedorLugar select {
+    width: 12vw;
+    margin-right: 1vw; }
+  .contenedorLugar select option {
+    font-size: 1rem; }
+  .tarjetasPago ul {
+    margin-left: 18vw; }
+  .tarjetasPago img {
+    width: 8vw; }
+  .contenedorCarrito h2 {
+    font-size: 1.5rem; }
+  .flexBoxCarritoProductos {
+    width: 40vw;
+    height: 16vh;
+    margin-left: 2vw; }
+  .flexBoxCarritoProductos ul {
+    font-size: 1rem; }
+  .flexBoxCarritoProductos p {
+    font-size: 1rem; }
+  /* END: MAIN */
+  /* BEGIN: FOOTER */
+  .footerWhite {
+    background-color: #f8f8ff; }
+  .dudasBoton a {
+    font-size: 1rem; }
+  .redesSociales {
+    list-style: none;
+    position: relative;
+    margin-top: 1.5vh;
+    margin-left: 1vw;
+    text-align: end;
+    grid-area: redes; }
+  .redesSociales li {
+    display: inline-block;
+    position: relative;
+    margin-right: 1vw; }
+  .redesSociales li img {
+    width: 4vw; }
+  .empresasLogos {
+    list-style: none;
+    position: relative;
+    text-align: start;
+    padding-left: 3vw;
+    padding-top: 1vh;
+    grid-area: empresas; }
+  .empresasLogos ul {
+    position: relative; }
+  .empresasLogos ul img {
+    width: 8vw; }
+  .empresasLogos ul li {
+    display: inline-block;
+    position: relative;
+    margin-right: 1vw; }
+  .banderaArg {
+    text-align: end;
+    padding-right: 1vw;
+    padding-top: 1vh;
+    grid-area: bandera; }
+  .banderaArg img {
+    width: 5vw;
+    border: 0.1vw solid black; }
+  .copyrightF {
+    text-align: center;
+    grid-area: copyright; }
+  .copyrightF li {
+    display: inline-block;
+    position: relative; }
+  .copyrightF li img {
+    width: 2vw; }
+  .copyrightF p {
+    font-size: 0.9rem; }
+  /* END: FOOTER */
+  /* --------------- IDs --------------- */
+  /* BEGIN: HEADER */
+  #imagenHeaderIndex {
+    background-image: url("../media/index0.jpg");
+    background-size: 90vw;
+    background-position: center top;
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    object-fit: cover; }
+  #flexBoxHeaderIndex {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 0 0 1vh 0; }
+  #separarTexto {
+    margin-top: 3vh; }
+  /* END: HEADER */
+  /* BEGIN: MAIN */
+  #flexBoxIndexCero img {
+    width: 80vw; }
+  #myCarousel {
+    display: none; }
+  #lemaFrase {
+    color: #f8f8ff;
+    font-size: 1.25rem;
+    font-style: italic;
+    text-align: center;
+    margin-top: 1vw;
+    display: none; }
+  #iFrameFormato {
+    width: 80vw;
+    margin: 5vh 0 0 10vw;
+    border: 0.2vw solid #f48322; }
+  #gridResenias {
+    width: 90vw; }
+  #gridResenias div {
+    width: 20vw;
+    height: auto;
+    font-size: 0.8rem; }
+  #gridResenias div strong {
+    font-size: 2vw; }
+  #gridResenias div p {
+    font-size: 1rem;
+    width: auto;
+    margin-bottom: 1vh;
+    height: auto; }
+  #gridResenias div img {
+    width: 40px;
+    height: 40px;
+    margin-left: -1vw; }
+  #imagenGaleria {
+    height: 30vh; }
+  #imagenGaleria div {
+    color: black;
+    margin-top: -12vh; }
+  #gridGaleria {
+    display: block; }
+  #nuestroNegocio {
+    width: 98vw;
+    margin-left: auto;
+    margin-right: auto; }
+  #nuestroNegocio h2 {
+    font-size: 2rem;
+    padding-top: 2vh; }
+  #nuestroNegocio p {
+    font-size: 1.15rem;
+    width: 70vw;
+    margin: 0 auto; }
+  #nuestroNegocio img {
+    width: 60vw;
+    height: 25vh;
+    margin-top: 2vh; }
+  #elBolson h2 {
+    padding-top: 1vh;
+    padding-bottom: 0.5vh;
+    font-size: 2rem; }
+  #elBolson p {
+    font-size: 1.15rem;
+    width: 45vw; }
+  #elBolsonImg img {
+    width: 45vw;
+    height: 15vh;
+    margin-top: 3vh; }
+  #atencionCliente h2 {
+    padding-top: 1vh;
+    padding-bottom: 0.5vh;
+    font-size: 2rem; }
+  #atencionCliente p {
+    font-size: 1.15rem;
+    width: 45vw; }
+  #atencionClienteImg img {
+    width: 45vw;
+    height: 15vh; }
+  #nuestrasInstalaciones h2 {
+    padding-top: 1vh;
+    padding-bottom: 0.5vh;
+    font-size: 2rem; }
+  #nuestrasInstalaciones p {
+    font-size: 1.15rem;
+    width: 45vw; }
+  #nuestrasInstalacionesImg img {
+    width: 45vw;
+    height: 15vh;
+    margin-top: 2vh; }
+  #estandarCalidad h2 {
+    padding-top: 1vh;
+    padding-bottom: 0.5vh;
+    font-size: 2rem; }
+  #estandarCalidad p {
+    font-size: 1.15rem;
+    width: 45vw; }
+  #empresasAsociadas img {
+    width: 35vw;
+    height: 23vh;
+    padding-top: 6vh;
+    margin-left: -3vw; }
+  #gridContacto {
+    margin: 5vh 5vw; }
+  #contactoForm {
+    width: 50vw; }
+  #contactoForm h2 {
+    font-size: 1.75rem; }
+  #contactoForm div {
+    font-size: 1rem; }
+  #contactoForm textarea {
+    width: 38vw;
+    font-size: 1rem; }
+  #contactoForm label {
+    font-size: 0.8rem; }
+  #contactoForm select {
+    width: 11.5vw;
+    height: 1.5vh; }
+  #contactoForm select option {
+    font-size: 0.8rem; }
+  #espacioDatos {
+    margin-left: 5vw;
+    width: 37vw;
+    height: 40vh;
+    margin-top: 10vh; }
+  #espacioDatos h2 {
+    font-size: 1.75rem; }
+  #espacioDatos p {
+    font-size: 1rem; }
+  #espacioDatos img {
+    width: 3vw; }
+  #espacioDatos ul li img {
+    width: 8vw; }
+  #zipFormato {
+    width: 12.5vw;
+    height: 2vh; }
+  #zipFormato::placeholder {
+    font-size: 0.8rem; } }
+
+/* END: MAIN */
+/* _____RESPONSIVE - TABLET_____ */
+/* _____RESPONSIVE - SMARTPHONE _____ */
+@media (max-width: 599px) {
+  /* BEGIN: HEADER */
+  .logo {
+    width: 150px;
+    position: relative;
+    margin-left: 35vw;
+    margin-bottom: 1vh; }
+  .linkTitulo {
+    font-size: 1.5rem;
+    margin-left: 30vw; }
+  .headerWhite {
+    min-height: 180px; }
+  .linkTituloPaginas {
+    font-size: 1.5rem;
+    position: absolute;
+    width: 200px;
+    left: 30%; }
+  /* END: HEADER */
+  /* BEGIN: MAIN */
+  .navBar {
+    opacity: 75%;
+    width: 100%;
+    height: 30px;
+    position: relative;
+    align-items: center;
+    background-color: #f48322;
+    text-align: center;
+    margin-bottom: 7vh; }
+  .navBar ul {
+    display: flex;
+    height: 30px;
+    padding-left: 1vw;
+    list-style: none;
+    justify-content: space-between; }
+  .navBar ul li {
+    position: relative;
+    margin-right: 1vw;
+    margin-left: 1vw; }
+  .navBar ul li a {
+    color: black;
+    position: relative;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding-top: 7.614px; }
+  .navBar ul li a:hover {
+    color: #f8f8ff; }
+  .navBar img {
+    width: 30px;
+    height: 30px;
+    margin-top: -6.472px; }
+  .navBarPages {
+    width: 100%;
+    height: 30px;
+    position: relative;
+    align-items: center;
+    background-color: #f48322;
+    text-align: center;
+    margin-bottom: 7vh; }
+  .navBarPages ul {
+    display: flex;
+    height: 30px;
+    padding-left: 1vw;
+    list-style: none;
+    justify-content: space-between; }
+  .navBarPages ul li {
+    position: relative;
+    margin-right: 1vw;
+    margin-left: 1vw; }
+  .navBarPages ul li a {
+    color: black;
+    position: relative;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding-top: 7.614px; }
+  .navBarPages ul li a:hover {
+    color: #f8f8ff; }
+  .navBarPages img {
+    width: 30px;
+    height: 30px;
+    margin-top: -6.472px; }
+  .divHrIndex {
+    display: none; }
+  .botonSubir {
+    right: 5vw; }
+  .botonSubir img {
+    width: 40px;
+    height: 40px;
+    padding: 0.5vh; }
+  .botonSubirPages {
+    right: 5vw; }
+  .botonSubirPages img {
+    width: 40px;
+    height: 40px;
+    padding: 0.5vh; }
+  .flexBoxIndexArticle {
+    display: block;
+    flex-wrap: nowrap;
+    margin-bottom: 10vh; }
+  .flexBoxIndexArticle div img {
+    margin: 4vh 0 0 2vw;
+    border: 0.15vw solid #f48322;
+    width: 90vw;
+    margin-left: 5vw; }
+  .flexBoxIndexArticle p {
+    color: #f8f8ff;
+    width: 90vw;
+    font-size: 1rem;
+    text-align: center; }
+  .flexBoxIndexArticle p a {
+    background-color: #f48322;
+    color: black;
+    border: 0.1vw solid black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 7.02px 4.54px; }
+  .flexBoxIndexArticle p a:hover {
+    color: #f8f8ff;
+    border: 0.1vw solid #f8f8ff; }
+  .h2WhiteLeft {
+    color: #f8f8ff;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 0 1.6vh 0; }
+  .h2WhiteRight {
+    color: #f8f8ff;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0; }
+  .h3WhiteIndex {
+    color: #f8f8ff;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 2vh; }
+  .compradoResenias {
+    font-size: 0.8rem; }
+  .h2TipoProducto {
+    text-align: center;
+    margin-top: 3vh;
+    position: relative;
+    align-self: flex-start;
+    margin: 3vh auto 0 auto;
+    justify-content: center;
+    width: 30vw; }
+  .h2TipoProducto h2 {
+    color: #494949;
+    font-size: 1rem;
+    border: 0.15vw solid #f48322;
+    padding: 0.5vh 0.7vw;
+    background-color: #f8f8ff;
+    text-align: center; }
+  .flexBoxProducto {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 180px;
+    min-width: 265px; }
+  .flexBoxProducto img {
+    width: 30vw;
+    object-fit: contain; }
+  .flexBoxProducto p a {
+    margin-left: 40vw;
+    font-size: 0.7rem; }
+  .divHrProductos {
+    display: none; }
+  .divHrProductosSub {
+    display: none; }
+  .tituloProducto {
+    font-size: 0.8rem; }
+  .precioProducto {
+    font-size: 0.9rem;
+    padding-top: 1vh; }
+  .entregaProducto {
+    font-size: 0.7rem;
+    width: auto;
+    max-width: 20vw; }
+  .gridContenedorPaquetes {
+    margin: 0 0 0 2vw; }
+  .h2WhiteCenter {
+    font-size: 1.25rem;
+    margin: 2vh 0; }
+  .contenedorSlider {
+    width: 65vw;
+    height: 50vh;
+    padding: 0 4vw 4vh 4vw; }
+  .listaSlider li {
+    width: 62vw; }
+  .contenedorInformacionP h3 {
+    font-size: 1.3rem;
+    padding-left: 2vw; }
+  .contenedorInformacionP h4 {
+    font-size: 1rem;
+    padding-left: 2vw; }
+  .listaInformacionP {
+    padding-left: 2vw; }
+  .listaInformacionP li {
+    font-size: 0.8rem; }
+  .paqueteSeleccion {
+    margin-top: 1vh;
+    width: 20vw;
+    padding-left: 2vw;
+    z-index: 5; }
+  .paqueteSeleccion li {
+    width: 15vw;
+    padding-top: -1vh; }
+  .paqueteSeleccion li a {
+    font-size: 0.7rem;
+    margin-left: -5.5vw; }
+  .botonPaquetes {
+    width: 34vw;
+    margin: -3vh 0 12vh 30vw;
+    font-size: 1rem; }
+  .botonPaquetes p {
+    width: auto;
+    text-align: center; }
+  .contenedorMembresia {
+    display: block;
+    height: 130vh; }
+  .flexBoxPaqueteM {
+    width: 80vw;
+    height: 40vh;
+    margin: 5vh auto; }
+  .flexBoxPaqueteM h3 {
+    font-size: 1.2rem; }
+  .flexBoxPaqueteM p {
+    font-size: 1rem; }
+  .flexBoxPaqueteM li p {
+    font-size: 0.8rem; }
+  .botonM {
+    height: 4.5vh; }
+  .h2Galeria {
+    margin: 15vh auto 0 auto;
+    font-size: 1.8rem;
+    width: 99vw;
+    animation-name: none;
+    margin-bottom: 5vh; }
+  .abrirDescripcion {
+    opacity: 1;
+    font-size: 5vw;
+    width: 36vw;
+    margin: -38vh auto 5vh auto;
+    border: none; }
+  .headerDescripcion h3 {
+    font-size: 1.25rem; }
+  .contenidoDescripcion {
+    z-index: 5;
+    top: 50%;
+    margin-left: 0.5vw; }
+  .contenidoDescripcion ul {
+    margin-top: -33vh; }
+  .contenidoDescripcion ul li {
+    font-size: 0.6rem; }
+  .cerrarDescripcion {
+    font-size: 0.5rem;
+    left: 82%;
+    bottom: 3%; }
+  .checkboxFormato {
+    padding: 1.2vw; }
+  .checkboxFormato:checked::after {
+    font-size: 0.55rem; }
+  .divHrContacto {
+    width: 30vw;
+    margin-left: 27.5vw; }
+  .divHrContactoSub {
+    width: 20vw;
+    height: 0.2vh;
+    margin-left: 21vw; }
+  .formInput {
+    width: 60vw;
+    font-size: 0.8rem; }
+  .botonesForm {
+    font-size: 0.8rem;
+    margin-top: -1vh; }
+  .contenedorCarrito {
+    display: block; }
+  .contenedorCarrito h2 {
+    font-size: 1rem; }
+  .contenedorLugar {
+    margin-left: 17vw; }
+  .flexBoxCarrito {
+    display: block;
+    width: 90vw;
+    margin: 0 0 5vh -3vw;
+    text-align: center; }
+  .flexBoxCarrito label {
+    font-size: 0.7rem; }
+  .flexBoxCarrito select {
+    width: 20vw;
+    height: 2vh;
+    font-size: 0.6rem; }
+  .flexBoxCarrito select option {
+    font-size: 0.6rem; }
+  .flexBoxCarritoProductos {
+    margin: 0 0 0 -2vw;
+    width: 90vw;
+    height: 18vh; }
+  .flexBoxCarritoProductos ul {
+    font-size: 0.8rem; }
+  .flexBoxCarritoProductos p {
+    font-size: 1rem;
+    padding-bottom: 0.5vh;
+    padding-top: 1.5vh; }
+  .flexBoxPago {
+    margin-left: 2vw; }
+  .tarjetasPago {
+    padding-left: 23vw; }
+  .tarjetasPago img {
+    width: 15vw; }
+  .h2Carrito {
+    font-size: 1.25rem; }
+  /* END: MAIN */
+  /* BEGIN: FOOTER */
+  .footerWhite {
+    background-color: #f8f8ff; }
+  .dudasBoton a {
+    font-size: 0.7rem; }
+  .redesSociales {
+    list-style: none;
+    position: relative;
+    margin-top: 1.5vh;
+    margin-left: 1vw;
+    text-align: end;
+    grid-area: redes; }
+  .redesSociales li {
+    display: inline-block;
+    position: relative;
+    margin-right: 1vw; }
+  .redesSociales li img {
+    width: 5vw; }
+  .empresasLogos {
+    list-style: none;
+    position: relative;
+    text-align: start;
+    padding-left: 6vw;
+    padding-top: 1vh;
+    grid-area: empresas; }
+  .empresasLogos ul {
+    position: relative;
+    padding-left: 0; }
+  .empresasLogos ul li {
+    display: inline-block;
+    position: relative;
+    margin-right: 1vw; }
+  .empresasLogos ul img {
+    width: 9vw; }
+  .banderaArg {
+    text-align: end;
+    padding-right: 1vw;
+    padding-top: 1vh;
+    grid-area: bandera; }
+  .banderaArg img {
+    width: 7vw;
+    border: 0.1vw solid black; }
+  .copyrightF {
+    text-align: center;
+    grid-area: copyright; }
+  .copyrightF li {
+    display: inline-block;
+    position: relative; }
+  .copyrightF li img {
+    width: 3vw; }
+  .copyrightF p {
+    font-size: 0.6rem; }
+  /* END: FOOTER */
+  /* --------------- IDs --------------- */
+  /* BEGIN: HEADER */
+  #imagenHeaderIndex {
+    background-image: none;
+    background-color: #f8f8ff;
+    height: 18vh; }
+  #flexBoxHeaderIndex {
+    display: block;
+    width: 100%;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 1vh 0; }
+  /* END: HEADER */
+  /* BEGIN: MAIN */
+  #flexBoxIndexCero {
+    display: none; }
+  #lemaFrase {
+    display: none; }
+  #separarTexto {
+    margin-top: 1vh; }
+  #myCarousel {
+    display: none; }
+  #iFrameFormato {
+    width: 85vw;
+    height: 40vh;
+    margin: 5vh 0 0 7.2vw;
+    border: 0.2vw solid #f48322; }
+  #gridResenias {
+    display: block;
+    width: auto; }
+  #gridResenias div {
+    font-size: 1rem;
+    display: block;
+    width: 50vw;
+    height: auto;
+    margin: 2vh auto; }
+  #gridResenias div p {
+    margin-bottom: 4vh; }
+  #gridResenias div img {
+    margin: 0 auto 1vh auto;
+    width: 30px;
+    height: 30px;
+    display: block;
+    text-align: center; }
+  #imagenGaleria {
+    height: 30vh;
+    margin-top: -3vh; }
+  #imagenGaleria div {
+    margin-top: -14vh;
+    font-size: 2rem;
+    color: black; }
+  #gridGaleria {
+    display: block;
+    padding: 2vh 0 5vh 0;
+    text-align: center;
+    overflow: hidden; }
+  #gridGaleria div {
+    width: 99vw;
+    margin-bottom: 8vh;
+    height: 30vh; }
+  #gridGaleria div:hover img {
+    border: none; }
+  #gridGaleria div img {
+    width: 90vw;
+    padding-left: 1vw;
+    object-fit: contain;
+    height: none; }
+  #gridGaleria div div p a {
+    margin-left: -50vw;
+    padding: 1vw;
+    background-color: #f48322; }
+  #gridNosotros {
+    display: block;
+    width: 100%; }
+  #gridNosotros img {
+    width: 80vw; }
+  #nuestroNegocio {
+    border: none;
+    margin-top: 1vh;
+    margin-bottom: 0; }
+  #nuestroNegocio h2 {
+    padding-top: 2vh;
+    font-size: 1.5rem; }
+  #nuestroNegocio p {
+    width: 95vw;
+    font-size: 1rem;
+    text-align: center; }
+  #elBolson h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 2vh; }
+  #elBolson p {
+    margin: 0;
+    width: 95vw;
+    padding-top: 3vh;
+    text-align: center;
+    font-size: 1rem; }
+  #elBolsonImg {
+    padding: 4vh 0; }
+  #elBolsonImg img {
+    width: 80vw;
+    padding: 0; }
+  #atencionCliente h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 2vh; }
+  #atencionCliente p {
+    margin: 0;
+    width: 95vw;
+    padding-top: 3vh;
+    text-align: center;
+    font-size: 1rem; }
+  #atencionClienteImg {
+    padding: 4vh 0; }
+  #atencionClienteImg img {
+    width: 80vw;
+    height: 25vh;
+    padding: 0; }
+  #nuestrasInstalacionesImg {
+    padding: 4vh 0; }
+  #nuestrasInstalaciones h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 2vh; }
+  #nuestrasInstalaciones p {
+    margin: 0;
+    width: 95vw;
+    padding-top: 3vh;
+    text-align: center;
+    font-size: 1rem; }
+  #estandarCalidad {
+    margin-bottom: 0; }
+  #estandarCalidad h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 2vh; }
+  #estandarCalidad p {
+    margin: 0;
+    width: 95vw;
+    padding-top: 3vh;
+    text-align: center;
+    font-size: 1rem; }
+  #empresasAsociadas {
+    margin-bottom: 0; }
+  #empresasAsociadas img {
+    width: 50vw;
+    height: 20vh;
+    margin-left: 10vw;
+    padding: 0; }
+  #gridContacto {
+    display: block;
+    margin: 1vh auto; }
+  #contactoForm {
+    width: 85vw;
+    margin: 1vh auto 1vh auto; }
+  #contactoForm h2 {
+    font-size: 1.75rem; }
+  #contactoForm div {
+    font-size: 0.8rem; }
+  #contactoForm textarea {
+    width: 60vw;
+    font-size: 0.8rem; }
+  #contactoForm label {
+    font-size: 0.65rem; }
+  #contactoForm select {
+    width: 30vw;
+    height: 3vh;
+    font-size: 0.8rem; }
+  #contactoForm select option {
+    font-size: 0.8rem; }
+  #espacioDatos {
+    width: 60vw;
+    padding: 0;
+    margin: 4vh auto;
+    padding-top: 5vh; }
+  #espacioDatos h2 {
+    font-size: 1.75rem; }
+  #espacioDatos p {
+    font-size: 1rem; }
+  #espacioDatos ul li img {
+    width: 15vw; }
+  #zipFormato {
+    margin-top: 0;
+    margin-left: 2vw;
+    width: 18vw;
+    height: 2.5vh; }
+  #zipFormato::placeholder {
+    font-size: 0.7rem; } }
+
+/* END: MAIN */
+/* _____RESPONSIVE - SMARTPHONE _____ */

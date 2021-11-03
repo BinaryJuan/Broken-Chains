@@ -1,0 +1,239 @@
+/* _____PAQUETES_____ */
+.h2WhiteCenter {
+    color: $HD-palette-white;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.gridContenedorPaquetes {
+    display: block;
+    width: 90vw;
+    animation-name: opacidadAnimacion;
+    animation-duration: 2s;
+    justify-content: center;
+}
+
+.gridContenedorPaquetes ul {
+    list-style: none;
+}
+
+.contenedorSlider {
+    margin: 0 10vw 5vh 0;
+    position: relative;
+}
+
+.listaSlider {
+    position: relative;
+}
+    .listaSlider li {
+        position: absolute;
+        opacity: 0;
+        width: 23.43vw;
+        height: 50.3vh;
+        background-color: $HD-grey-lighter;
+        border: 0.1vw solid $HD-palette-orange;
+        border-radius: 10%;
+        margin: 1.8vh auto 0 1.3vw;
+    }
+        .listaSlider li:first-child {
+            opacity: 1;
+        }
+        .listaSlider li:target {
+            opacity: 1;
+        }
+
+    .contenedorInformacionP {
+        position: relative;
+        margin: 1vh 0 0 2vw;
+        color: $HD-palette-white;
+    }
+        .contenedorInformacionP h3 {
+            font-size: 2rem;
+        }
+        .contenedorInformacionP h4 {
+            font-size: 1.5rem;
+        }
+        .contenedorInformacionP p {
+            font-size: 1rem;
+            width: 10vw;
+            padding: 1vh 0;
+            margin-top: 4.5vh;
+            background-color: $HD-grey-lighter;
+            border: 10px solid $HD-palette-orange;
+            border-radius: 7%;
+            font-weight: bold;
+            text-align: center;
+            color: $HD-palette-white;
+        }
+        .listaInformacionP {
+            position: absolute;
+            width: 30vw;
+            height: 40vh;
+            margin-top: 0.5vh;
+            margin-left: 1vw;
+        }
+            .listaInformacionP li {
+                height: 3vh;
+                width: 30vw;
+                position: relative;
+                background-color: transparent;
+                opacity: 1;
+                font-size: 1.15rem;
+                list-style: square;
+                border: none;
+            }
+
+    .paqueteSeleccion {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-left: 10px;
+        width: 95%;
+        z-index: 4;
+        height: auto;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 110vh;
+        margin-left: 3vw;
+        background-color: $HD-grey-lighter;
+        border-radius: 2rem;
+        border: 1px solid $HD-palette-orange;
+    }
+        .paqueteSeleccion li {
+            width: 180px;
+            height: auto;
+            padding-top: 50px;
+            padding-bottom: 6px;
+            margin: 0 10px 50px 0;
+            text-align: center;
+            box-sizing: content-box;
+        }
+            .paqueteSeleccion li:hover a {
+                transform: scale(1.07, 1.07);
+                transition: all 1s;
+            }
+            .paqueteSeleccion li a {
+                text-decoration: none;
+                display: inline-block;
+                align-items: center;
+                padding-top: 10px;
+                width: 180px;
+                color: $HD-palette-white;
+                font-size: 1.15rem;
+                height: 50px;
+                background-color: $HD-grey-darker;
+                border: 1px solid $HD-palette-orange;
+                border-radius: 2rem;
+                font-weight: bold;
+            }
+
+.botonPaquetes {
+    color: $HD-palette-white;
+    padding: 1vh 2vw;
+    font-size: 1.5rem;
+    position: absolute;
+    text-align: center;
+    top: 95vh;
+    margin-left: 41vw;
+    width: 150px;
+    font-weight: bold;
+    background-color: #353535;
+    transition: background-color 1s;
+    border: 0.1vw solid $HD-palette-orange;
+    border-radius: 2vw;
+    user-select: none;
+    cursor: pointer;
+    box-sizing: content-box;
+}
+    .botonPaquetes:hover {
+        color: $HD-palette-black;
+        background-color: $HD-palette-white;
+    }
+
+    .contenedorMembresia {
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto 5vh auto;
+        height: 70vh;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        user-select: none;
+    }
+        .flexBoxPaqueteM {
+            background-color: $HD-palette-white;
+            display: flex;
+            flex-direction: column;
+            width: 25vw;
+            height: 50vh;
+            margin: 0 2vw;
+            border: 0.2vw solid $HD-palette-black;
+            border-radius: 2.1vw;
+            position: relative;
+        }
+            .flexBoxPaqueteM h3 {
+                text-align: center;
+                color: black;
+                font-size: 2rem;
+                padding: 3vh 0;
+                background-color: $HD-palette-orange;
+                overflow: hidden;
+                border-radius: 1.9vw 1.9vw 0 0;
+                box-shadow: 0.1vw 0.1vw 1vh 0 rgb(44, 44, 44);
+            }
+            .flexBoxPaqueteM p {
+                text-align: center;
+                font-size: 1.8rem;
+            }
+            .flexBoxPaqueteM li p {
+                font-size: 1.15rem;
+            }
+            .flexBoxPaqueteM ul {
+                margin: 2vh 2vw 0 2vw;
+                list-style: none;
+                text-align: center;
+            }
+            .flexBoxPaqueteM hr {
+                height: 0.001vh;
+                color: $HD-palette-orange;
+                margin-bottom: 1vh;
+            }
+
+        .botonM {
+            background-color: $HD-palette-white;
+            border: 0.15vw solid $HD-palette-orange;
+            border-radius: 2vw;
+            width: 20vw;
+            height: 6vh;
+            margin: 4vh auto 0 auto;
+            cursor: pointer;
+        }
+            .botonM p {
+                padding-top: 1vh;
+                font-weight: bold;
+                padding-bottom: 1vh;
+            }
+            .botonM:hover {
+                background-color: $HD-palette-orange;
+                color: $HD-palette-white;
+                animation-name: opacidadAnimacion;
+                animation-duration: 1s;
+                border: 0.1vw solid $HD-palette-black;
+            }
+
+/* -------------------------- */
+
+#seccionMembresia {
+    margin-top: 90vh;
+}
+
+@for $i from 1 through 9 {
+    #paquete#{$i} {
+        width: 460px;
+        height: 480px;
+        margin-left: 35vw;
+    }
+}
+/* _____PAQUETES_____ */

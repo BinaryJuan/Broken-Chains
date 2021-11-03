@@ -1,0 +1,96 @@
+/* _____CARRITO_____ */
+.contenedorCarrito {
+    width: 90%;
+    margin: 1vh 0 2vh 5vw;
+    color: $HD-palette-white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+    .contenedorCarrito h2 {
+        font-size: 1.5rem;
+        color: $HD-palette-white;
+    }
+    .contenedorCarrito label {
+        font-size: 1.15rem;
+    }
+.flexBoxCarrito {
+    display: flex;
+    flex-direction: row;
+    width: 30vw;
+    justify-content: center;
+    background-color: $HD-grey-darker;
+    padding: 2vh 0;
+}
+    .contenedorLugar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 20.2vw;
+    }
+        .contenedorLugar label {
+            font-size: 1.15rem;
+        }
+        .contenedorLugar select {
+            width: 5.5vw;
+            height: 2vh;
+        }
+            .contenedorLugar select option {
+                font-size: 1rem;
+            }
+
+.flexBoxCarritoProductos {
+    margin-left: 20vw;
+    width: 20vw;
+    height: 20vh;
+    background-color: $HD-grey-darker;
+    border: 0.1vw solid $HD-palette-orange;
+    padding: 2vh 2vw 5vh 2vw;
+}
+    .flexBoxCarritoProductos ul {
+        margin-top: 1vh;
+        margin-bottom: 0.7vh;
+        list-style: none;
+        font-size: 1rem;
+    }
+    .flexBoxCarritoProductos p {
+        font-weight: bold;
+        margin-bottom: 0.5vh;
+        font-size: 1.25rem;
+    }
+
+.h2Carrito {
+    color: $HD-palette-white;
+    font-size: 1.5rem;
+    margin-left: 4vw;
+    margin-top: 5vh;
+}
+
+.flexBoxPago {
+    margin: 1vh 0 4vh 5vw;
+}
+
+.tarjetasPago {
+    margin: 0 0 6vh 3vw;
+    color: $HD-palette-white;
+}
+    .tarjetasPago ul {
+        list-style: none;
+        margin-left: 10vw;
+    }
+    .tarjetasPago ul li {
+        display: inline-block;
+        margin-right: 3vw;
+    }
+    .tarjetasPago img {
+        width: 5vw;
+    }
+
+/* --------------- IDs --------------- */
+#zipFormato {
+    width: 7vw;
+    height: 3vh;
+}
+    #zipFormato::placeholder {
+        font-size: 1rem;
+    }
+/* _____CARRITO_____ */

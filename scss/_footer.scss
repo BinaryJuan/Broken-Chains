@@ -1,0 +1,97 @@
+/* _____FOOTER_____ */
+.footerWhite {
+    background-color: $HD-palette-white;
+    height: auto;
+    user-select: none;
+}
+
+.gridFooter {
+    display: grid;
+    grid-template-areas: 
+        "dudas redes"
+        "empresas bandera"
+        "copyright copyright";
+}
+    .dudasBoton {
+        grid-area: dudas;
+    }
+        .dudasBoton a {
+            background-color: $HD-palette-orange;
+            font-weight: bold;
+            border: 0.15vw solid $HD-palette-black;
+            padding: 1.2vh 1vw;
+            text-align: start;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.15rem;
+            margin-left: 1vw;
+            margin-top: 1.5vh;
+            color: $HD-palette-black;
+        }
+            .dudasBoton a:hover {
+                color: $HD-palette-white;
+            }
+
+    .redesSociales {
+        list-style: none;
+        position: relative;
+        margin-top: 1.5vh;
+        margin-left: 1vw;
+        text-align: end;
+        grid-area: redes;
+    }
+        .redesSociales li {
+            display: inline-block;
+            position: relative;
+            margin-right: 1vw;
+        }
+        .redesSociales li img {
+            width: 2vw;
+        }
+
+    .empresasLogos {
+        position: relative;
+        text-align: start;
+        padding-left: 2vw;
+        padding-top: 1vh;
+        grid-area: empresas;
+    }
+        .empresasLogos ul {
+            position: absolute;
+        }
+        .empresasLogos ul li {
+            display: inline-block;
+            position: relative;
+            margin-right: 1vw;
+            list-style: none;
+        }
+            .empresasLogos ul img {
+                width: 4vw;
+            }
+
+    .banderaArg {
+        text-align: end;
+        padding-right: 1vw;
+        padding-top: 1vh;
+        grid-area: bandera;
+    }
+        .banderaArg img {
+            width: 3vw;
+            border: 0.1vw solid $HD-palette-black;
+        }
+
+    .copyrightF {
+        text-align: center;
+        grid-area: copyright;
+    }
+        .copyrightF li {
+            display: inline-block;
+            position: relative;
+        }
+            .copyrightF li img {
+                width: 1vw;
+            }
+        .copyrightF p {
+            font-size: 1rem;
+        }
+/* _____FOOTER_____ */

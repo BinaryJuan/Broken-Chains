@@ -1,0 +1,734 @@
+/* _____RESPONSIVE - TABLET_____ */
+@media (min-width: 600px) and (max-width: 1023px) {
+    /* BEGIN: HEADER */
+    .logo {
+        width: 150px;
+        height: auto;
+        position: relative;
+        padding: 7vh 1vw 0 3vw;
+    }
+
+    .linkTitulo {
+        font-size: 2rem;
+        position: absolute;
+        padding-top: 4vh;
+    }
+
+    .headerWhite {
+        height: 200px;
+    }
+
+    .linkTituloPaginas {
+        font-size: 2rem;
+    }
+    /* END: HEADER */
+
+    /* BEGIN: MAIN */
+    .navBar {
+        opacity: 75%;
+        width: 100%;
+        height: 40px;
+        position: relative;
+        align-items: center;
+        background-color: $HD-palette-orange;
+        text-align: center;
+        margin-bottom: 7vh;
+        z-index: 8;
+    }
+        .navBar ul {
+            display: flex;
+            height: 35px;
+            padding-left: 1vw;
+            list-style: none;
+            justify-content: space-between;
+        }
+            .navBar ul li {
+                position: relative;
+                margin: 0 1vw;
+            }
+                .navBar ul li a {
+                    color: $HD-palette-black;
+                    position: relative;
+                    font-weight: bold;
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                    padding-top: 0.6vh;
+                }
+        .navBar img {
+            width: 35px;
+            height: 35px;
+            margin-top: -0.9vh;
+        }
+
+    .navBarPages {
+        height: 40px;
+    }
+        .navBarPages ul {
+            height: 35px;
+            padding-top: 1vh;
+        }
+            .navBarPages ul li {
+                margin-right: 1vw;
+            }
+                .navBarPages ul li a {
+                    font-size: 1.2rem;
+                }
+        .navBarPages img {
+            width: 35px;
+            height: 35px;
+            margin-top: -0.9vh;
+        }
+
+    .botonSubir {
+        bottom: 3vh;
+        right: 1vw;
+    }
+        .botonSubir img {
+            background-color: $HD-palette-orange;
+            padding: 0.5vw;
+            width: 45px;
+            height: 45px;
+        }
+    
+    .botonSubirPages {
+        bottom: 3vh;
+        right: 1vw;
+    }
+        .botonSubirPages img {
+            background-color: $HD-palette-orange;
+            padding: 0.5vw;
+            width: 45px;
+            height: 45px;
+        }
+        
+    .imagenCarrusel {
+        width: 80vw;
+        height: 35vh;
+        margin-left: -5.5vw;
+        max-height: 507px;
+        margin-top: -70vh;
+    }
+
+    .carousel-inner {
+        margin-top: -30vh;
+    }
+    
+    .carousel-control-prev {
+        padding-right: 5vw;
+    }
+
+    .carousel-control-next {
+        padding-left: 3vw;
+    }
+
+    .carousel-indicators {
+        top: 85vh;
+        z-index: 5;
+    }
+
+    .divHrIndex {
+        display: none;
+    }
+
+    .flexBoxIndexArticle {
+        display: block;
+        flex-wrap: nowrap;
+        margin-bottom: 15vh;
+    }
+        .flexBoxIndexArticle div img {
+            margin: 4vh 0 0 10vw;
+            border: 0.15vw solid $HD-palette-orange;
+            width: 80vw;
+        }
+        .flexBoxIndexArticle p {
+            color: $HD-palette-white;
+            width: 90vw;
+            font-size: 1.25rem;
+            text-align: center;
+        }
+            .flexBoxIndexArticle p a {
+                background-color: $HD-palette-orange;
+                color: $HD-palette-black;
+                border: 0.1vw solid $HD-palette-black;
+                text-align: center;
+                text-decoration: none;
+                font-size: 1.15rem;
+                padding: 1vh 1vw;
+            }
+                .flexBoxIndexArticle p a:hover {
+                    color: $HD-palette-white;
+                    border: 0.1vw solid $HD-palette-white;
+                }
+    
+    .h2WhiteLeft {
+        color: $HD-palette-white;
+        font-size: 2rem;
+        text-align: center;
+        margin: 0 0 1.6vh 3vw;
+    }
+    .h2WhiteRight {
+        color: $HD-palette-white;
+        font-size: 2rem;
+        text-align: center;
+        margin: 0 0 1.6vh 0vw;
+    }
+    .h3WhiteIndex {
+        color: $HD-palette-white;
+        font-size: 2rem;
+        text-align: center;
+        margin: 2vh;
+    }
+
+    .compradoResenias {
+        font-size: 1.8vw;
+        display: block;
+        width: auto;
+        margin-left: -2vw;
+    }
+
+    .h2TipoProducto {
+        position: static;
+        margin: 2vh auto;
+        width: 22vw;
+        min-width: 172px;
+    }
+        .h2TipoProducto h2 {
+            font-size: 1.5rem;
+        }
+    
+    .flexBoxProducto {
+        width: 85vw;
+        height: auto;
+        min-width: 550px;
+        min-height: 230px;
+        margin: 2vh auto;
+        overflow: hidden;
+    }
+        .flexBoxProducto img {
+            width: 20vw;
+            object-fit: contain;
+        }
+        .flexBoxProducto p {
+            height: auto;
+        }
+            .flexBoxProducto p a {
+                margin-left: 52vw;
+                margin-top: 4vh;
+                font-size: 1rem;
+                width: 10vw;
+            }
+
+    .tituloProducto {
+        font-size: 1.25rem;
+    }
+
+    .precioProducto {
+        font-size: 1.15rem;
+    }
+
+    .entregaProducto {
+        font-size: 1rem;
+        width: 10vw;
+        text-align: center;
+        height: auto;
+        padding: auto 0;
+    }
+
+    .divHrProductos {
+        width: 85vw;
+        min-width: 550px;
+    }
+
+    .h2WhiteCenter {
+        font-size: 2rem;
+    }
+
+    .gridContenedorPaquetes {
+        margin-left: 8vw;
+    }
+
+    .contenedorSlider {
+        width: 70vw;
+        margin-left: 0;
+    }
+
+    .listaSlider li {
+        width: 65vw;
+        margin: 2.5vh 0 0 2.5vw;
+    }
+
+    .contenedorInformacionP {
+        padding-left: 3vw;
+    }
+        .contenedorInformacionP li {
+            font-size: 1.25rem;
+        }
+        .contenedorInformacionP h3 {
+            font-size: 1.7rem;
+        }
+        .contenedorInformacionP h4 {
+            font-size: 1.4rem;
+        }
+    
+    .paqueteSeleccion {
+        margin-left: 1vw;
+        margin-top: 3vh;
+    }
+        .paqueteSeleccion li {
+            transition: none;
+            width: 14vw;
+            height: 2.5vh;
+        }
+            .paqueteSeleccion li a {
+                font-size: 1rem;
+                margin-left: -3.8vw;
+            }
+    
+    .botonPaquetes {
+        width: 13vw;
+    }
+        .botonPaquetes p {
+            font-size: 1.25rem;
+        }
+
+    .contenedorMembresia {
+        height: 50vh;
+    }
+        .flexBoxPaqueteM {
+            width: 30vw;
+            height: auto;
+            min-height: 350px;
+        }
+            .flexBoxPaqueteM h3 {
+                font-size: 1.7rem;
+                height: 5vh;
+            }
+            .flexBoxPaqueteM p {
+                font-size: 1.5rem;
+            }
+            .flexBoxPaqueteM ul li p {
+                font-size: 1rem;
+            }
+        
+        .botonM {
+            margin: 2vh auto 0 auto;
+            height: 40px;
+        }
+            .botonM p {
+                margin-top: -0.5vh;
+            }
+    
+    .h2Galeria {
+        margin: 5vh auto 0 auto;
+        width: 80vw;
+        font-size: 1.75rem;
+    }
+
+    .gridGaleriaDiv {
+        margin: 0 auto 2vh auto;
+        width: 80vw;
+    }
+        .gridGaleriaDiv img {
+            width: 80vw;
+            border: 0.3vw solid $HD-palette-orange;
+        }
+    
+    .abrirDescripcion {
+        opacity: 1;
+        width: 20vw;
+        font-size: 1.5rem;
+        margin: -38vh 0 0 3vw;
+    }
+
+    .contenidoDescripcion {
+        width: 70vw;
+        height: 30vh;
+        top: 21vh;
+    }
+        .contenidoDescripcion ul li {
+            font-size: 1rem;
+            margin-left: 1vw;
+        }
+        .headerDescripcion h3 {
+            font-size: 2rem;
+        }
+        .cerrarDescripcion {
+            left: 70%;
+            font-size: 1.25rem;
+        }
+    
+    .divHrContacto {
+        width: 12vw;
+        margin: 1vh auto;
+    }
+
+    .divHrContactoSub {
+        width: 12vw;
+        margin: 1vh auto;
+    }
+
+    .formInput {
+        width: 38vw;
+        height: 2.5vh;
+        font-size: 1rem;
+    }
+
+    .checkboxFormato {
+        padding: 0.6vw;
+    }
+        .checkboxFormato:checked:after {
+            font-size: 0.65rem;
+        }
+    
+    .botonesForm {
+        font-size: 1rem;
+        margin-left: 0.5vw;
+    }
+
+    .h2Carrito {
+        font-size: 1.75rem;
+    }
+
+    .flexBoxCarrito {
+        width: 50vw;
+        margin-bottom: 2vh;
+    }
+
+    .contenedorCarrito label {
+        font-size: 1rem;
+    }
+
+    .contenedorLugar label {
+        font-size: 1rem;
+    }
+    .contenedorLugar select {
+        width: 12vw;
+        margin-right: 1vw;
+    }
+        .contenedorLugar select option {
+            font-size: 1rem;
+        }
+    
+    .tarjetasPago ul {
+        margin-left: 18vw;
+    }
+    .tarjetasPago img {
+        width: 8vw;
+    }
+
+    .contenedorCarrito h2 {
+        font-size: 1.5rem;
+    }
+    .flexBoxCarritoProductos {
+        width: 40vw;
+        height: 16vh;
+        margin-left: 2vw;
+    }
+        .flexBoxCarritoProductos ul {
+            font-size: 1rem;
+        }
+        .flexBoxCarritoProductos p {
+            font-size: 1rem;
+        }
+    /* END: MAIN */
+
+    /* BEGIN: FOOTER */
+    .footerWhite {
+        background-color: $HD-palette-white;
+    }
+
+    .dudasBoton a {
+        font-size: 1rem;
+    }
+
+    .redesSociales {
+        list-style: none;
+        position: relative;
+        margin-top: 1.5vh;
+        margin-left: 1vw;
+        text-align: end;
+        grid-area: redes;
+    }
+        .redesSociales li {
+            display: inline-block;
+            position: relative;
+            margin-right: 1vw;
+        }
+            .redesSociales li img {
+                width: 4vw;
+            }
+
+    .empresasLogos {
+        list-style: none;
+        position: relative;
+        text-align: start;
+        padding-left: 3vw;
+        padding-top: 1vh;
+        grid-area: empresas;
+    }
+        .empresasLogos ul {
+            position: relative;
+        }
+            .empresasLogos ul img {
+                width: 8vw;
+            }
+            .empresasLogos ul li {
+                display: inline-block;
+                position: relative;
+                margin-right: 1vw;
+            }
+
+    .banderaArg {
+        text-align: end;
+        padding-right: 1vw;
+        padding-top: 1vh;
+        grid-area: bandera;
+    }
+        .banderaArg img {
+            width: 5vw;
+            border: 0.1vw solid $HD-palette-black;
+        }
+
+    .copyrightF {
+        text-align: center;
+        grid-area: copyright;
+    }
+        .copyrightF li {
+            display: inline-block;
+            position: relative;
+        }
+            .copyrightF li img {
+                width: 2vw;
+            }
+        .copyrightF p {
+            font-size: 0.9rem;
+        }
+    /* END: FOOTER */
+
+    /* --------------- IDs --------------- */
+    /* BEGIN: HEADER */
+    #imagenHeaderIndex {
+        background-image: url("../media/index0.jpg");
+        background-size: 90vw;
+        background-position: center top;
+        background-attachment: fixed;
+        position: relative;
+        width: 100%;
+        height: 20vh;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        object-fit: cover;
+    }
+
+    #flexBoxHeaderIndex {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding: 0 0 1vh 0;
+    }
+
+    #separarTexto {
+        margin-top: 3vh;
+    }
+    /* END: HEADER */
+
+    /* BEGIN: MAIN */
+    #flexBoxIndexCero img {
+        width: 80vw;
+    }
+
+    #myCarousel {
+        display: none;
+    }
+
+    #lemaFrase {
+        color: $HD-palette-white;
+        font-size: 1.25rem;
+        font-style: italic;
+        text-align: center;
+        margin-top: 1vw;
+        display: none;
+    }
+
+    #iFrameFormato {
+        width: 80vw;
+        margin: 5vh 0 0 10vw;
+        border: 0.2vw solid $HD-palette-orange;
+    }
+
+    #gridResenias {
+        width: 90vw;
+    }
+    #gridResenias div {
+        width: 20vw;
+        height: auto;
+        font-size: 0.8rem;
+    }
+        #gridResenias div strong {
+            font-size: 2vw;
+        }
+        #gridResenias div p {
+            font-size: 1rem;
+            width: auto;
+            margin-bottom: 1vh;
+            height: auto;
+        }
+        #gridResenias div img {
+            width: 40px;
+            height: 40px;
+            margin-left: -1vw;
+        }
+    
+    #imagenGaleria {
+        height: 30vh;
+    }
+        #imagenGaleria div {
+            color: $HD-palette-black;
+            margin-top: -12vh;
+        }
+
+    #gridGaleria {
+        display: block;
+    }
+
+    #nuestroNegocio {
+        width: 98vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+        #nuestroNegocio h2 {
+            font-size: 2rem;
+            padding-top: 2vh;
+        }
+        #nuestroNegocio p {
+            font-size: 1.15rem;
+            width: 70vw;
+            margin: 0 auto;
+        }
+        #nuestroNegocio img {
+            width: 60vw;
+            height: 25vh;
+            margin-top: 2vh;
+        }
+
+    #elBolson h2 {
+        padding-top: 1vh;
+        padding-bottom: 0.5vh;
+        font-size: 2rem;
+    }
+    #elBolson p {
+        font-size: 1.15rem;
+        width: 45vw;
+    }
+
+    #elBolsonImg img {
+        width: 45vw;
+        height: 15vh;
+        margin-top: 3vh;
+    }
+
+    #atencionCliente h2 {
+        padding-top: 1vh;
+        padding-bottom: 0.5vh;
+        font-size: 2rem;
+    }
+    #atencionCliente p {
+        font-size: 1.15rem;
+        width: 45vw;
+    }
+
+    #atencionClienteImg img {
+        width: 45vw;
+        height: 15vh;
+    }
+
+    #nuestrasInstalaciones h2 {
+        padding-top: 1vh;
+        padding-bottom: 0.5vh;
+        font-size: 2rem;
+    }
+    #nuestrasInstalaciones p {
+        font-size: 1.15rem;
+        width: 45vw;
+    }
+
+    #nuestrasInstalacionesImg img {
+        width: 45vw;
+        height: 15vh;
+        margin-top: 2vh;
+    }
+
+    #estandarCalidad h2 {
+        padding-top: 1vh;
+        padding-bottom: 0.5vh;
+        font-size: 2rem;
+    }
+    #estandarCalidad p {
+        font-size: 1.15rem;
+        width: 45vw;
+    }
+
+    #empresasAsociadas img {
+        width: 35vw;
+        height: 23vh;
+        padding-top: 6vh;
+        margin-left: -3vw;
+    }
+
+    #gridContacto {
+        margin: 5vh 5vw;
+    }
+        #contactoForm {
+            width: 50vw;
+        }
+            #contactoForm h2 {
+                font-size: 1.75rem;
+            }
+            #contactoForm div {
+                font-size: 1rem;
+            }
+            #contactoForm textarea {
+                width: 38vw;
+                font-size: 1rem;
+            }
+            #contactoForm label {
+                font-size: 0.8rem;
+            }
+            #contactoForm select {
+                width: 11.5vw;
+                height: 1.5vh;
+            }
+                #contactoForm select option {
+                    font-size: 0.8rem;
+                }
+    
+        #espacioDatos {
+            margin-left: 5vw;
+            width: 37vw;
+            height: 40vh;
+            margin-top: 10vh;
+        }
+            #espacioDatos h2 {
+                font-size: 1.75rem;
+            }
+            #espacioDatos p {
+                font-size: 1rem;
+            }
+            #espacioDatos img {
+                width: 3vw;
+            }
+            #espacioDatos ul li img {
+                width: 8vw;
+            }
+    
+    #zipFormato {
+        width: 12.5vw;
+        height: 2vh;
+    }
+        #zipFormato::placeholder {
+            font-size: 0.8rem;
+        }
+}
+/* END: MAIN */
+/* _____RESPONSIVE - TABLET_____ */

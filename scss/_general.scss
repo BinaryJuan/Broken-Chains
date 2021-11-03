@@ -1,0 +1,82 @@
+/* _____RESET_____ */
+* {
+    margin:0;
+    padding:0;
+}
+/* _____RESET_____ */
+
+// V A R I A B L E S //
+// Colores
+$HD-palette-orange: #f48322;
+$HD-palette-black: black;
+$HD-palette-white: #f8f8ff;
+$HD-grey-darker: #242424;
+$HD-grey-lighter: #353535;
+
+// Letras
+$HD-font-family: 'Abril Fatface', cursive;
+// V A R I A B L E S //
+
+/* _____ETIQUETAS_____ */
+html {
+    background-color: $HD-palette-black;
+}
+/* _____ETIQUETAS_____ */
+
+/* ____PSEUDOELEMENTOS_____ */
+::selection {
+    background-color: $HD-palette-orange;
+}
+/* ____PSEUDOELEMENTOS_____ */
+
+/* _____KEYFRAMES_____ */
+@keyframes opacidadAnimacion {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+/* _____KEYFRAMES_____ */
+
+/* _____GENERAL_____ */
+.botonSubir {
+    position: fixed;
+    bottom: 3vh;
+    right: 1vw;
+    z-index: 6;
+}
+    .botonSubir img {
+        width: 50px;
+        height: 50px;
+        background-color: $HD-palette-orange;
+        padding: 0.4vw;
+        border: 0.1vw solid $HD-palette-white;
+        border-radius: 50%;
+        opacity: 0.65;
+    }
+        .botonSubir:hover img {
+            opacity: 0.9;
+        }
+
+.botonSubirPages {
+    position: fixed;
+    bottom: 3vh;
+    right: 2vw;
+    z-index: 6;
+}
+    .botonSubirPages img {
+        width: 40px;
+        height: 40px;
+        background-color: $HD-palette-orange;
+        padding: 0.4vw;
+        border: 0.1vw solid $HD-palette-white;
+        border-radius: 50%;
+        opacity: 0.65;
+        box-sizing: content-box;
+    }
+        .botonSubirPages:hover img {
+            opacity: 0.9;
+        }
+
+.sectionFormato {
+    width: 100%;
+}
+/* _____GENERAL_____ */
