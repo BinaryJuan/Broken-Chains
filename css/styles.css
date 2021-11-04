@@ -558,21 +558,32 @@ html {
   color: #f8f8ff;
   font-size: 2rem;
   text-align: center;
-  margin-top: 10vh; }
+  margin-top: 15vh; }
 
 .gridContenedorPaquetes {
-  display: block;
-  width: 90vw;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 100%;
+  grid-row-gap: 5vh;
+  justify-items: center;
   animation-name: opacidadAnimacion;
   animation-duration: 2s;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 5vh; }
 
 .gridContenedorPaquetes ul {
   list-style: none; }
 
 .contenedorSlider {
-  margin: 0 10vw 5vh 0;
-  position: relative; }
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 500px;
+  height: 480px; }
+
+.contenedorSlider:hover {
+  transform: scale(1.05, 1.05);
+  transition: all 1s; }
 
 .listaSlider {
   position: relative; }
@@ -584,8 +595,7 @@ html {
   height: 50.3vh;
   background-color: #353535;
   border: 0.1vw solid #f48322;
-  border-radius: 10%;
-  margin: 1.8vh auto 0 1.3vw; }
+  border-radius: 10%; }
 
 .listaSlider li:first-child {
   opacity: 1; }
@@ -595,14 +605,26 @@ html {
 
 .contenedorInformacionP {
   position: relative;
-  margin: 1vh 0 0 2vw;
-  color: #f8f8ff; }
+  color: #f8f8ff;
+  padding-top: 1vh; }
 
 .contenedorInformacionP h3 {
-  font-size: 2rem; }
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 2rem;
+  width: 500px;
+  text-decoration: underline; }
 
 .contenedorInformacionP h4 {
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  color: black;
+  width: 100px;
+  margin-top: 0.5vh;
+  text-align: center;
+  background-color: #f48322;
+  border: 1px solid #f8f8ff;
+  border-radius: 2rem;
+  margin: 0 auto; }
 
 .contenedorInformacionP p {
   font-size: 1rem;
@@ -617,34 +639,33 @@ html {
   color: #f8f8ff; }
 
 .listaInformacionP {
-  position: absolute;
-  width: 30vw;
-  height: 40vh;
-  margin-top: 0.5vh;
-  margin-left: 1vw; }
+  position: relative;
+  width: 500px;
+  margin-top: 4vh;
+  margin-bottom: 3vh;
+  text-align: center; }
 
 .listaInformacionP li {
-  height: 3vh;
-  width: 30vw;
+  width: 500px;
+  height: 35px;
   position: relative;
   background-color: transparent;
   opacity: 1;
   font-size: 1.15rem;
   list-style: square;
-  border: none; }
+  border: none;
+  list-style: none; }
 
 .paqueteSeleccion {
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding-left: 10px;
-  width: 95%;
+  width: 100%;
   z-index: 4;
   height: auto;
   flex-wrap: wrap;
-  position: absolute;
-  top: 110vh;
-  margin-left: 3vw;
+  position: relative;
   background-color: #353535;
   border-radius: 2rem;
   border: 1px solid #f48322; }
@@ -652,15 +673,15 @@ html {
 .paqueteSeleccion li {
   width: 180px;
   height: auto;
+  margin-right: 10px;
   padding-top: 50px;
-  padding-bottom: 6px;
-  margin: 0 10px 50px 0;
+  padding-bottom: 50px;
   text-align: center;
   box-sizing: content-box; }
 
 .paqueteSeleccion li:hover a {
-  transform: scale(1.07, 1.07);
-  transition: all 1s; }
+  border: 1px solid #f8f8ff;
+  transition: 0.6s; }
 
 .paqueteSeleccion li a {
   text-decoration: none;
@@ -677,14 +698,15 @@ html {
   font-weight: bold; }
 
 .botonPaquetes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #f8f8ff;
-  padding: 1vh 2vw;
+  padding: 1vh 0;
   font-size: 1.5rem;
-  position: absolute;
-  text-align: center;
-  top: 95vh;
-  margin-left: 41vw;
-  width: 150px;
+  position: relative;
+  width: 500px;
+  height: auto;
   font-weight: bold;
   background-color: #353535;
   transition: background-color 1s;
@@ -701,6 +723,7 @@ html {
 .contenedorMembresia {
   width: 95%;
   display: flex;
+  position: relative;
   flex-direction: row;
   margin: 0 auto 5vh auto;
   height: 70vh;
@@ -711,10 +734,9 @@ html {
 
 .flexBoxPaqueteM {
   background-color: #f8f8ff;
-  display: flex;
-  flex-direction: column;
+  display: block;
   width: 25vw;
-  height: 50vh;
+  height: 450px;
   margin: 0 2vw;
   border: 0.2vw solid black;
   border-radius: 2.1vw;
@@ -748,18 +770,19 @@ html {
   margin-bottom: 1vh; }
 
 .botonM {
+  display: flex;
   background-color: #f8f8ff;
-  border: 0.15vw solid #f48322;
-  border-radius: 2vw;
+  border: 1px solid #f48322;
+  border-radius: 2rem;
   width: 20vw;
   height: 6vh;
   margin: 4vh auto 0 auto;
-  cursor: pointer; }
+  cursor: pointer;
+  align-items: center;
+  justify-content: center; }
 
 .botonM p {
-  padding-top: 1vh;
-  font-weight: bold;
-  padding-bottom: 1vh; }
+  font-weight: bold; }
 
 .botonM:hover {
   background-color: #f48322;
@@ -769,53 +792,41 @@ html {
   border: 0.1vw solid black; }
 
 /* -------------------------- */
-#seccionMembresia {
-  margin-top: 90vh; }
-
 #paquete1 {
-  width: 460px;
-  height: 480px;
-  margin-left: 35vw; }
+  width: 500px;
+  height: 480px; }
 
 #paquete2 {
-  width: 460px;
-  height: 480px;
-  margin-left: 35vw; }
+  width: 500px;
+  height: 480px; }
 
 #paquete3 {
-  width: 460px;
-  height: 480px;
-  margin-left: 35vw; }
+  width: 500px;
+  height: 480px; }
 
 #paquete4 {
-  width: 460px;
-  height: 480px;
-  margin-left: 35vw; }
+  width: 500px;
+  height: 480px; }
 
 #paquete5 {
-  width: 460px;
-  height: 480px;
-  margin-left: 35vw; }
+  width: 500px;
+  height: 480px; }
 
 #paquete6 {
-  width: 460px;
-  height: 480px;
-  margin-left: 35vw; }
+  width: 500px;
+  height: 480px; }
 
 #paquete7 {
-  width: 460px;
-  height: 480px;
-  margin-left: 35vw; }
+  width: 500px;
+  height: 480px; }
 
 #paquete8 {
-  width: 460px;
-  height: 480px;
-  margin-left: 35vw; }
+  width: 500px;
+  height: 480px; }
 
 #paquete9 {
-  width: 460px;
-  height: 480px;
-  margin-left: 35vw; }
+  width: 500px;
+  height: 480px; }
 
 /* _____PAQUETES_____ */
 /* _____GALERIA_____ */
@@ -1719,54 +1730,32 @@ html {
     min-width: 550px; }
   .h2WhiteCenter {
     font-size: 2rem; }
-  .gridContenedorPaquetes {
-    margin-left: 8vw; }
-  .contenedorSlider {
-    width: 70vw;
-    margin-left: 0; }
-  .listaSlider li {
-    width: 65vw;
-    margin: 2.5vh 0 0 2.5vw; }
-  .contenedorInformacionP {
-    padding-left: 3vw; }
-  .contenedorInformacionP li {
-    font-size: 1.25rem; }
-  .contenedorInformacionP h3 {
-    font-size: 1.7rem; }
-  .contenedorInformacionP h4 {
-    font-size: 1.4rem; }
-  .paqueteSeleccion {
-    margin-left: 1vw;
-    margin-top: 3vh; }
-  .paqueteSeleccion li {
-    transition: none;
-    width: 14vw;
-    height: 2.5vh; }
-  .paqueteSeleccion li a {
-    font-size: 1rem;
-    margin-left: -3.8vw; }
-  .botonPaquetes {
-    width: 13vw; }
-  .botonPaquetes p {
-    font-size: 1.25rem; }
   .contenedorMembresia {
-    height: 50vh; }
+    display: block;
+    margin: 1vh auto;
+    position: relative;
+    user-select: none; }
   .flexBoxPaqueteM {
-    width: 30vw;
-    height: auto;
-    min-height: 350px; }
+    background-color: #f8f8ff;
+    width: 50vw;
+    height: 450px;
+    margin: 5vh auto; }
   .flexBoxPaqueteM h3 {
-    font-size: 1.7rem;
-    height: 5vh; }
+    font-size: 2rem; }
   .flexBoxPaqueteM p {
-    font-size: 1.5rem; }
-  .flexBoxPaqueteM ul li p {
-    font-size: 1rem; }
+    font-size: 1.8rem; }
+  .flexBoxPaqueteM li p {
+    font-size: 1.15rem; }
   .botonM {
-    margin: 2vh auto 0 auto;
-    height: 40px; }
-  .botonM p {
-    margin-top: -0.5vh; }
+    width: 200px;
+    height: 50px; }
+  .contenedorMembresia {
+    display: list-item;
+    flex-direction: column;
+    height: auto; }
+  .flexBoxPaqueteM {
+    display: block;
+    position: relative; }
   .h2Galeria {
     margin: 5vh auto 0 auto;
     width: 80vw;
@@ -1842,7 +1831,8 @@ html {
   /* END: MAIN */
   /* BEGIN: FOOTER */
   .footerWhite {
-    background-color: #f8f8ff; }
+    background-color: #f8f8ff;
+    position: relative; }
   .dudasBoton a {
     font-size: 1rem; }
   .redesSociales {
@@ -2231,45 +2221,25 @@ html {
     font-size: 0.7rem;
     width: auto;
     max-width: 20vw; }
-  .gridContenedorPaquetes {
-    margin: 0 0 0 2vw; }
   .h2WhiteCenter {
     font-size: 1.25rem;
     margin: 2vh 0; }
   .contenedorSlider {
-    width: 65vw;
-    height: 50vh;
-    padding: 0 4vw 4vh 4vw; }
-  .listaSlider li {
-    width: 62vw; }
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 70vw;
+    height: 800px; }
   .contenedorInformacionP h3 {
-    font-size: 1.3rem;
-    padding-left: 2vw; }
-  .contenedorInformacionP h4 {
-    font-size: 1rem;
-    padding-left: 2vw; }
+    width: 70vw; }
   .listaInformacionP {
-    padding-left: 2vw; }
+    width: 70vw;
+    height: 500px; }
   .listaInformacionP li {
-    font-size: 0.8rem; }
-  .paqueteSeleccion {
-    margin-top: 1vh;
-    width: 20vw;
-    padding-left: 2vw;
-    z-index: 5; }
-  .paqueteSeleccion li {
-    width: 15vw;
-    padding-top: -1vh; }
-  .paqueteSeleccion li a {
-    font-size: 0.7rem;
-    margin-left: -5.5vw; }
+    width: 70vw;
+    height: 60px; }
   .botonPaquetes {
-    width: 34vw;
-    margin: -3vh 0 12vh 30vw;
-    font-size: 1rem; }
-  .botonPaquetes p {
-    width: auto;
-    text-align: center; }
+    width: 70vw; }
   .contenedorMembresia {
     display: block;
     height: 130vh; }
@@ -2278,7 +2248,7 @@ html {
     height: 40vh;
     margin: 5vh auto; }
   .flexBoxPaqueteM h3 {
-    font-size: 1.2rem; }
+    font-size: 1.3rem; }
   .flexBoxPaqueteM p {
     font-size: 1rem; }
   .flexBoxPaqueteM li p {
@@ -2463,6 +2433,42 @@ html {
     height: 30px;
     display: block;
     text-align: center; }
+  #paquete1 {
+    width: 70vw;
+    height: 700px;
+    border-radius: 2rem; }
+  #paquete2 {
+    width: 70vw;
+    height: 700px;
+    border-radius: 2rem; }
+  #paquete3 {
+    width: 70vw;
+    height: 700px;
+    border-radius: 2rem; }
+  #paquete4 {
+    width: 70vw;
+    height: 700px;
+    border-radius: 2rem; }
+  #paquete5 {
+    width: 70vw;
+    height: 700px;
+    border-radius: 2rem; }
+  #paquete6 {
+    width: 70vw;
+    height: 700px;
+    border-radius: 2rem; }
+  #paquete7 {
+    width: 70vw;
+    height: 700px;
+    border-radius: 2rem; }
+  #paquete8 {
+    width: 70vw;
+    height: 700px;
+    border-radius: 2rem; }
+  #paquete9 {
+    width: 70vw;
+    height: 700px;
+    border-radius: 2rem; }
   #imagenGaleria {
     height: 30vh;
     margin-top: -3vh; }

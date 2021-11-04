@@ -243,81 +243,45 @@
         font-size: 2rem;
     }
 
-    .gridContenedorPaquetes {
-        margin-left: 8vw;
+    .contenedorMembresia {
+        display: block;
+        margin: 1vh auto;
+        position: relative;
+        user-select: none;
     }
 
-    .contenedorSlider {
-        width: 70vw;
-        margin-left: 0;
+    .flexBoxPaqueteM {
+        background-color: $HD-palette-white;
+        width: 50vw;
+        height: 450px;
+        margin: 5vh auto;
     }
+        .flexBoxPaqueteM h3 {
+            font-size: 2rem;
+        }
+        .flexBoxPaqueteM p {
+            font-size: 1.8rem;
+        }
+        .flexBoxPaqueteM li p {
+            font-size: 1.15rem;
+        }
 
-    .listaSlider li {
-        width: 65vw;
-        margin: 2.5vh 0 0 2.5vw;
+    .botonM {
+        width: 200px;
+        height: 50px;
     }
-
-    .contenedorInformacionP {
-        padding-left: 3vw;
-    }
-        .contenedorInformacionP li {
-            font-size: 1.25rem;
-        }
-        .contenedorInformacionP h3 {
-            font-size: 1.7rem;
-        }
-        .contenedorInformacionP h4 {
-            font-size: 1.4rem;
-        }
-    
-    .paqueteSeleccion {
-        margin-left: 1vw;
-        margin-top: 3vh;
-    }
-        .paqueteSeleccion li {
-            transition: none;
-            width: 14vw;
-            height: 2.5vh;
-        }
-            .paqueteSeleccion li a {
-                font-size: 1rem;
-                margin-left: -3.8vw;
-            }
-    
-    .botonPaquetes {
-        width: 13vw;
-    }
-        .botonPaquetes p {
-            font-size: 1.25rem;
-        }
 
     .contenedorMembresia {
-        height: 50vh;
+        display: list-item;
+        flex-direction: column;
+        height: auto;
     }
-        .flexBoxPaqueteM {
-            width: 30vw;
-            height: auto;
-            min-height: 350px;
-        }
-            .flexBoxPaqueteM h3 {
-                font-size: 1.7rem;
-                height: 5vh;
-            }
-            .flexBoxPaqueteM p {
-                font-size: 1.5rem;
-            }
-            .flexBoxPaqueteM ul li p {
-                font-size: 1rem;
-            }
-        
-        .botonM {
-            margin: 2vh auto 0 auto;
-            height: 40px;
-        }
-            .botonM p {
-                margin-top: -0.5vh;
-            }
-    
+
+    .flexBoxPaqueteM {
+        display: block;
+        position: relative;
+    }
+
     .h2Galeria {
         margin: 5vh auto 0 auto;
         width: 80vw;
@@ -435,6 +399,7 @@
     /* BEGIN: FOOTER */
     .footerWhite {
         background-color: $HD-palette-white;
+        position: relative;
     }
 
     .dudasBoton a {

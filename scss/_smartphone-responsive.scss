@@ -236,67 +236,35 @@
         max-width: 20vw;
     }
 
-    .gridContenedorPaquetes {
-        margin: 0 0 0 2vw;
-    }
-
     .h2WhiteCenter {
         font-size: 1.25rem;
         margin: 2vh 0;
     }
 
     .contenedorSlider {
-        width: 65vw;
-        height: 50vh;
-        padding: 0 4vw 4vh 4vw;
-    }
-
-    .listaSlider li {
-        width: 62vw;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 70vw;
+        height: 800px;
     }
 
     .contenedorInformacionP h3 {
-        font-size: 1.3rem;
-        padding-left: 2vw;
-    }
-
-    .contenedorInformacionP h4 {
-        font-size: 1rem;
-        padding-left: 2vw;
+        width: 70vw;
     }
 
     .listaInformacionP {
-        padding-left: 2vw;
+        width: 70vw;
+        height: 500px;
     }
-
-    .listaInformacionP li {
-        font-size: 0.8rem;
-    }
-
-    .paqueteSeleccion {
-        margin-top: 1vh;
-        width: 20vw;
-        padding-left: 2vw;
-        z-index: 5;
-    }
-        .paqueteSeleccion li {
-            width: 15vw;
-            padding-top: -1vh;
+        .listaInformacionP li {
+            width: 70vw;
+            height: 60px;
         }
-            .paqueteSeleccion li a {
-                font-size: 0.7rem;
-                margin-left: -5.5vw;
-            }
 
     .botonPaquetes {
-        width: 34vw;
-        margin: -3vh 0 12vh 30vw;
-        font-size: 1rem;
+        width: 70vw;
     }
-        .botonPaquetes p {
-            width: auto;
-            text-align: center;
-        }
 
     .contenedorMembresia {
         display: block;
@@ -309,7 +277,7 @@
         margin: 5vh auto;
     }
         .flexBoxPaqueteM h3 {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
         }
         .flexBoxPaqueteM p {
             font-size: 1rem;
@@ -586,6 +554,14 @@
                 display: block;
                 text-align: center;
             }
+
+    @for $i from 1 through 9 {
+    #paquete#{$i} {
+        width: 70vw;
+        height: 700px;
+        border-radius: 2rem;
+    }
+}
 
     #imagenGaleria {
         height: 30vh;
