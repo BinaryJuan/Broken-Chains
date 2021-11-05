@@ -199,7 +199,7 @@ html {
   visibility: hidden;
   position: absolute;
   position: fixed;
-  top: 22vh;
+  top: 2vh;
   left: 2vw;
   z-index: 10; }
 
@@ -2357,7 +2357,7 @@ html {
   .flexBoxCarrito select {
     width: 20vw;
     font-size: 0.6rem;
-    height: 30px; }
+    height: 3vh; }
   .flexBoxCarrito select option {
     font-size: 0.6rem; }
   .flexBoxCarritoProductos {
