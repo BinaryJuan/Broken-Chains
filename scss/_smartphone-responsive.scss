@@ -4,13 +4,14 @@
     .logo {
         width: 150px;
         position: relative;
-        margin-left: 35vw;
-        margin-bottom: 1vh;
+        margin: 0 auto 1vh auto;
     }
 
     .linkTitulo {
         font-size: 1.5rem;
-        margin-left: 30vw;
+        margin: 0;
+        width: 100%;
+        position: relative;
     }
 
     .headerWhite {
@@ -19,9 +20,19 @@
 
     .linkTituloPaginas {
         font-size: 1.5rem;
-        position: absolute;
-        width: 200px;
-        left: 30%;
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+
+    .flexBoxHeaderPages {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding: 1vh 0;
+        justify-content: center;
+        width: 100%;
     }
     /* END: HEADER */
 
@@ -60,6 +71,29 @@
             padding: 0.5vh;
         }
 
+    .menu {
+        width: 120px;
+        height: auto;
+        visibility: hidden;
+        display: none;
+    }
+        .menu ul {
+            background-color: $HD-palette-orange;
+            border-radius: 0.5rem;
+            border: 1px solid $HD-palette-black;
+            text-align: center;
+            list-style: none;
+        }
+            .menu ul li {
+                margin-bottom: 5px;
+            }
+                .menu ul li a {
+                    text-decoration: none;
+                    font-weight: bold;
+                    color: $HD-palette-black;
+                    font-size: 1.3rem;
+                }
+    
     .flexBoxIndexArticle {
         display: block;
         flex-wrap: nowrap;
@@ -123,7 +157,7 @@
         align-self: flex-start;
         margin: 3vh auto 0 auto;
         justify-content: center;
-        width: 30vw;
+        width: 35vw;
     }
         .h2TipoProducto h2 {
             color: rgb(73, 73, 73);
@@ -172,7 +206,7 @@
     }
 
     .h2WhiteCenter {
-        font-size: 1.25rem;
+        font-size: 1.6rem;
         margin: 2vh 0;
     }
 
@@ -180,35 +214,53 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        width: 70vw;
-        height: 800px;
+        width: 90vw;
+        height: 700px;
     }
 
     .contenedorInformacionP h3 {
-        width: 70vw;
+        width: 90vw;
+        font-size: 1.5rem;
     }
 
     .listaInformacionP {
-        width: 70vw;
+        width: 90vw;
         height: 500px;
     }
         .listaInformacionP li {
-            width: 70vw;
+            width: 90vw;
             height: 60px;
+            list-style: square;
         }
 
     .botonPaquetes {
         width: 70vw;
     }
 
+    .paqueteSeleccion {
+        width: 90vw;
+        height: auto;
+    }
+
+    .paqueteSeleccion li {
+        width: 90vw;
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .paqueteSeleccion li a {
+        padding-top: 13px;
+    }
+
     .contenedorMembresia {
         display: block;
-        height: 130vh;
+        height: auto;
     }
 
     .flexBoxPaqueteM {
         width: 80vw;
-        height: 40vh;
+        height: auto;
         margin: 5vh auto;
     }
         .flexBoxPaqueteM h3 {
@@ -222,27 +274,32 @@
         }
     
     .botonM {
+        width: 50vw;
         height: 4.5vh;
     }
 
     .h2Galeria {
-        margin: 15vh auto 0 auto;
-        font-size: 1.8rem;
-        width: 99vw;
+        margin: 15vh auto 5vh auto;
+        font-size: 1.5rem;
+        width: 100%;
         animation-name: none;
-        margin-bottom: 5vh;
+        background-image: radial-gradient(circle, #f48322 0%, rgba(0, 0, 0, 0.896779) 90%);
     }
+        .h2Galeria:hover {
+            width: 100%;
+        }
 
     .abrirDescripcion {
         opacity: 1;
         font-size: 5vw;
         width: 36vw;
-        margin: -38vh auto 5vh auto;
+        margin: -40vh auto 5vh auto;
         border: none;
     }
 
     .headerDescripcion h3 {
         font-size: 1.25rem;
+        text-decoration: underline;
     }
 
     .contenidoDescripcion {
@@ -251,15 +308,15 @@
         margin-left: 0.5vw;
     }
         .contenidoDescripcion ul {
-            margin-top: -33vh;
+            margin-top: -48vh;
         }
             .contenidoDescripcion ul li {
-                font-size: 0.6rem;
+                font-size: 0.8rem;
             }
     
     .cerrarDescripcion {
-        font-size: 0.5rem;
-        left: 82%;
+        font-size: 0.7rem;
+        left: 40%;
         bottom: 3%;
     }
     
@@ -276,9 +333,9 @@
     }
 
     .divHrContactoSub {
-        width: 20vw;
+        width: 30vw;
         height: 0.2vh;
-        margin-left: 21vw;
+        margin-left: 27.5vw;
     }
 
     .formInput {
@@ -295,11 +352,11 @@
         display: block;
     }
         .contenedorCarrito h2 {
-            font-size: 1rem;
+            font-size: 1.4rem;
         }
 
     .contenedorLugar {
-        margin-left: 17vw;
+        margin-left: 15vw;
     }
     
     .flexBoxCarrito {
@@ -309,12 +366,12 @@
         text-align: center;
     }
         .flexBoxCarrito label {
-            font-size: 0.7rem;
+            font-size: 0.9rem;
         }
         .flexBoxCarrito select {
             width: 20vw;
-            height: 2vh;
             font-size: 0.6rem;
+            height: 30px;
         }
         .flexBoxCarrito select option {
             font-size: 0.6rem;
@@ -323,15 +380,16 @@
     .flexBoxCarritoProductos {
         margin: 0 0 0 -2vw;
         width: 90vw;
-        height: 18vh;
+        height: auto;
     }
         .flexBoxCarritoProductos ul {
-            font-size: 0.8rem;
+            font-size: 1rem;
         }
         .flexBoxCarritoProductos p {
-            font-size: 1rem;
+            font-size: 1.3rem;
             padding-bottom: 0.5vh;
-            padding-top: 1.5vh;
+            width: 30vw;
+            margin: 0 auto;
         }
 
     .flexBoxPago {
@@ -339,7 +397,7 @@
     }
 
     .tarjetasPago {
-        padding-left: 23vw;
+        padding-left: 18vw;
     }
         .tarjetasPago img {
             width: 15vw;
@@ -429,17 +487,19 @@
     /* --------------- IDs --------------- */
     /* BEGIN: HEADER */
     #imagenHeaderIndex {
+        display: block;
+        flex-direction: column;
+        align-items: center;
         background-image: none;
         background-color: $HD-palette-white;
-        height: 18vh;
+        height: auto;
     }
 
     #flexBoxHeaderIndex {
-        display: block;
-        width: 100%;
-        align-items: center;
-        flex-wrap: nowrap;
+        display: flex;
+        flex-direction: column;
         padding: 1vh 0;
+        justify-content: center;
     }
     /* END: HEADER */
 
@@ -450,6 +510,17 @@
 
     #lemaFrase {
         display: none;
+    }
+
+    #abrirMenu {
+        display: none;
+    }
+
+    #abrirMenu:checked ~ .menu {
+        visibility: visible;
+        display: block;
+        animation-name: opacidadAnimacion;
+        animation-duration: 0.7s;
     }
 
     #separarTexto {
@@ -492,7 +563,7 @@
 
     @for $i from 1 through 9 {
     #paquete#{$i} {
-        width: 70vw;
+        width: 90vw;
         height: 700px;
         border-radius: 2rem;
     }
@@ -503,9 +574,11 @@
         margin-top: -3vh;
     }
         #imagenGaleria div {
-            margin-top: -14vh;
+            width: 100%;
+            margin-top: 10vh;
+            padding: 0;
             font-size: 2rem;
-            color: $HD-palette-black;
+            color: $HD-grey-lighter;
         }
 
     #gridGaleria {
@@ -517,7 +590,7 @@
         #gridGaleria div {
             width: 99vw;
             margin-bottom: 8vh;
-            height: 30vh;
+            height: 45vh;
         }
             #gridGaleria div:hover img {
                 border: none;
@@ -646,7 +719,7 @@
             margin: 1vh auto 1vh auto;
         }
             #contactoForm h2 {
-                font-size: 1.75rem;
+                font-size: 1.5rem;
             }
             #contactoForm div {
                 font-size: 0.8rem;
@@ -656,11 +729,11 @@
                 font-size: 0.8rem;
             }
             #contactoForm label {
-                font-size: 0.65rem;
+                font-size: 0.85rem;
             }
             #contactoForm select {
                 width: 30vw;
-                height: 3vh;
+                height: auto;
                 font-size: 0.8rem;
             }
                 #contactoForm select option {
@@ -668,13 +741,15 @@
                 }
     
     #espacioDatos {
-        width: 60vw;
+        width: 85vw;
         padding: 0;
         margin: 4vh auto;
         padding-top: 5vh;
+        height: auto;
+        min-height: 65vh;
     }
         #espacioDatos h2 {
-            font-size: 1.75rem;
+            font-size: 1.5rem;
         }
         #espacioDatos p {
             font-size: 1rem;
@@ -687,7 +762,7 @@
         margin-top: 0;
         margin-left: 2vw;
         width: 18vw;
-        height: 2.5vh;
+        height: 3vh;
     }
         #zipFormato::placeholder {
             font-size: 0.7rem;

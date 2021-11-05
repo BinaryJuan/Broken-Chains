@@ -51,19 +51,20 @@
         }
     .contenidoDescripcion {
         position: absolute;
-        top: 100%;
+        top: 15vh;
         left: 50%;
         transform: translate(-50%, -50%);
         border: 0.1vw solid $HD-palette-orange;
         border-radius: 1vw;
         width: 30vw;
-        height: 50vh;
+        height: 55vh;
         box-shadow: 0 0.2vw 1.2vw 0 rgba(0, 0, 0, 0.2);
         background-color: $HD-grey-darker;
         opacity: 0;
         visibility: hidden;
         user-select: none;
         transition: opacity 0.6s;
+        z-index: 4;
     }
         .contenidoDescripcion ul {
             list-style: none;

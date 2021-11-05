@@ -209,34 +209,12 @@ html {
   border: 1px solid black; }
 
 .menu {
-  width: 120px;
-  height: auto;
-  visibility: hidden; }
-
-.menu ul {
-  background-color: #f48322;
-  border-radius: 0.5rem;
-  border: 1px solid black;
-  text-align: center;
-  list-style: none; }
-
-.menu ul li {
-  margin-bottom: 5px; }
-
-.menu ul li a {
-  text-decoration: none;
-  font-weight: bold;
-  color: black;
-  font-size: 1.3rem; }
+  visibility: hidden;
+  display: none; }
 
 /* ---------------------------- */
 #abrirMenu {
   display: none; }
-
-#abrirMenu:checked ~ .menu {
-  visibility: visible;
-  animation-name: opacidadAnimacion;
-  animation-duration: 0.7s; }
 
 /* _____NAVBAR_____ */
 /* _____INDEX_____ */
@@ -287,7 +265,8 @@ html {
 .flexBoxIndexArticle p a {
   background-color: #f48322;
   color: black;
-  border: 0.1vw solid black;
+  border: 1px solid black;
+  border-radius: 0.8rem;
   text-align: center;
   text-decoration: none;
   font-size: 1.2rem;
@@ -296,7 +275,7 @@ html {
 
 .flexBoxIndexArticle p a:hover {
   color: #f8f8ff;
-  border: 0.1vw solid #f8f8ff; }
+  border: 1px solid #f8f8ff; }
 
 .h2WhiteLeft {
   color: #f8f8ff;
@@ -401,12 +380,12 @@ html {
   margin: 2vh auto;
   background-color: #f8f8ff;
   position: relative;
-  min-height: 150px;
+  min-height: 170px;
   max-height: 205px; }
 
 .flexBoxProducto p {
   color: black;
-  height: 2.5vh; }
+  height: auto; }
 
 .flexBoxProducto p a {
   color: black;
@@ -751,13 +730,13 @@ html {
   padding: 1vh 0;
   font-size: 1.5rem;
   position: relative;
-  width: 500px;
+  width: 50vw;
   height: auto;
   font-weight: bold;
   background-color: #353535;
   transition: background-color 1s;
   border: 0.1vw solid #f48322;
-  border-radius: 2vw;
+  border-radius: 2rem;
   user-select: none;
   cursor: pointer;
   box-sizing: content-box; }
@@ -926,19 +905,20 @@ html {
 
 .contenidoDescripcion {
   position: absolute;
-  top: 100%;
+  top: 15vh;
   left: 50%;
   transform: translate(-50%, -50%);
   border: 0.1vw solid #f48322;
   border-radius: 1vw;
   width: 30vw;
-  height: 50vh;
+  height: 55vh;
   box-shadow: 0 0.2vw 1.2vw 0 rgba(0, 0, 0, 0.2);
   background-color: #242424;
   opacity: 0;
   visibility: hidden;
   user-select: none;
-  transition: opacity 0.6s; }
+  transition: opacity 0.6s;
+  z-index: 4; }
 
 .contenidoDescripcion ul {
   list-style: none; }
@@ -1376,7 +1356,7 @@ html {
 #contactoForm select {
   background-color: #f8f8ff;
   width: 6vw;
-  height: 2vh;
+  height: auto;
   font-size: 0.9rem; }
 
 #contactoForm select option {
@@ -1388,7 +1368,7 @@ html {
   text-align: center;
   margin-top: 5vh;
   width: 30vw;
-  height: 52vh;
+  height: auto;
   background-color: #242424;
   margin-left: 20vw;
   padding: 4vh 0; }
@@ -1429,7 +1409,8 @@ html {
 
 .contenedorCarrito h2 {
   font-size: 1.5rem;
-  color: #f8f8ff; }
+  color: #f8f8ff;
+  text-align: center; }
 
 .contenedorCarrito label {
   font-size: 1.15rem; }
@@ -1453,7 +1434,7 @@ html {
 
 .contenedorLugar select {
   width: 5.5vw;
-  height: 2vh; }
+  height: 30px; }
 
 .contenedorLugar select option {
   font-size: 1rem; }
@@ -1461,7 +1442,8 @@ html {
 .flexBoxCarritoProductos {
   margin-left: 20vw;
   width: 20vw;
-  height: 20vh;
+  height: auto;
+  max-height: 25vh;
   background-color: #242424;
   border: 0.1vw solid #f48322;
   padding: 2vh 2vw 5vh 2vw; }
@@ -1475,7 +1457,13 @@ html {
 .flexBoxCarritoProductos p {
   font-weight: bold;
   margin-bottom: 0.5vh;
-  font-size: 1.25rem; }
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: #f48322;
+  border: 1px solid black;
+  border-radius: 2rem;
+  margin-top: 2vh;
+  height: auto; }
 
 .h2Carrito {
   color: #f8f8ff;
@@ -1504,10 +1492,30 @@ html {
 /* --------------- IDs --------------- */
 #zipFormato {
   width: 7vw;
-  height: 3vh; }
+  height: 30px;
+  margin-top: 3px; }
 
 #zipFormato::placeholder {
   font-size: 1rem; }
+
+#botonPagarCarrito {
+  text-align: center; }
+
+#botonPagarCarrito input {
+  background-color: #f48322;
+  border: 1px solid #f8f8ff;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  width: 30vw;
+  height: auto;
+  min-height: 70px;
+  margin-bottom: 5vh;
+  box-shadow: inset 0 0 0 0 #f8f8ff;
+  transition: ease-out 0.3s; }
+
+#botonPagarCarrito input:hover {
+  box-shadow: inset 30vw 0 0 0 #f8f8ff; }
 
 /* _____CARRITO_____ */
 /* _____FOOTER_____ */
@@ -1526,7 +1534,8 @@ html {
 .dudasBoton a {
   background-color: #f48322;
   font-weight: bold;
-  border: 0.15vw solid black;
+  border: 1px solid black;
+  border-radius: 0.8rem;
   padding: 1.2vh 1vw;
   text-align: start;
   text-decoration: none;
@@ -1819,8 +1828,8 @@ html {
     margin: -38vh 0 0 3vw; }
   .contenidoDescripcion {
     width: 70vw;
-    height: 30vh;
-    top: 21vh; }
+    height: auto;
+    top: 18vh; }
   .contenidoDescripcion ul li {
     font-size: 1rem;
     margin-left: 1vw; }
@@ -1868,12 +1877,12 @@ html {
     font-size: 1.5rem; }
   .flexBoxCarritoProductos {
     width: 40vw;
-    height: 16vh;
+    height: auto;
     margin-left: 2vw; }
   .flexBoxCarritoProductos ul {
     font-size: 1rem; }
   .flexBoxCarritoProductos p {
-    font-size: 1rem; }
+    font-size: 1.5rem; }
   /* END: MAIN */
   /* BEGIN: FOOTER */
   .footerWhite {
@@ -2063,14 +2072,15 @@ html {
   #contactoForm label {
     font-size: 0.8rem; }
   #contactoForm select {
+    min-width: 10vw;
     width: 11.5vw;
-    height: 1.5vh; }
+    height: auto; }
   #contactoForm select option {
     font-size: 0.8rem; }
   #espacioDatos {
     margin-left: 5vw;
     width: 37vw;
-    height: 40vh;
+    height: auto;
     margin-top: 10vh; }
   #espacioDatos h2 {
     font-size: 1.75rem; }
@@ -2082,7 +2092,8 @@ html {
     width: 8vw; }
   #zipFormato {
     width: 12.5vw;
-    height: 2vh; }
+    height: 30px;
+    margin-top: 0; }
   #zipFormato::placeholder {
     font-size: 0.8rem; } }
 
@@ -2094,18 +2105,27 @@ html {
   .logo {
     width: 150px;
     position: relative;
-    margin-left: 35vw;
-    margin-bottom: 1vh; }
+    margin: 0 auto 1vh auto; }
   .linkTitulo {
     font-size: 1.5rem;
-    margin-left: 30vw; }
+    margin: 0;
+    width: 100%;
+    position: relative; }
   .headerWhite {
     min-height: 180px; }
   .linkTituloPaginas {
     font-size: 1.5rem;
-    position: absolute;
-    width: 200px;
-    left: 30%; }
+    display: block;
+    position: relative;
+    width: 100%; }
+  .flexBoxHeaderPages {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 1vh 0;
+    justify-content: center;
+    width: 100%; }
   /* END: HEADER */
   /* BEGIN: MAIN */
   .navBar {
@@ -2128,6 +2148,24 @@ html {
     width: 40px;
     height: 40px;
     padding: 0.5vh; }
+  .menu {
+    width: 120px;
+    height: auto;
+    visibility: hidden;
+    display: none; }
+  .menu ul {
+    background-color: #f48322;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    text-align: center;
+    list-style: none; }
+  .menu ul li {
+    margin-bottom: 5px; }
+  .menu ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1.3rem; }
   .flexBoxIndexArticle {
     display: block;
     flex-wrap: nowrap;
@@ -2177,7 +2215,7 @@ html {
     align-self: flex-start;
     margin: 3vh auto 0 auto;
     justify-content: center;
-    width: 30vw; }
+    width: 35vw; }
   .h2TipoProducto h2 {
     color: #494949;
     font-size: 1rem;
@@ -2211,30 +2249,42 @@ html {
     width: auto;
     max-width: 20vw; }
   .h2WhiteCenter {
-    font-size: 1.25rem;
+    font-size: 1.6rem;
     margin: 2vh 0; }
   .contenedorSlider {
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 70vw;
-    height: 800px; }
+    width: 90vw;
+    height: 700px; }
   .contenedorInformacionP h3 {
-    width: 70vw; }
+    width: 90vw;
+    font-size: 1.5rem; }
   .listaInformacionP {
-    width: 70vw;
+    width: 90vw;
     height: 500px; }
   .listaInformacionP li {
-    width: 70vw;
-    height: 60px; }
+    width: 90vw;
+    height: 60px;
+    list-style: square; }
   .botonPaquetes {
     width: 70vw; }
+  .paqueteSeleccion {
+    width: 90vw;
+    height: auto; }
+  .paqueteSeleccion li {
+    width: 90vw;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  .paqueteSeleccion li a {
+    padding-top: 13px; }
   .contenedorMembresia {
     display: block;
-    height: 130vh; }
+    height: auto; }
   .flexBoxPaqueteM {
     width: 80vw;
-    height: 40vh;
+    height: auto;
     margin: 5vh auto; }
   .flexBoxPaqueteM h3 {
     font-size: 1.3rem; }
@@ -2243,32 +2293,36 @@ html {
   .flexBoxPaqueteM li p {
     font-size: 0.8rem; }
   .botonM {
+    width: 50vw;
     height: 4.5vh; }
   .h2Galeria {
-    margin: 15vh auto 0 auto;
-    font-size: 1.8rem;
-    width: 99vw;
+    margin: 15vh auto 5vh auto;
+    font-size: 1.5rem;
+    width: 100%;
     animation-name: none;
-    margin-bottom: 5vh; }
+    background-image: radial-gradient(circle, #f48322 0%, rgba(0, 0, 0, 0.896779) 90%); }
+  .h2Galeria:hover {
+    width: 100%; }
   .abrirDescripcion {
     opacity: 1;
     font-size: 5vw;
     width: 36vw;
-    margin: -38vh auto 5vh auto;
+    margin: -40vh auto 5vh auto;
     border: none; }
   .headerDescripcion h3 {
-    font-size: 1.25rem; }
+    font-size: 1.25rem;
+    text-decoration: underline; }
   .contenidoDescripcion {
     z-index: 5;
     top: 50%;
     margin-left: 0.5vw; }
   .contenidoDescripcion ul {
-    margin-top: -33vh; }
+    margin-top: -48vh; }
   .contenidoDescripcion ul li {
-    font-size: 0.6rem; }
+    font-size: 0.8rem; }
   .cerrarDescripcion {
-    font-size: 0.5rem;
-    left: 82%;
+    font-size: 0.7rem;
+    left: 40%;
     bottom: 3%; }
   .checkboxFormato {
     padding: 1.2vw; }
@@ -2278,9 +2332,9 @@ html {
     width: 30vw;
     margin-left: 27.5vw; }
   .divHrContactoSub {
-    width: 20vw;
+    width: 30vw;
     height: 0.2vh;
-    margin-left: 21vw; }
+    margin-left: 27.5vw; }
   .formInput {
     width: 60vw;
     font-size: 0.8rem; }
@@ -2290,36 +2344,37 @@ html {
   .contenedorCarrito {
     display: block; }
   .contenedorCarrito h2 {
-    font-size: 1rem; }
+    font-size: 1.4rem; }
   .contenedorLugar {
-    margin-left: 17vw; }
+    margin-left: 15vw; }
   .flexBoxCarrito {
     display: block;
     width: 90vw;
     margin: 0 0 5vh -3vw;
     text-align: center; }
   .flexBoxCarrito label {
-    font-size: 0.7rem; }
+    font-size: 0.9rem; }
   .flexBoxCarrito select {
     width: 20vw;
-    height: 2vh;
-    font-size: 0.6rem; }
+    font-size: 0.6rem;
+    height: 30px; }
   .flexBoxCarrito select option {
     font-size: 0.6rem; }
   .flexBoxCarritoProductos {
     margin: 0 0 0 -2vw;
     width: 90vw;
-    height: 18vh; }
+    height: auto; }
   .flexBoxCarritoProductos ul {
-    font-size: 0.8rem; }
+    font-size: 1rem; }
   .flexBoxCarritoProductos p {
-    font-size: 1rem;
+    font-size: 1.3rem;
     padding-bottom: 0.5vh;
-    padding-top: 1.5vh; }
+    width: 30vw;
+    margin: 0 auto; }
   .flexBoxPago {
     margin-left: 2vw; }
   .tarjetasPago {
-    padding-left: 23vw; }
+    padding-left: 18vw; }
   .tarjetasPago img {
     width: 15vw; }
   .h2Carrito {
@@ -2381,21 +2436,30 @@ html {
   /* --------------- IDs --------------- */
   /* BEGIN: HEADER */
   #imagenHeaderIndex {
+    display: block;
+    flex-direction: column;
+    align-items: center;
     background-image: none;
     background-color: #f8f8ff;
-    height: 18vh; }
+    height: auto; }
   #flexBoxHeaderIndex {
-    display: block;
-    width: 100%;
-    align-items: center;
-    flex-wrap: nowrap;
-    padding: 1vh 0; }
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 0;
+    justify-content: center; }
   /* END: HEADER */
   /* BEGIN: MAIN */
   #flexBoxIndexCero {
     display: none; }
   #lemaFrase {
     display: none; }
+  #abrirMenu {
+    display: none; }
+  #abrirMenu:checked ~ .menu {
+    visibility: visible;
+    display: block;
+    animation-name: opacidadAnimacion;
+    animation-duration: 0.7s; }
   #separarTexto {
     margin-top: 1vh; }
   #myCarousel {
@@ -2423,48 +2487,50 @@ html {
     display: block;
     text-align: center; }
   #paquete1 {
-    width: 70vw;
+    width: 90vw;
     height: 700px;
     border-radius: 2rem; }
   #paquete2 {
-    width: 70vw;
+    width: 90vw;
     height: 700px;
     border-radius: 2rem; }
   #paquete3 {
-    width: 70vw;
+    width: 90vw;
     height: 700px;
     border-radius: 2rem; }
   #paquete4 {
-    width: 70vw;
+    width: 90vw;
     height: 700px;
     border-radius: 2rem; }
   #paquete5 {
-    width: 70vw;
+    width: 90vw;
     height: 700px;
     border-radius: 2rem; }
   #paquete6 {
-    width: 70vw;
+    width: 90vw;
     height: 700px;
     border-radius: 2rem; }
   #paquete7 {
-    width: 70vw;
+    width: 90vw;
     height: 700px;
     border-radius: 2rem; }
   #paquete8 {
-    width: 70vw;
+    width: 90vw;
     height: 700px;
     border-radius: 2rem; }
   #paquete9 {
-    width: 70vw;
+    width: 90vw;
     height: 700px;
     border-radius: 2rem; }
   #imagenGaleria {
     height: 30vh;
     margin-top: -3vh; }
   #imagenGaleria div {
-    margin-top: -14vh;
+    width: 100%;
+    margin-top: 10vh;
+    padding: 0;
     font-size: 2rem;
-    color: black; }
+    color: #353535; }
   #gridGaleria {
     display: block;
     padding: 2vh 0 5vh 0;
@@ -2473,7 +2539,7 @@ html {
   #gridGaleria div {
     width: 99vw;
     margin-bottom: 8vh;
-    height: 30vh; }
+    height: 45vh; }
   #gridGaleria div:hover img {
     border: none; }
   #gridGaleria div img {
@@ -2570,27 +2636,29 @@ html {
     width: 85vw;
     margin: 1vh auto 1vh auto; }
   #contactoForm h2 {
-    font-size: 1.75rem; }
+    font-size: 1.5rem; }
   #contactoForm div {
     font-size: 0.8rem; }
   #contactoForm textarea {
     width: 60vw;
     font-size: 0.8rem; }
   #contactoForm label {
-    font-size: 0.65rem; }
+    font-size: 0.85rem; }
   #contactoForm select {
     width: 30vw;
-    height: 3vh;
+    height: auto;
     font-size: 0.8rem; }
   #contactoForm select option {
     font-size: 0.8rem; }
   #espacioDatos {
-    width: 60vw;
+    width: 85vw;
     padding: 0;
     margin: 4vh auto;
-    padding-top: 5vh; }
+    padding-top: 5vh;
+    height: auto;
+    min-height: 65vh; }
   #espacioDatos h2 {
-    font-size: 1.75rem; }
+    font-size: 1.5rem; }
   #espacioDatos p {
     font-size: 1rem; }
   #espacioDatos ul li img {
@@ -2599,7 +2667,7 @@ html {
     margin-top: 0;
     margin-left: 2vw;
     width: 18vw;
-    height: 2.5vh; }
+    height: 3vh; }
   #zipFormato::placeholder {
     font-size: 0.7rem; } }
 

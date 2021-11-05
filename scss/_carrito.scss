@@ -9,6 +9,7 @@
     .contenedorCarrito h2 {
         font-size: 1.5rem;
         color: $HD-palette-white;
+        text-align: center;
     }
     .contenedorCarrito label {
         font-size: 1.15rem;
@@ -32,7 +33,7 @@
         }
         .contenedorLugar select {
             width: 5.5vw;
-            height: 2vh;
+            height: 30px;
         }
             .contenedorLugar select option {
                 font-size: 1rem;
@@ -41,7 +42,8 @@
 .flexBoxCarritoProductos {
     margin-left: 20vw;
     width: 20vw;
-    height: 20vh;
+    height: auto;
+    max-height: 25vh;
     background-color: $HD-grey-darker;
     border: 0.1vw solid $HD-palette-orange;
     padding: 2vh 2vw 5vh 2vw;
@@ -55,7 +57,13 @@
     .flexBoxCarritoProductos p {
         font-weight: bold;
         margin-bottom: 0.5vh;
-        font-size: 1.25rem;
+        font-size: 1.5rem;
+        text-align: center;
+        background-color: $HD-palette-orange;
+        border: 1px solid $HD-palette-black;
+        border-radius: 2rem;
+        margin-top: 2vh;
+        height: auto;
     }
 
 .h2Carrito {
@@ -88,9 +96,30 @@
 /* --------------- IDs --------------- */
 #zipFormato {
     width: 7vw;
-    height: 3vh;
+    height: 30px;
+    margin-top: 3px;
 }
     #zipFormato::placeholder {
         font-size: 1rem;
     }
+
+#botonPagarCarrito {
+    text-align: center;
+}
+    #botonPagarCarrito input {
+        background-color: $HD-palette-orange;
+        border: 1px solid $HD-palette-white;
+        font-weight: bold;
+        border-radius: 0.5rem;
+        font-size: 1.6rem;
+        width: 30vw;
+        height: auto;
+        min-height: 70px;
+        margin-bottom: 5vh;
+        box-shadow: inset 0 0 0 0 $HD-palette-white;
+        transition: ease-out 0.3s;
+    }
+        #botonPagarCarrito input:hover {
+            box-shadow: inset 30vw 0 0 0 $HD-palette-white;
+        }
 /* _____CARRITO_____ */

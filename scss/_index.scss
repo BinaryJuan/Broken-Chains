@@ -48,7 +48,8 @@
         .flexBoxIndexArticle p a {
             background-color: $HD-palette-orange;
             color: $HD-palette-black;
-            border: 0.1vw solid $HD-palette-black;
+            border: 1px solid $HD-palette-black;
+            border-radius: 0.8rem;
             text-align: center;
             text-decoration: none;
             font-size: 1.2rem;
@@ -57,7 +58,7 @@
         }
             .flexBoxIndexArticle p a:hover {
                 color: $HD-palette-white;
-                border: 0.1vw solid $HD-palette-white;
+                border: 1px solid $HD-palette-white;
             }
 .h2WhiteLeft {
     color: $HD-palette-white;

@@ -7,12 +7,12 @@
     margin: 2vh auto;
     background-color: $HD-palette-white;
     position: relative;
-    min-height: 150px;
+    min-height: 170px;
     max-height: 205px;
 }
     .flexBoxProducto p {
         color: $HD-palette-black;
-        height: 2.5vh;
+        height: auto;
     }
         .flexBoxProducto p a {
             color: $HD-palette-black;

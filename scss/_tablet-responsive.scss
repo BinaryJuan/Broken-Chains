@@ -306,8 +306,8 @@
 
     .contenidoDescripcion {
         width: 70vw;
-        height: 30vh;
-        top: 21vh;
+        height: auto;
+        top: 18vh;
     }
         .contenidoDescripcion ul li {
             font-size: 1rem;
@@ -385,14 +385,15 @@
     }
     .flexBoxCarritoProductos {
         width: 40vw;
-        height: 16vh;
+        height: auto;
         margin-left: 2vw;
     }
         .flexBoxCarritoProductos ul {
             font-size: 1rem;
         }
         .flexBoxCarritoProductos p {
-            font-size: 1rem;
+            font-size: 1.5rem;
+
         }
     /* END: MAIN */
 
@@ -661,8 +662,9 @@
                 font-size: 0.8rem;
             }
             #contactoForm select {
+                min-width: 10vw;
                 width: 11.5vw;
-                height: 1.5vh;
+                height: auto;
             }
                 #contactoForm select option {
                     font-size: 0.8rem;
@@ -671,7 +673,7 @@
         #espacioDatos {
             margin-left: 5vw;
             width: 37vw;
-            height: 40vh;
+            height: auto;
             margin-top: 10vh;
         }
             #espacioDatos h2 {
@@ -689,7 +691,8 @@
     
     #zipFormato {
         width: 12.5vw;
-        height: 2vh;
+        height: 30px;
+        margin-top: 0;
     }
         #zipFormato::placeholder {
             font-size: 0.8rem;

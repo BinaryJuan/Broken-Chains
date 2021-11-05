@@ -18,7 +18,8 @@
         .dudasBoton a {
             background-color: $HD-palette-orange;
             font-weight: bold;
-            border: 0.15vw solid $HD-palette-black;
+            border: 1px solid $HD-palette-black;
+            border-radius: 0.8rem;
             padding: 1.2vh 1vw;
             text-align: start;
             text-decoration: none;
