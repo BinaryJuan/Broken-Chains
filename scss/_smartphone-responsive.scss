@@ -39,6 +39,7 @@
     /* BEGIN: MAIN */
     .navBar {
         visibility: hidden;
+        display: none;
     }
 
     .navHam {
@@ -47,6 +48,11 @@
 
     .navBarPages {
         visibility: hidden;
+        display: none;
+    }
+
+    .smartphoneMargin {
+        margin-top: 5vh;
     }
 
     .divHrIndex {
@@ -547,7 +553,7 @@
         #gridResenias div {
             font-size: 1rem;
             display: block;
-            width: 50vw;
+            width: 70vw;
             height: auto;
             margin: 2vh auto;
         }
