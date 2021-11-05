@@ -27,81 +27,16 @@
 
     /* BEGIN: MAIN */
     .navBar {
-        opacity: 75%;
-        width: 100%;
-        height: 30px;
-        position: relative;
-        align-items: center;
-        background-color: $HD-palette-orange;
-        text-align: center;
-        margin-bottom: 7vh;
+        visibility: hidden;
     }
-        .navBar ul {
-            display: flex;
-            height: 30px;
-            padding-left: 1vw;
-            list-style: none;
-            justify-content: space-between;
-        }
-            .navBar ul li {
-                position: relative;
-                margin-right: 1vw;
-                margin-left: 1vw;
-            }
-                .navBar ul li a {
-                    color: $HD-palette-black;
-                    position: relative;
-                    font-weight: bold;
-                    text-decoration: none;
-                    font-size: 0.8rem;
-                    padding-top: 7.614px;
-                        }
-                        .navBar ul li a:hover {
-                            color: $HD-palette-white;
-                        }
-        .navBar img {
-            width: 30px;
-            height: 30px;
-            margin-top: -6.472px;
-        }
 
-        .navBarPages {
-            width: 100%;
-            height: 30px;
-            position: relative;
-            align-items: center;
-            background-color: $HD-palette-orange;
-            text-align: center;
-            margin-bottom: 7vh;
-        }
-            .navBarPages ul {
-                display: flex;
-                height: 30px;
-                padding-left: 1vw;
-                list-style: none;
-                justify-content: space-between;
-            }
-                .navBarPages ul li {
-                    position: relative;
-                    margin-right: 1vw;
-                    margin-left: 1vw;
-                }
-                    .navBarPages ul li a {
-                        color: $HD-palette-black;
-                        position: relative;
-                        font-weight: bold;
-                        text-decoration: none;
-                        font-size: 0.8rem;
-                        padding-top: 7.614px;
-                            }
-                            .navBarPages ul li a:hover {
-                                color: $HD-palette-white;
-                            }
-            .navBarPages img {
-                width: 30px;
-                height: 30px;
-                margin-top: -6.472px;
-            }
+    .navHam {
+        visibility: visible;
+    }
+
+    .navBarPages {
+        visibility: hidden;
+    }
 
     .divHrIndex {
         display: none;

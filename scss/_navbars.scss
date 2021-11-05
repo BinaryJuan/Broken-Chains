@@ -70,4 +70,56 @@
         height: 40px;
         margin-top: -0.6vh;
     }
+
+.estiloAbrir {
+    opacity: 60%;
+}
+
+.navHam {
+    visibility: hidden;
+    position: absolute;
+    position: fixed;
+    top: 22vh;
+    left: 2vw;
+    z-index: 10;
+}
+    .navHam svg {
+        background-color: $HD-palette-orange;
+        border-radius: 0.5rem;
+        border: 1px solid $HD-palette-black;
+    }
+
+.menu {
+    width: 120px;
+    height: auto;
+    visibility: hidden;
+}
+    .menu ul {
+        background-color: $HD-palette-orange;
+        border-radius: 0.5rem;
+        border: 1px solid $HD-palette-black;
+        text-align: center;
+        list-style: none;
+    }
+        .menu ul li {
+            margin-bottom: 5px;
+        }
+            .menu ul li a {
+                text-decoration: none;
+                font-weight: bold;
+                color: $HD-palette-black;
+                font-size: 1.3rem;
+            }
+
+/* ---------------------------- */
+
+#abrirMenu {
+    display: none;
+}
+
+#abrirMenu:checked ~ .menu {
+    visibility: visible;
+    animation-name: opacidadAnimacion;
+    animation-duration: 0.7s;
+}
 /* _____NAVBAR_____ */
