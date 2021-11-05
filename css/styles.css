@@ -2266,7 +2266,7 @@ html {
   .listaInformacionP li {
     width: 90vw;
     height: 60px;
-    list-style: square; }
+    list-style: none; }
   .botonPaquetes {
     width: 70vw; }
   .paqueteSeleccion {
@@ -2317,7 +2317,7 @@ html {
     top: 50%;
     margin-left: 0.5vw; }
   .contenidoDescripcion ul {
-    margin-top: -48vh; }
+    margin-top: -52vh; }
   .contenidoDescripcion ul li {
     font-size: 0.8rem; }
   .cerrarDescripcion {
@@ -2363,13 +2363,14 @@ html {
   .flexBoxCarritoProductos {
     margin: 0 0 0 -2vw;
     width: 90vw;
-    height: auto; }
+    height: auto;
+    min-height: 30vh; }
   .flexBoxCarritoProductos ul {
     font-size: 1rem; }
   .flexBoxCarritoProductos p {
     font-size: 1.3rem;
     padding-bottom: 0.5vh;
-    width: 30vw;
+    width: 55vw;
     margin: 0 auto; }
   .flexBoxPago {
     margin-left: 2vw; }
@@ -2539,7 +2540,7 @@ html {
   #gridGaleria div {
     width: 99vw;
     margin-bottom: 8vh;
-    height: 45vh; }
+    height: 50vh; }
   #gridGaleria div:hover img {
     border: none; }
   #gridGaleria div img {
