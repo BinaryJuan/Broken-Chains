@@ -33,16 +33,15 @@
         #nuestroNegocio p {
             font-size: 1.25rem;
             text-align: left;
-            margin-left: 3vw;
-            margin-bottom: 1.4vh;
+            margin: 0 auto 1.4vh auto;
             padding: 0 2vw;
             width: 60vw;
         }
         #nuestroNegocio img {
             border: 0.02vw solid $HD-palette-orange;
             user-select: none;
-            width: 30vw;
-            height: 35vh;
+            width: 600px;
+            height: auto;
         }
     #elBolson {
         grid-area: bolson;
@@ -66,6 +65,8 @@
         }
     #elBolsonImg {
         grid-area: bolsonimg;
+        display: flex;
+        align-items: center;
         background-color: $HD-palette-white;
         text-align: center;
         padding: 3vh 2vw 3vh 7vw;
@@ -76,7 +77,8 @@
         animation-delay: 0s;
     }
         #elBolsonImg img {
-            width: 30vw;
+            width: 500px;
+            height: auto;
             border: 0.02vw solid $HD-palette-orange;
             user-select: none;
         }
@@ -104,6 +106,8 @@
         }
     #empresasAsociadas {
         grid-area: empresas;
+        display: flex;
+        align-items: center;
         color: $HD-palette-white;
         background-color: $HD-grey-darker;
         padding-left: 15.5vw;
@@ -139,6 +143,8 @@
         }
     #nuestrasInstalacionesImg {
         grid-area: instalacionesImg;
+        display: flex;
+        align-items: center;
         background-color: $HD-palette-white;
         text-align: center;
         padding: 3vh 2vw 0 7vw;
@@ -148,7 +154,8 @@
         animation-delay: 0s;
     }
         #nuestrasInstalacionesImg img {
-            width: 30vw;
+            width: 500px;
+            height: auto;
             border: 0.02vw solid $HD-palette-orange;
             user-select: none;
         }
@@ -175,6 +182,8 @@
         }
     #atencionClienteImg {
         grid-area: atencionImg;
+        display: flex;
+        align-items: center;
         background-color: $HD-grey-darker;
         text-align: center;
         padding: 3vh 2vw 3vh 7vw;
@@ -184,8 +193,8 @@
         animation-delay: 0s;
     }
         #atencionClienteImg img {
-            width: 30vw;
-            height: 33vh;
+            width: 500px;
+            height: auto;
             border: 0.02vw solid $HD-palette-orange;
             user-select: none;
         }

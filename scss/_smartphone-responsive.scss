@@ -642,6 +642,7 @@
             font-size: 1.5rem;
             text-align: center;
             padding-top: 2vh;
+            padding-left: 0;
         }
         #elBolson p {
             margin: 0;
@@ -652,6 +653,8 @@
     }
     #elBolsonImg {
         padding: 4vh 0;
+        display: flex;
+        justify-content: center;
     }
         #elBolsonImg img {
             width: 80vw;
@@ -661,6 +664,7 @@
             font-size: 1.5rem;
             text-align: center;
             padding-top: 2vh;
+            padding-left: 0;
         }
         #atencionCliente p {
             margin: 0;
@@ -671,6 +675,8 @@
         }
     #atencionClienteImg {
         padding: 4vh 0;
+        display: flex;
+        justify-content: center;
     }
         #atencionClienteImg img {
             width: 80vw;
@@ -679,11 +685,14 @@
         }
     #nuestrasInstalacionesImg {
         padding: 4vh 0;
+        display: flex;
+        justify-content: center;
     }
         #nuestrasInstalaciones h2 {
             font-size: 1.5rem;
             text-align: center;
             padding-top: 2vh;
+            padding-left: 0;
         }
         #nuestrasInstalaciones p {
             margin: 0;
@@ -699,6 +708,7 @@
             font-size: 1.5rem;
             text-align: center;
             padding-top: 2vh;
+            padding-left: 0;
         }
         #estandarCalidad p {
             margin: 0;
@@ -709,11 +719,13 @@
         }
     #empresasAsociadas {
         margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+        padding: 0;
     }
         #empresasAsociadas img {
             width: 50vw;
-            height: 20vh;
-            margin-left: 10vw;
+            height: auto;
             padding: 0;
         }
     

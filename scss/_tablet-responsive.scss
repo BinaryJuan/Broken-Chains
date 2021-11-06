@@ -558,89 +558,119 @@
         display: block;
     }
 
+    #gridNosotros {
+        display: block;
+        width: 100%;
+    }
+        #gridNosotros img {
+            width: 80vw;
+        }
+    
     #nuestroNegocio {
-        width: 98vw;
-        margin-left: auto;
-        margin-right: auto;
+        border: none;
+        margin-top: 1vh;
+        margin-bottom: 0;
     }
         #nuestroNegocio h2 {
-            font-size: 2rem;
             padding-top: 2vh;
+            font-size: 2rem;
+            padding-left: 0;
         }
         #nuestroNegocio p {
-            font-size: 1.15rem;
-            width: 70vw;
-            margin: 0 auto;
+            width: 95vw;
+            font-size: 1.2rem;
+            text-align: center;
         }
-        #nuestroNegocio img {
-            width: 60vw;
-            height: 25vh;
-            margin-top: 2vh;
+        #elBolson h2 {
+            font-size: 2rem;
+            text-align: center;
+            padding-top: 2vh;
+            padding-left: 0;
         }
-
-    #elBolson h2 {
-        padding-top: 1vh;
-        padding-bottom: 0.5vh;
-        font-size: 2rem;
+        #elBolson p {
+            margin: 0;
+            width: 95vw;
+            padding-top: 3vh;
+            text-align: center;
+            font-size: 1.2rem;
     }
-    #elBolson p {
-        font-size: 1.15rem;
-        width: 45vw;
+    #elBolsonImg {
+        padding: 4vh 0;
+        display: flex;
+        justify-content: center;
     }
-
-    #elBolsonImg img {
-        width: 45vw;
-        height: 15vh;
-        margin-top: 3vh;
+        #elBolsonImg img {
+            width: 80vw;
+            padding: 0;
+        }
+        #atencionCliente h2 {
+            font-size: 2rem;
+            text-align: center;
+            padding-top: 2vh;
+            padding-left: 0;
+        }
+        #atencionCliente p {
+            margin: 0;
+            width: 95vw;
+            padding-top: 3vh;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+    #atencionClienteImg {
+        padding: 4vh 0;
+        display: flex;
+        justify-content: center;
     }
-
-    #atencionCliente h2 {
-        padding-top: 1vh;
-        padding-bottom: 0.5vh;
-        font-size: 2rem;
+        #atencionClienteImg img {
+            width: 80vw;
+            height: auto;
+            padding: 0;
+        }
+    #nuestrasInstalacionesImg {
+        padding: 4vh 0;
+        display: flex;
+        justify-content: center;
     }
-    #atencionCliente p {
-        font-size: 1.15rem;
-        width: 45vw;
+        #nuestrasInstalaciones h2 {
+            font-size: 2rem;
+            text-align: center;
+            padding-top: 2vh;
+            padding-left: 0;
+        }
+        #nuestrasInstalaciones p {
+            margin: 0;
+            width: 95vw;
+            padding-top: 3vh;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+    #estandarCalidad {
+        margin-bottom: 0;
     }
-
-    #atencionClienteImg img {
-        width: 45vw;
-        height: 15vh;
+        #estandarCalidad h2 {
+            font-size: 2rem;
+            text-align: center;
+            padding-top: 2vh;
+            padding-left: 0;
+        }
+        #estandarCalidad p {
+            margin: 0;
+            width: 95vw;
+            padding-top: 3vh;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+    #empresasAsociadas {
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+        padding: 0;
     }
-
-    #nuestrasInstalaciones h2 {
-        padding-top: 1vh;
-        padding-bottom: 0.5vh;
-        font-size: 2rem;
-    }
-    #nuestrasInstalaciones p {
-        font-size: 1.15rem;
-        width: 45vw;
-    }
-
-    #nuestrasInstalacionesImg img {
-        width: 45vw;
-        height: 15vh;
-        margin-top: 2vh;
-    }
-
-    #estandarCalidad h2 {
-        padding-top: 1vh;
-        padding-bottom: 0.5vh;
-        font-size: 2rem;
-    }
-    #estandarCalidad p {
-        font-size: 1.15rem;
-        width: 45vw;
-    }
-
-    #empresasAsociadas img {
-        width: 35vw;
-        height: 23vh;
-        padding-top: 6vh;
-        margin-left: -3vw;
-    }
+        #empresasAsociadas img {
+            width: 50vw;
+            height: auto;
+            padding: 0;
+        }
 
     #gridContacto {
         margin: 5vh 5vw;
