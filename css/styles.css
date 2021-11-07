@@ -225,7 +225,8 @@ html {
   z-index: 4; }
 
 .carousel-control-prev, .carousel-control-next, .carousel-inner {
-  background-color: black; }
+  background-color: black;
+  z-index: 0; }
 
 .bd-placeholder-img {
   background-color: black; }
@@ -983,7 +984,7 @@ html {
   background-attachment: fixed;
   position: relative;
   height: 64vh;
-  margin-top: -2vh; }
+  margin-top: -20px; }
 
 #imagenGaleria div {
   color: #f8f8ff;

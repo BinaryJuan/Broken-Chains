@@ -8,6 +8,7 @@
 
 .carousel-control-prev, .carousel-control-next, .carousel-inner {
     background-color: $HD-palette-black;
+    z-index: 0;
 }
 
 .bd-placeholder-img {
