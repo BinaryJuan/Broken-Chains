@@ -1815,7 +1815,7 @@ html {
   .flexBoxPaqueteM {
     background-color: #f8f8ff;
     width: 50vw;
-    height: 450px;
+    height: auto;
     margin: 5vh auto; }
   .flexBoxPaqueteM h3 {
     font-size: 2rem; }
@@ -2373,9 +2373,13 @@ html {
   .contenidoDescripcion {
     z-index: 5;
     top: 50%;
-    margin-left: 0.5vw; }
+    margin-left: 0.5vw;
+    height: 40vh;
+    min-height: 260px; }
   .contenidoDescripcion ul {
-    margin-top: -52vh; }
+    position: absolute;
+    top: 12%;
+    left: 4%; }
   .contenidoDescripcion ul li {
     font-size: 0.8rem; }
   .cerrarDescripcion {
@@ -2585,7 +2589,7 @@ html {
     border-radius: 2rem; }
   #imagenGaleria {
     height: 30vh;
-    margin-top: -3vh; }
+    margin-top: 3vh; }
   #imagenGaleria div {
     width: 100%;
     margin-top: 10vh;
@@ -2600,7 +2604,8 @@ html {
   #gridGaleria div {
     width: 99vw;
     margin-bottom: 8vh;
-    height: 50vh; }
+    height: 50vh;
+    min-height: 260px; }
   #gridGaleria div:hover img {
     border: none; }
   #gridGaleria div img {
