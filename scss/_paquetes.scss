@@ -4,6 +4,8 @@
     font-size: 2rem;
     text-align: center;
     margin-top: 15vh;
+    margin-bottom: 3vh;
+    position: relative;
 }
 
 .gridContenedorPaquetes {
@@ -177,6 +179,7 @@
         width: 95%;
         display: flex;
         position: relative;
+        margin-bottom: 50vh;
         flex-direction: row;
         margin: 0 auto 5vh auto;
         height: 70vh;

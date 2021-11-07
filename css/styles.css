@@ -221,7 +221,14 @@ html {
 .imagenCarrusel {
   width: 70vw;
   height: 70vh;
-  height: auto; }
+  min-height: 500px;
+  z-index: 4; }
+
+.carousel-control-prev, .carousel-control-next, .carousel-inner {
+  background-color: black; }
+
+.bd-placeholder-img {
+  background-color: black; }
 
 .divHrIndex {
   width: 50vw;
@@ -583,7 +590,9 @@ html {
   color: #f8f8ff;
   font-size: 2rem;
   text-align: center;
-  margin-top: 15vh; }
+  margin-top: 15vh;
+  margin-bottom: 3vh;
+  position: relative; }
 
 .gridContenedorPaquetes {
   display: grid;
@@ -749,6 +758,7 @@ html {
   width: 95%;
   display: flex;
   position: relative;
+  margin-bottom: 50vh;
   flex-direction: row;
   margin: 0 auto 5vh auto;
   height: 70vh;
@@ -912,6 +922,7 @@ html {
   border-radius: 1vw;
   width: 30vw;
   height: 55vh;
+  min-height: 450px;
   box-shadow: 0 0.2vw 1.2vw 0 rgba(0, 0, 0, 0.2);
   background-color: #242424;
   opacity: 0;
@@ -1264,6 +1275,7 @@ html {
 .formInput {
   width: 20vw;
   height: 3vh;
+  min-height: 25px;
   margin-bottom: 1vh;
   font-size: 1rem; }
 
@@ -1452,7 +1464,7 @@ html {
   margin-left: 20vw;
   width: 20vw;
   height: auto;
-  max-height: 25vh;
+  min-height: 25vh;
   background-color: #242424;
   border: 0.1vw solid #f48322;
   padding: 2vh 2vw 5vh 2vw; }
@@ -2178,7 +2190,7 @@ html {
     visibility: hidden;
     display: none; }
   .smartphoneMargin {
-    margin-top: 5vh; }
+    margin-top: 3vh; }
   .divHrIndex {
     display: none; }
   .botonSubir {
@@ -2351,7 +2363,7 @@ html {
   .abrirDescripcion {
     opacity: 1;
     font-size: 5vw;
-    width: 36vw;
+    width: 60%;
     margin: -40vh auto 5vh auto;
     border: none; }
   .headerDescripcion h3 {
@@ -2412,6 +2424,8 @@ html {
     min-height: 30vh; }
   .flexBoxCarritoProductos ul {
     font-size: 1rem; }
+  .flexBoxCarritoProductos ul li {
+    text-align: center; }
   .flexBoxCarritoProductos p {
     font-size: 1.3rem;
     padding-bottom: 0.5vh;

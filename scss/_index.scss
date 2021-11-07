@@ -2,7 +2,16 @@
 .imagenCarrusel {
     width: 70vw;
     height: 70vh;
-    height: auto;
+    min-height: 500px;
+    z-index: 4;
+}
+
+.carousel-control-prev, .carousel-control-next, .carousel-inner {
+    background-color: $HD-palette-black;
+}
+
+.bd-placeholder-img {
+    background-color: $HD-palette-black;
 }
 
 .divHrIndex {
@@ -88,7 +97,6 @@
     color: $HD-palette-white;
     white-space: nowrap;
 }
-
 /* --------------- IDs --------------- */
 #flexBoxIndexCero {
     display: flex;

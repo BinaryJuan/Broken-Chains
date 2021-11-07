@@ -52,7 +52,7 @@
     }
 
     .smartphoneMargin {
-        margin-top: 5vh;
+        margin-top: 3vh;
     }
 
     .divHrIndex {
@@ -298,7 +298,7 @@
     .abrirDescripcion {
         opacity: 1;
         font-size: 5vw;
-        width: 36vw;
+        width: 60%;
         margin: -40vh auto 5vh auto;
         border: none;
     }
@@ -392,6 +392,9 @@
         .flexBoxCarritoProductos ul {
             font-size: 1rem;
         }
+            .flexBoxCarritoProductos ul li {
+                text-align: center;
+            }
         .flexBoxCarritoProductos p {
             font-size: 1.3rem;
             padding-bottom: 0.5vh;
