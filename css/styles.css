@@ -2617,6 +2617,8 @@ html {
     margin-left: -50vw;
     padding: 1vw;
     background-color: #f48322; }
+  #heritage {
+    left: 20%; }
   #gridNosotros {
     display: block;
     width: 100%; }
