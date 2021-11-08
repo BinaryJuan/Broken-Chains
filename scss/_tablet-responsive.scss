@@ -82,6 +82,7 @@
     .botonSubir {
         bottom: 3vh;
         right: 1vw;
+        position: fixed;
     }
         .botonSubir img {
             background-color: $HD-palette-orange;
@@ -568,7 +569,7 @@
     
     #nuestroNegocio {
         border: none;
-        margin-top: 1vh;
+        margin-top: -1vh;
         margin-bottom: 0;
     }
         #nuestroNegocio h2 {

@@ -1693,7 +1693,8 @@ html {
     margin-top: -0.9vh; }
   .botonSubir {
     bottom: 3vh;
-    right: 1vw; }
+    right: 1vw;
+    position: fixed; }
   .botonSubir img {
     background-color: #f48322;
     padding: 0.5vw;
@@ -2028,7 +2029,7 @@ html {
     width: 80vw; }
   #nuestroNegocio {
     border: none;
-    margin-top: 1vh;
+    margin-top: -1vh;
     margin-bottom: 0; }
   #nuestroNegocio h2 {
     padding-top: 2vh;
