@@ -2379,8 +2379,9 @@ html {
     min-height: 260px; }
   .contenidoDescripcion ul {
     position: absolute;
-    top: 12%;
-    left: 4%; }
+    width: 99vw;
+    text-align: center;
+    top: 12%; }
   .contenidoDescripcion ul li {
     font-size: 0.8rem; }
   .cerrarDescripcion {
@@ -2618,8 +2619,6 @@ html {
     margin-left: -50vw;
     padding: 1vw;
     background-color: #f48322; }
-  #heritage {
-    left: 20%; }
   #gridNosotros {
     display: block;
     width: 100%; }
