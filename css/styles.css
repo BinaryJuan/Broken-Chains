@@ -2382,7 +2382,7 @@ html {
     min-height: 260px; }
   .contenidoDescripcion ul {
     position: absolute;
-    width: 95vw;
+    width: 99vw;
     text-align: center;
     top: 12%; }
   .contenidoDescripcion ul li {
@@ -2607,7 +2607,7 @@ html {
     text-align: center;
     overflow: hidden; }
   #gridGaleria div {
-    width: 95vw;
+    width: 99vw;
     margin-bottom: 8vh;
     height: 50vh;
     min-height: 260px; }
