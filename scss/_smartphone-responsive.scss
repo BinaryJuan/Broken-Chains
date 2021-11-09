@@ -317,9 +317,10 @@
     }
         .contenidoDescripcion ul {
             position: absolute;
-            width: 99vw;
+            width: 95vw;
             text-align: center;
             top: 12%;
+            margin: 0 auto;
         }
             .contenidoDescripcion ul li {
                 font-size: 0.8rem;
@@ -603,10 +604,10 @@
         overflow: hidden;
     }
         #gridGaleria div {
-            width: 99vw;
-            margin-bottom: 8vh;
+            width: 95vw;
             height: 50vh;
             min-height: 260px;
+            margin: 0 auto 8vh auto;
         }
             #gridGaleria div:hover img {
                 border: none;
