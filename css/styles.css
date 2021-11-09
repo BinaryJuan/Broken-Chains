@@ -718,10 +718,13 @@ html {
   border: 1px solid #f8f8ff;
   transition: 0.6s; }
 
+.paqueteSeleccion li:active a {
+  background-color: #f8f8ff;
+  color: black; }
+
 .paqueteSeleccion li a {
   text-decoration: none;
   display: inline-block;
-  align-items: center;
   padding-top: 10px;
   width: 180px;
   color: #f8f8ff;
@@ -2379,7 +2382,7 @@ html {
     min-height: 260px; }
   .contenidoDescripcion ul {
     position: absolute;
-    width: 99vw;
+    width: 95vw;
     text-align: center;
     top: 12%; }
   .contenidoDescripcion ul li {
@@ -2604,7 +2607,7 @@ html {
     text-align: center;
     overflow: hidden; }
   #gridGaleria div {
-    width: 99vw;
+    width: 95vw;
     margin-bottom: 8vh;
     height: 50vh;
     min-height: 260px; }

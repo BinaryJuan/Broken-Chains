@@ -136,10 +136,13 @@
                 border: 1px solid $HD-palette-white;
                 transition: 0.6s;
             }
+            .paqueteSeleccion li:active a {
+                background-color: $HD-palette-white;
+                color: $HD-palette-black;
+            }
             .paqueteSeleccion li a {
                 text-decoration: none;
                 display: inline-block;
-                align-items: center;
                 padding-top: 10px;
                 width: 180px;
                 color: $HD-palette-white;
