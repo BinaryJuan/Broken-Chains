@@ -12,4 +12,4 @@ En este repositorio se encontrará el sitio web completo. Dicho proyecto se real
 
 ```diff
 Estado
-- NO TERMINADO
++ TERMINADO
