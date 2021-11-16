@@ -185,7 +185,7 @@
         margin-bottom: 50vh;
         flex-direction: row;
         margin: 0 auto 5vh auto;
-        height: 70vh;
+        height: 700px;
         justify-content: center;
         align-items: center;
         position: relative;
@@ -205,7 +205,7 @@
                 text-align: center;
                 color: black;
                 font-size: 2rem;
-                padding: 3vh 0;
+                padding: 30px 0;
                 background-color: $HD-palette-orange;
                 overflow: hidden;
                 border-radius: 1.9vw 1.9vw 0 0;
@@ -235,8 +235,8 @@
             border: 1px solid $HD-palette-orange;
             border-radius: 2rem;
             width: 20vw;
-            height: 6vh;
-            margin: 4vh auto 0 auto;
+            height: 60px;
+            margin: 40px auto 0 auto;
             cursor: pointer;
             align-items: center;
             justify-content: center;

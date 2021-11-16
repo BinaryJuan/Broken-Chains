@@ -373,7 +373,7 @@ html {
 
 #iFrameFormato {
   width: 40vw;
-  height: 50vh;
+  height: 450px;
   margin-left: 2vw;
   border: 0.2vw solid #f48322; }
 
@@ -404,7 +404,6 @@ html {
   margin-left: 60vw;
   text-align: center;
   text-decoration: none;
-  width: 90px;
   box-sizing: content-box; }
 
 .flexBoxProducto p a:hover {
@@ -764,7 +763,7 @@ html {
   margin-bottom: 50vh;
   flex-direction: row;
   margin: 0 auto 5vh auto;
-  height: 70vh;
+  height: 700px;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -784,7 +783,7 @@ html {
   text-align: center;
   color: black;
   font-size: 2rem;
-  padding: 3vh 0;
+  padding: 30px 0;
   background-color: #f48322;
   overflow: hidden;
   border-radius: 1.9vw 1.9vw 0 0;
@@ -813,8 +812,8 @@ html {
   border: 1px solid #f48322;
   border-radius: 2rem;
   width: 20vw;
-  height: 6vh;
-  margin: 4vh auto 0 auto;
+  height: 60px;
+  margin: 40px auto 0 auto;
   cursor: pointer;
   align-items: center;
   justify-content: center; }
@@ -1363,7 +1362,7 @@ html {
 
 #contactoForm textarea {
   width: 20vw;
-  height: 20vh;
+  height: 200px;
   resize: none;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem; }
@@ -2355,7 +2354,7 @@ html {
     font-size: 0.8rem; }
   .botonM {
     width: 50vw;
-    height: 4.5vh; }
+    height: 45px; }
   .h2Galeria {
     margin: 15vh auto 5vh auto;
     font-size: 1.5rem;
@@ -2424,7 +2423,7 @@ html {
   .flexBoxCarrito select {
     width: 20vw;
     font-size: 0.6rem;
-    height: 3vh; }
+    height: 30px; }
   .flexBoxCarrito select option {
     font-size: 0.6rem; }
   .flexBoxCarritoProductos {
@@ -2673,7 +2672,7 @@ html {
     justify-content: center; }
   #atencionClienteImg img {
     width: 80vw;
-    height: 25vh;
+    height: auto;
     padding: 0; }
   #nuestrasInstalacionesImg {
     padding: 4vh 0;
@@ -2750,7 +2749,7 @@ html {
     margin-top: 0;
     margin-left: 2vw;
     width: 18vw;
-    height: 3vh; }
+    height: 30px; }
   #zipFormato::placeholder {
     font-size: 0.7rem; } }
 
