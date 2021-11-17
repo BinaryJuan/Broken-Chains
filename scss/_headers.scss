@@ -40,7 +40,7 @@
 /* --------------- IDs --------------- */
 #imagenHeaderIndex {
     background-image: url("../media/index0.jpg");
-    background-size: 90vw 50%;
+    background-size: 90vw 500px;
     background-position: center top;
     background-attachment: fixed;
     position: relative;
@@ -49,12 +49,13 @@
     overflow: hidden;
     background-repeat: no-repeat;
     object-fit: cover;
-    height: auto;
+    height: 300px;
 }
 
 #flexBoxHeaderIndex {
     display: flex;
     width: 100%;
+    height: 350px;
     align-items: center;
     flex-wrap: nowrap;
     padding: 10vh 0;
