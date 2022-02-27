@@ -1,10 +1,23 @@
 /* _____CARRITO_____ */
-.contenedorCarrito {
-    width: 90%;
-    margin: 1vh 0 2vh 5vw;
-    color: $HD-palette-white;
+.pago {
     display: flex;
+    justify-content: center;
+    
+    flex-direction: row;
+    width: 95%;
+}
+
+.infoPago {
+    width: 45%;
+    height: 350px;
+}
+
+.contenedorCarrito {
+    width: 45%;
+    height: 350px;
+    color: $HD-palette-white;
     flex-wrap: nowrap;
+    margin-right: 100px;
 }
     .contenedorCarrito h2 {
         font-size: 1.5rem;
@@ -14,13 +27,15 @@
     .contenedorCarrito label {
         font-size: 1.15rem;
     }
+    .contenedorCarrito form {
+        margin-left: 10vw;
+    }
 .flexBoxCarrito {
-    display: flex;
-    flex-direction: row;
-    width: 30vw;
     justify-content: center;
+    margin-left: 8vw;
     background-color: $HD-grey-darker;
-    padding: 2vh 0;
+    padding: 25px;
+    color: white;
 }
     .contenedorLugar {
         display: flex;
@@ -41,7 +56,7 @@
 
 .flexBoxCarritoProductos {
     margin-left: 20vw;
-    width: 20vw;
+    width: 70vw;
     height: auto;
     min-height: 25vh;
     background-color: $HD-grey-darker;
@@ -56,14 +71,16 @@
     }
     .flexBoxCarritoProductos p {
         font-weight: bold;
-        margin-bottom: 0.5vh;
         font-size: 1.5rem;
         text-align: center;
         background-color: $HD-palette-orange;
         border: 1px solid $HD-palette-black;
         border-radius: 2rem;
-        margin-top: 2vh;
+        width: 300px;
+        min-height: 50px;
         height: auto;
+        margin: 20px auto 0.5vh auto;
+        padding-top: 9px;
     }
 
 .h2Carrito {
@@ -73,26 +90,29 @@
     margin-top: 5vh;
 }
 
-.flexBoxPago {
-    margin: 1vh 0 4vh 5vw;
+.eliminar {
+    padding: 2px 5px;
 }
 
-.tarjetasPago {
-    margin: 0 0 6vh 3vw;
-    color: $HD-palette-white;
+.add {
+    margin-left: -130px;
+    margin-bottom: -30px;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
-    .tarjetasPago ul {
-        list-style: none;
-        margin-left: 10vw;
-    }
-    .tarjetasPago ul li {
-        display: inline-block;
-        margin-right: 3vw;
-    }
-    .tarjetasPago img {
-        width: 5vw;
-    }
 
+.minus {
+    margin-right: -130px;
+    margin-top: -40px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+}
+
+.imagenesCarrito {
+    display: inline-block;
+    margin: 10px 0 -80px -600px;
+}
 /* --------------- IDs --------------- */
 #zipFormato {
     width: 7vw;
@@ -105,6 +125,7 @@
 
 #botonPagarCarrito {
     text-align: center;
+    margin-top: 100px;
 }
     #botonPagarCarrito input {
         background-color: $HD-palette-orange;
@@ -122,4 +143,60 @@
         #botonPagarCarrito input:hover {
             box-shadow: inset 30vw 0 0 0 $HD-palette-white;
         }
+
+#carritoBox {
+    z-index: 10;
+    margin: 100px auto;
+    color: white;
+    text-align: center;
+}
+
+#totalBase {
+    font-weight: bold;
+}
+
+#listadoProductos {
+    border: 1px solid rgb(54, 53, 53);
+    padding: 15px;
+}
+
+#cupon {
+    height: 35px;
+    text-align: center;
+    border: 2px solid #f48322;
+    display: block;
+    margin: 30px auto 0 auto;
+}
+
+#aplicarCupon {
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 5px;
+    display: block;
+    margin: 5px auto 0 auto;
+    background-color: #f48322;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+
+#aplicarCupon:active {
+    padding: 3px;
+    margin: 9px auto 2px auto;
+}
+
+#errorCupon {
+    display: none;
+    margin: 4px auto;
+    color: red;
+}
+
+#limpiar {
+    font-size: 1.2rem;
+    background-color: red;
+    width: 150px;
+    padding: 5px;
+    cursor: pointer;
+    margin: 30px auto 0 auto;
+    border-radius: 1rem;
+}
 /* _____CARRITO_____ */

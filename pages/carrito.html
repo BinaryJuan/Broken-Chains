@@ -26,6 +26,8 @@ Proyecto: "Broken Chains"
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </head>
 
     <body>
@@ -53,9 +55,10 @@ Proyecto: "Broken Chains"
                     <li><a href="nosotros.html">Nosotros</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                     <li>
-                        <a href="carrito.html">
-                            <img src="../media/carrito.svg" alt="carrito">
+                        <a class="linkCarrito" href="carrito.html">
+                            <div id="numeroProductos"></div>
                         </a>
+                        <img class="iconoCarrito" src="../media/carrito.svg" alt="carrito">
                     </li>
                 </ul>
             </nav>
@@ -88,90 +91,84 @@ Proyecto: "Broken Chains"
             <!-- Botón subir -->
             <!-- SECCIÓN 1: CARRITO (CHECKOUT) -->
             <section class="smartphoneMargin">
-                <h2 class="h2Carrito animate__animated animate__fadeIn">Dirección de envío</h2>
-                <article class="contenedorCarrito">
-                    <div class="flexBoxCarrito animate__animated animate__fadeIn">
-                        <form>
-                            <br>
-                            <label for="nombre"></label>
-                            <input class="formInput" type="text" name="nombre" placeholder="Nombre completo" min="1" maxlength="30"/>
-                            <br>
-                            <label for="direccion"></label>
-                            <input class="formInput" type="text" name="direccion" placeholder="Dirección" min="5" maxlength="40"/>
-                            <br>
-                            <label for="correo"></label>
-                            <input class="formInput" type="email" name="correo" placeholder="E-mail" min="10" maxlength="30"/>
-                            <br>
-                            <label for="celular"></label>
-                            <input class="formInput" type="tel" name="celular" placeholder="Celular" min="10" maxlength="15"/>
-                            <br>
-                            <div class="contenedorLugar">
-                                <div>
-                                    <label for="provincia">Provincia</label>
-                                    <select name="provincia" form="contactanosForm">
-                                        <option value="BSAS">Buenos Aires</option>
-                                    </select>
+                <div class="flexBoxCarritoProductos" id="carritoBox">
+                    <h2 id="enElCarrito">En el carrito</h2>
+                    <ul id="listadoProductos">
+                    </ul>
+                    <div id="totalBase"></div>
+                    <div id="iva"></div>
+                    <div id="descuento"></div>
+                    <input id="cupon" type="text" placeholder="Cupón de descuento">
+                    <div id="errorCupon"></div>
+                    <button id="aplicarCupon" type="button">Aplicar cupón</button>
+                    <p id="totalFinal"></p>
+                </div>
+                <section class="pago">
+                    <article>
+                        <div class="flexBoxCarrito animate__animated animate__fadeIn">
+                            <form>
+                                <br>
+                                <label for="nombre"></label>
+                                <input class="formInput" type="text" name="nombre" placeholder="Nombre completo" min="1" maxlength="30"/>
+                                <br>
+                                <label for="direccion"></label>
+                                <input class="formInput" type="text" name="direccion" placeholder="Dirección" min="5" maxlength="40"/>
+                                <br>
+                                <label for="correo"></label>
+                                <input class="formInput" type="email" name="correo" placeholder="E-mail" min="10" maxlength="30"/>
+                                <br>
+                                <label for="celular"></label>
+                                <input class="formInput" type="tel" name="celular" placeholder="Celular" min="10" maxlength="15"/>
+                                <br>
+                                <div class="contenedorLugar">
+                                    <div>
+                                        <label for="provincia">Provincia</label>
+                                        <select name="provincia" form="contactanosForm">
+                                            <option value="BSAS">Buenos Aires</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="localidad">Localidad</label>
+                                        <select name="provincia" form="contactanosForm">
+                                            <option value="Mor">Moreno</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="zip"></label>
+                                        <input id="zipFormato" type="tel" name="zip" placeholder="ZIP" min="3" maxlength="10"/>
+                                    </div>
                                 </div>
-                                <div>
-                                    <label for="localidad">Localidad</label>
-                                    <select name="provincia" form="contactanosForm">
-                                        <option value="Mor">Moreno</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <label for="zip"></label>
-                                    <input id="zipFormato" type="tel" name="zip" placeholder="ZIP" min="3" maxlength="10"/>
-                                </div>
-                            </div>
-                            <br>
-                            <input type="checkbox" name="notificar" class="checkboxFormato"/>
-                            <label for="notificar">Guardar esta información para la próxima vez</label>
-                        </form>
-                    </div>
-                    <div class="flexBoxCarritoProductos animate__animated animate__pulse">
-                        <h2>En el carrito</h2>
-                        <ul>
-                            <li>1x Remera Harley Davidson cuello redondo blanca - $1800</li>
-                            <li>2x Anillo Harley Davidson - $1500</li>
-                        </ul>
-                        <p>Total $3300</p>
-                    </div>
-                </article>
-                <article>
-                    <h2 class="h2Carrito animate__animated animate__fadeIn">Método de pago</h2>
-                    <div class="flexBoxCarrito flexBoxPago animate__animated animate__fadeIn">
-                        <form>
-                            <br>
-                            <label for="nombreTarjeta"></label>
-                            <input class="formInput" type="text" name="nombreTarjeta" placeholder="Nombre en tarjeta" min="1" maxlength="30"/>
-                            <br>
-                            <label for="numeroTarjeta"></label>
-                            <input class="formInput" type="text" name="numeroTarjeta" placeholder="Número de tarjeta" min="1" maxlength="30"/>
-                            <br>
-                            <label for="expiracionTarjeta"></label>
-                            <input class="formInput" type="month" name="expiracionTarjeta" placeholder="Expiración" min="2022-11" max="2026-11"/>
-                            <br>
-                            <label for="cvvTarjeta"></label>
-                            <input class="formInput" type="password" name="cvvTarjeta" placeholder="CVV" min="3" maxlength="3"/>
-                            <br>
-                            <input class="botonesForm" type="reset" value="Borrar datos"/>
-                        </form>
-                    </div>
-                    <div class="tarjetasPago animate__animated animate__fadeIn">
-                        <ul>
-                            <li>
-                                <img src="../media/visa.png" alt="visa">
-                            </li>
-                            <li>
-                                <img src="../media/mastercard.png" alt="mastercard">
-                            </li>
-                        </ul>
-                    </div>
-                    <div id="botonPagarCarrito">
-                        <input type="submit" value="Pagar"/>
-                    </div>
-                </article>
+                                <br>
+                                <input type="checkbox" name="notificar" class="checkboxFormato"/>
+                                <label for="notificar">Guardar esta información para la próxima vez</label>
+                            </form>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="flexBoxCarrito flexBoxPago animate__animated animate__fadeIn">
+                            <form>
+                                <br>
+                                <label for="nombreTarjeta"></label>
+                                <input class="formInput" type="text" name="nombreTarjeta" placeholder="Nombre en tarjeta" min="1" maxlength="30"/>
+                                <br>
+                                <label for="numeroTarjeta"></label>
+                                <input class="formInput" type="text" name="numeroTarjeta" placeholder="Número de tarjeta" min="1" maxlength="30"/>
+                                <br>
+                                <label for="expiracionTarjeta"></label>
+                                <input class="formInput" type="month" name="expiracionTarjeta" placeholder="Expiración" min="2022-11" max="2026-11"/>
+                                <br>
+                                <label for="cvvTarjeta"></label>
+                                <input class="formInput" type="password" name="cvvTarjeta" placeholder="CVV" min="3" maxlength="3"/>
+                                <br>
+                                <input class="botonesForm" type="reset" value="Borrar datos"/>
+                            </form>
+                        </div>
+                    </article>
+                </section>
             </section>
+            <div id="botonPagarCarrito">
+                <input type="submit" value="Pagar"/>
+            </div>
             <!-- SECCIÓN 1: CARRITO (CHECKOUT) -->
         </main>
         <!-- M A I N -->
@@ -209,5 +206,9 @@ Proyecto: "Broken Chains"
             </div>
         </footer>
         <!-- F O O T E R -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script type="text/javascript" src="../js/modulo-productos.js"></script>
+        <script type="text/javascript" src="../js/modulo-funciones.js"></script>
+        <script type="text/javascript" src="../js/modulo-carr-pag.js"></script>
     </body>
 </html>

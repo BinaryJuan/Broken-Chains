@@ -26,6 +26,7 @@ Proyecto: "Broken Chains"
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     </head>
 
     <body>
@@ -52,10 +53,14 @@ Proyecto: "Broken Chains"
                     <li><a href="galeria.html">Galería</a></li>
                     <li><a href="nosotros.html">Nosotros</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
-                    <li>
+                    <li class="linkCarrito">
                         <a href="carrito.html">
-                            <img src="../media/carrito.svg" alt="carrito">
+                            <div id="numeroProductos"></div>
                         </a>
+                        <img class="iconoCarrito" src="../media/carrito.svg" alt="carrito">
+                        <div class="carritoProductos">
+                            <span class="tip"></span>
+                        </div>
                     </li>
                 </ul>
             </nav>
@@ -99,7 +104,10 @@ Proyecto: "Broken Chains"
                             <p class="tituloProducto">Gorra Harley Davidson estilo trucker race</p>
                             <p class="precioProducto">$800</p>
                             <p class="entregaProducto">Llega el jueves</p>
-                            <p><a href="">AGREGAR</a></p>
+                            <p class="stock"></p>
+                            <p><a class="agregarPointer agregar">AGREGAR</a></p>
+                            <input class="cantidadAgregar" type="number" placeholder="Cant.">
+                            <div class="mensajeError"></div>
                         </div>
                     </div>
                 </article>
@@ -111,7 +119,10 @@ Proyecto: "Broken Chains"
                             <p class="tituloProducto">Campera de cuero Harley Davidson</p>
                             <p class="precioProducto">$48000</p>
                             <p class="entregaProducto">Llega mañana</p>
-                            <p><a href="">AGREGAR</a></p>
+                            <p class="stock"></p>
+                            <p><a class="agregarPointer agregar">AGREGAR</a></p>
+                            <input class="cantidadAgregar" type="number" placeholder="Cant.">
+                            <div class="mensajeError"></div>
                         </div>
                     </div>
                 </article>
@@ -123,7 +134,10 @@ Proyecto: "Broken Chains"
                             <p class="tituloProducto">Buzo Harley Davidson gris talle M</p>
                             <p class="precioProducto">$4500</p>
                             <p class="entregaProducto">Llega el martes</p>
-                            <p><a href="">AGREGAR</a></p>
+                            <p class="stock"></p>
+                            <p><a class="agregarPointer agregar">AGREGAR</a></p>
+                            <input class="cantidadAgregar" type="number" placeholder="Cant.">
+                            <div class="mensajeError"></div>
                         </div>
                     </div>
                 </article>
@@ -135,7 +149,10 @@ Proyecto: "Broken Chains"
                             <p class="tituloProducto">Botas Harley Davidson Facus B02</p>
                             <p class="precioProducto">$17000</p>
                             <p class="entregaProducto">Llega el jueves</p>
-                            <p><a href="">AGREGAR</a></p>
+                            <p class="stock"></p>
+                            <p><a class="agregarPointer agregar">AGREGAR</a></p>
+                            <input class="cantidadAgregar" type="number" placeholder="Cant.">
+                            <div class="mensajeError"></div>
                         </div>
                     </div>
                 </article>
@@ -147,7 +164,10 @@ Proyecto: "Broken Chains"
                             <p class="tituloProducto">Remera Harley Davidson cuello redondo negra</p>
                             <p class="precioProducto">$1800</p>
                             <p class="entregaProducto">Llega mañana</p>
-                            <p><a href="">AGREGAR</a></p>
+                            <p class="stock"></p>
+                            <p><a class="agregarPointer agregar">AGREGAR</a></p>
+                            <input class="cantidadAgregar" type="number" placeholder="Cant.">
+                            <div class="mensajeError"></div>
                         </div>
                     </div>
                 </article>
@@ -159,7 +179,10 @@ Proyecto: "Broken Chains"
                             <p class="tituloProducto">Remera Harley Davidson cuello redondo blanca</p>
                             <p class="precioProducto">$1800</p>
                             <p class="entregaProducto">Llega el lúnes</p>
-                            <p><a href="">AGREGAR</a></p>
+                            <p class="stock"></p>
+                            <p><a class="agregarPointer agregar">AGREGAR</a></p>
+                            <input class="cantidadAgregar" type="number" placeholder="Cant.">
+                            <div class="mensajeError"></div>
                         </div>
                     </div>
                 </article>
@@ -173,7 +196,10 @@ Proyecto: "Broken Chains"
                             <p class="tituloProducto">Anillo Harley Davidson</p>
                             <p class="precioProducto">$750</p>
                             <p class="entregaProducto">Llega el jueves</p>
-                            <p><a href="">AGREGAR</a></p>
+                            <p class="stock"></p>
+                            <p><a class="agregarPointer agregar">AGREGAR</a></p>
+                            <input class="cantidadAgregar" type="number" placeholder="Cant.">
+                            <div class="mensajeError"></div>
                         </div>
                     </div>
                 </article>
@@ -185,7 +211,10 @@ Proyecto: "Broken Chains"
                             <p class="tituloProducto">Llavero Harley Davidson</p>
                             <p class="precioProducto">$500</p>
                             <p class="entregaProducto">Llega el martes</p>
-                            <p><a href="">AGREGAR</a></p>
+                            <p class="stock"></p>
+                            <p><a class="agregarPointer agregar">AGREGAR</a></p>
+                            <input class="cantidadAgregar" type="number" placeholder="Cant.">
+                            <div class="mensajeError"></div>
                         </div>
                     </div>
                 </article>
@@ -197,7 +226,10 @@ Proyecto: "Broken Chains"
                             <p class="tituloProducto">Parche Harley Davidson clásico para ropa</p>
                             <p class="precioProducto">$1000</p>
                             <p class="entregaProducto">Llega el lúnes</p>
-                            <p><a href="">AGREGAR</a></p>
+                            <p class="stock"></p>
+                            <p><a class="agregarPointer agregar">AGREGAR</a></p>
+                            <input class="cantidadAgregar" type="number" placeholder="Cant.">
+                            <div class="mensajeError"></div>
                         </div>
                     </div>
                 </article>
@@ -209,7 +241,10 @@ Proyecto: "Broken Chains"
                             <p class="tituloProducto">Llavero Harley Davidson moto</p>
                             <p class="precioProducto">$600</p>
                             <p class="entregaProducto">Llega el jueves</p>
-                            <p><a href="">AGREGAR</a></p>
+                            <p class="stock"></p>
+                            <p><a class="agregarPointer agregar">AGREGAR</a></p>
+                            <input class="cantidadAgregar" type="number" placeholder="Cant.">
+                            <div class="mensajeError"></div>
                         </div>
                     </div>
                 </article>
@@ -223,7 +258,10 @@ Proyecto: "Broken Chains"
                             <p class="tituloProducto">Poster Harley Davidson "Wild at heart" 32x42</p>
                             <p class="precioProducto">$750</p>
                             <p class="entregaProducto">Llega el martes</p>
-                            <p><a href="">AGREGAR</a></p>
+                            <p class="stock"></p>
+                            <p><a class="agregarPointer agregar">AGREGAR</a></p>
+                            <input class="cantidadAgregar" type="number" placeholder="Cant.">
+                            <div class="mensajeError"></div>
                         </div>
                     </div>
                 </article>
@@ -235,7 +273,10 @@ Proyecto: "Broken Chains"
                             <p class="tituloProducto">Poster Harley Davidson "Good Year" 32x42</p>
                             <p class="precioProducto">$750</p>
                             <p class="entregaProducto">Llega el lúnes</p>
-                            <p><a href="">AGREGAR</a></p>
+                            <p class="stock"></p>
+                            <p><a class="agregarPointer agregar">AGREGAR</a></p>
+                            <input class="cantidadAgregar" type="number" placeholder="Cant.">
+                            <div class="mensajeError"></div>
                         </div>
                     </div>
                 </article>
@@ -247,7 +288,10 @@ Proyecto: "Broken Chains"
                             <p class="tituloProducto">Poster Harley Davidson "Uncle Sam" 32x42</p>
                             <p class="precioProducto">$750</p>
                             <p class="entregaProducto">Llega el jueves</p>
-                            <p><a href="">AGREGAR</a></p>
+                            <p class="stock"></p>
+                            <p><a class="agregarPointer agregar">AGREGAR</a></p>
+                            <input class="cantidadAgregar" type="number" placeholder="Cant.">
+                            <div class="mensajeError"></div>
                         </div>
                     </div>
                 </article>
@@ -259,7 +303,10 @@ Proyecto: "Broken Chains"
                             <p class="tituloProducto">Poster Harley Davidson "Garage" 32x42</p>
                             <p class="precioProducto">$750</p>
                             <p class="entregaProducto">Llega el jueves</p>
-                            <p><a href="">AGREGAR</a></p>
+                            <p class="stock"></p>
+                            <p><a class="agregarPointer agregar">AGREGAR</a></p>
+                            <input class="cantidadAgregar" type="number" placeholder="Cant.">
+                            <div class="mensajeError"></div>
                         </div>
                     </div>
                 </article>
@@ -271,7 +318,10 @@ Proyecto: "Broken Chains"
                             <p class="tituloProducto">Poster Harley Davidson "Mother Road" circular</p>
                             <p class="precioProducto">$800</p>
                             <p class="entregaProducto">Llega el viernes</p>
-                            <p><a href="">AGREGAR</a></p>
+                            <p class="stock"></p>
+                            <p><a class="agregarPointer agregar">AGREGAR</a></p>
+                            <input class="cantidadAgregar" type="number" placeholder="Cant.">
+                            <div class="mensajeError"></div>
                         </div>
                     </div>
                 </article>
@@ -314,5 +364,11 @@ Proyecto: "Broken Chains"
             </div>
         </footer>
         <!-- F O O T E R -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script type="text/javascript" src="../js/modulo-productos.js"></script>
+        <script type="text/javascript" src="../js/modulo-carrito.js"></script>
+        <script type="text/javascript" src="../js/modulo-funciones.js"></script>
+        <script type="text/javascript" src="../js/modulo-paginas.js"></script>
+        <script type="text/javascript" src="../js/main.js"></script>
     </body>
 </html>

@@ -79,6 +79,10 @@
             margin-top: -0.9vh;
         }
 
+    .carritoProductos {
+        display: none;
+    }
+    
     .botonSubir {
         bottom: 3vh;
         right: 1vw;
@@ -227,6 +231,11 @@
         font-size: 1.15rem;
     }
 
+    .cantidadAgregar {
+        margin-top: 20px;
+        margin-left: 52vw;
+    }
+
     .entregaProducto {
         font-size: 1rem;
         width: 10vw;
@@ -356,6 +365,7 @@
 
     .flexBoxCarrito {
         width: 50vw;
+        margin-left: 22vw;
         margin-bottom: 2vh;
     }
 
@@ -385,7 +395,7 @@
         font-size: 1.5rem;
     }
     .flexBoxCarritoProductos {
-        width: 40vw;
+        width: auto;
         height: auto;
         margin-left: 2vw;
     }
@@ -396,6 +406,15 @@
             font-size: 1.5rem;
 
         }
+
+    .imagenesCarrito {
+        display: none;
+    }
+
+    .pago {
+        display: block;
+        margin: 20px auto;
+    }
     /* END: MAIN */
 
     /* BEGIN: FOOTER */
@@ -729,6 +748,10 @@
         #zipFormato::placeholder {
             font-size: 0.8rem;
         }
+
+    #numeroProductos {
+        left: 4vw;
+    }
 }
 /* END: MAIN */
 /* _____RESPONSIVE - TABLET_____ */

@@ -39,7 +39,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        min-height: 200px;
+        min-height: 250px;
         max-height: 250px;
     }
         .tituloProducto {
@@ -93,6 +93,20 @@
     border-radius: 2vw;
 }
 
+.agregarPointer {
+    cursor: pointer;
+}
+
+.cantidadAgregar {
+    width: 50px;
+    height: 30px;
+    margin-left: 57vw;
+    margin-top: -25px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
 @for $i from 1 through 15 {
     .animacionP#{$i} {  
         animation-name: opacidadAnimacion;
@@ -112,3 +126,9 @@
     flex-direction: column;
 }
 /* _____PRODUCTOS_____ */
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+} 

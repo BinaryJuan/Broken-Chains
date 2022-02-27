@@ -252,6 +252,29 @@
                 border: 0.1vw solid $HD-palette-black;
             }
 
+.swal-title {
+    color: white;
+}
+
+.swal-text {
+    color: white;
+    text-align: center;
+}
+
+.swal-modal {
+    background-color: black;
+    border: 2px solid #f48322;
+}
+
+.swal-button--confirm {
+    background-color: #f48322;
+    color: white;
+}
+
+.swal-button:hover {
+    background: white;
+    color: black;
+}
 /* -------------------------- */
 
 @for $i from 1 through 9 {

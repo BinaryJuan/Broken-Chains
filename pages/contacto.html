@@ -26,6 +26,7 @@ Proyecto: "Broken Chains"
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     </head>
 
     <body>
@@ -52,10 +53,14 @@ Proyecto: "Broken Chains"
                     <li><a href="galeria.html">Galería</a></li>
                     <li><a href="nosotros.html">Nosotros</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
-                    <li>
+                    <li class="linkCarrito">
                         <a href="carrito.html">
-                            <img src="../media/carrito.svg" alt="carrito">
+                            <div id="numeroProductos"></div>
                         </a>
+                        <img class="iconoCarrito" src="../media/carrito.svg" alt="carrito">
+                        <div class="carritoProductos">
+                            <span class="tip"></span>
+                        </div>
                     </li>
                 </ul>
             </nav>
@@ -93,23 +98,23 @@ Proyecto: "Broken Chains"
                     <div id="contactoForm" class="animate__animated animate__fadeIn">
                         <h2>Contactanos</h2>
                         <div class="divHrContacto"></div>
-                        <form>
+                        <form id="form">
                             <br>
                             <label for="nombre"></label>
-                            <input class="formInput" type="text" name="nombre" placeholder="Nombre" min="1" maxlength="30"/>
+                            <input class="formInput" type="text" placeholder="Nombre" min="1" maxlength="30" name="from_name" required/>
                             <br>
                             <label for="apellido"></label>
-                            <input class="formInput" type="text" name="apellido" placeholder="Apellido" min="1" maxlength="30"/>
+                            <input class="formInput" type="text" placeholder="Apellido" min="1" maxlength="30" name="from_lastname" required/>
                             <br>
                             <label for="correo"></label>
-                            <input class="formInput" type="email" name="correo" placeholder="E-mail" min="10" maxlength="30"/>
+                            <input class="formInput" type="email" placeholder="E-mail" min="10" maxlength="50" name="from_email" required/>
                             <br>
                             <label for="celular"></label>
-                            <input class="formInput" type="tel" name="celular" placeholder="Celular" min="10" maxlength="15"/>
+                            <input class="formInput" type="tel" placeholder="Celular" min="10" maxlength="15" name="from_phone"/>
                             <br>
                             <br>
                             <div>Ingrese comentarios o dudas</div>
-                            <textarea rows="10" cols="40"></textarea>
+                            <textarea rows="10" cols="40" name="msg" required></textarea>
                             <br>
                             <br>
                             <label for="sexo">Sexo:</label>
@@ -124,11 +129,17 @@ Proyecto: "Broken Chains"
                             <label for="notificar">Deseo recibir notificaciones de ofertas</label>
                             <br>
                             <br>
-                            <input class="botonesForm" type="submit" value="Enviar"/>
+                            <input class="botonesForm" type="submit" value="Enviar" id="button"/>
                             <input class="botonesForm" type="reset" value="Borrar datos"/>
                             <br>
                             <br>
                         </form>
+                        <script type="text/javascript"
+                        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+                        </script>
+                        <script type="text/javascript">
+                            emailjs.init('tVyroKbD8XtFQfTKF')
+                        </script>
                     </div>
                     <div id="espacioDatos" class="animate__animated animate__fadeIn">
                         <h2>Nuestros datos</h2>
@@ -214,5 +225,43 @@ Proyecto: "Broken Chains"
             </div>
         </footer>
         <!-- F O O T E R -->
+        <script>
+            const btn = document.getElementById('button');
+            document.getElementById('form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                btn.value = 'Enviando...';
+                const serviceID = 'default_service';
+                const templateID = 'template_pqors6p';
+                emailjs.sendForm(serviceID, templateID, this)
+                    .then(() => {
+                        btn.value = 'Enviar';
+                        Toastify({
+                            text: "Se envió su consulta exitosamente",
+                            duration: 2000,
+                            gravity: "bottom",
+                            position: "left",
+                            style: {
+                                background: "#f48322",
+                            },
+                            avatar: "../media/hecho.svg",
+                        }).showToast();
+                    }, (err) => {
+                        btn.value = 'Enviar';
+                        Toastify({
+                            text: "Hubo un error al enviar la consulta",
+                            duration: 2500,
+                            gravity: "bottom",
+                            position: "left",
+                            style: {
+                                background: "#ff0000",
+                            },
+                            avatar: "../media/problema.svg",
+                        }).showToast();
+                    });
+            });
+        </script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script type="text/javascript" src="../js/modulo-funciones.js"></script>
+        <script type="text/javascript" src="../js/modulo-paginas.js"></script>
     </body>
 </html>

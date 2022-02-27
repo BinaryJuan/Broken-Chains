@@ -25,7 +25,7 @@ Proyecto: "Broken Chains"
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </head>
 
     <body>
@@ -52,10 +52,14 @@ Proyecto: "Broken Chains"
                     <li><a href="galeria.html">Galería</a></li>
                     <li><a href="nosotros.html">Nosotros</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
-                    <li>
+                    <li class="linkCarrito">
                         <a href="carrito.html">
-                            <img src="../media/carrito.svg" alt="carrito">
+                            <div id="numeroProductos"></div>
                         </a>
+                        <img class="iconoCarrito" src="../media/carrito.svg" alt="carrito">
+                        <div class="carritoProductos">
+                            <span class="tip"></span>
+                        </div>
                     </li>
                 </ul>
             </nav>
@@ -238,9 +242,6 @@ Proyecto: "Broken Chains"
                             </li>
                         </ul>
                     </div>
-                    <div class="botonPaquetes">
-                        <p>COMPRAR</p>
-                    </div>
                     <div>
                         <ul class="paqueteSeleccion">
                             <li>
@@ -295,9 +296,10 @@ Proyecto: "Broken Chains"
                                 <li><p>No provee cupón de descuento</p></li>
                             </ul>
                         </div>
-                        <div class="botonM">
+                        <div class="botonM agregarM" id="0" onclick="mostrarInfo()">
                             <p>Contratar</p>
                         </div>
+                        <div class="mensajeError"></div>
                     </div>
                     <div class="flexBoxPaqueteM">
                         <h3>Pro</h3>
@@ -315,9 +317,10 @@ Proyecto: "Broken Chains"
                                 <li><p>Provee cupón de descuento</p></li>
                             </ul>
                         </div>
-                        <div class="botonM">
+                        <div class="botonM agregarM" id="1" onclick="mostrarInfo()">
                             <p>Contratar</p>
                         </div>
+                        <div class="mensajeError"></div>
                     </div>
                     <div class="flexBoxPaqueteM">
                         <h3>Premium</h3>
@@ -335,9 +338,10 @@ Proyecto: "Broken Chains"
                                 <li><p>Provee cupón de descuento</p></li>
                             </ul>
                         </div>
-                        <div class="botonM">
+                        <div class="botonM agregarM" id="2" onclick="mostrarInfo()">
                             <p>Contratar</p>
                         </div>
+                        <div class="mensajeError"></div>
                     </div>
                 </div>
             </section>
@@ -378,5 +382,8 @@ Proyecto: "Broken Chains"
             </div>
         </footer>
         <!-- F O O T E R -->
+        <script type="text/javascript" src="../js/modulo-funciones.js"></script>
+        <script type="text/javascript" src="../js/modulo-paginas.js"></script>
+        <script type="text/javascript" src="../js/modulo-paq-pag.js"></script>
     </body>
 </html>

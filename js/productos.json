@@ -1,0 +1,17 @@
+[
+    {"id": "1", "leyenda": "Gorra H.D. estilo trucker race", "precio": 800, "stock": 200, "tipo": "producto", "img": "../media/gorra1.png"},
+    {"id": "2", "leyenda": "Campera de cuero H.D.", "precio": 48000, "stock": 15, "tipo": "producto", "img": "../media/campera1.png"},
+    {"id": "3", "leyenda": "Buzo H.D. gris talle M", "precio": 4500, "stock": 55, "tipo": "producto", "img": "../media/buzo1.png"},
+    {"id": "4", "leyenda": "Botas H.D. Facus B02", "precio": 17000, "stock": 0, "tipo": "producto", "img": "../media/botas1.png"},
+    {"id": "5", "leyenda": "Remera H.D. cuello redondo negra", "precio": 1800, "stock": 0, "tipo": "producto", "img": "../media/remera1.png"},
+    {"id": "6", "leyenda": "Remera H.D. cuello redondo blanca", "precio": 1800, "stock": 350, "tipo": "producto", "img": "../media/remera2.png"},
+    {"id": "7", "leyenda": "Anillo H.D.", "precio": 750, "stock": 60, "tipo": "producto", "img": "../media/anillo1.png"},
+    {"id": "8", "leyenda": "Llavero H.D.", "precio": 500, "stock": 500, "tipo": "producto", "img": "../media/llavero1.png"},
+    {"id": "9", "leyenda": "Parche H.D. clasico para ropa", "precio": 1000, "stock": 0, "tipo": "producto", "img": "../media/parche1.png"},
+    {"id": "10", "leyenda": "Llavero H.D. moto", "precio": 600, "stock": 400, "tipo": "producto", "img": "../media/llavero2.png"},
+    {"id": "11", "leyenda": "Poster H.D. Wild at heart 32x42", "precio": 750, "stock": 150, "tipo": "producto", "img": "../media/poster1.png"},
+    {"id": "12", "leyenda": "Poster H.D. Good Year 32x42", "precio": 750, "stock": 0, "tipo": "producto", "img": "../media/poster2.png"},
+    {"id": "13", "leyenda": "Poster H.D. Uncle Sam 32x42", "precio": 750, "stock": 150, "tipo": "producto", "img": "../media/poster3.png"},
+    {"id": "14", "leyenda": "Poster H.D. Garage 32x42", "precio": 750, "stock": 150, "tipo": "producto", "img": "../media/poster4.png"},
+    {"id": "15", "leyenda": "Poster H.D. Mother Road circular", "precio": 800, "stock": 150, "tipo": "producto", "img": "../media/poster5.png"}
+]

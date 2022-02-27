@@ -51,6 +51,10 @@
         display: none;
     }
 
+    .carritoProductos {
+        display: none;
+    }
+
     .smartphoneMargin {
         margin-top: 3vh;
     }
@@ -210,6 +214,11 @@
         width: auto;
         max-width: 20vw;
     }
+    
+    .cantidadAgregar {
+        margin-top: 20px;
+        margin-left: 40vw;
+    }
 
     .h2WhiteCenter {
         font-size: 1.6rem;
@@ -368,13 +377,13 @@
         }
 
     .contenedorLugar {
-        margin-left: 15vw;
+        margin-left: 8.5vw;
     }
     
     .flexBoxCarrito {
         display: block;
         width: 90vw;
-        margin: 0 0 5vh -3vw;
+        margin: 20px auto;
         text-align: center;
     }
         .flexBoxCarrito label {
@@ -408,10 +417,6 @@
             margin: 0 auto;
         }
 
-    .flexBoxPago {
-        margin-left: 2vw;
-    }
-
     .tarjetasPago {
         padding-left: 18vw;
     }
@@ -419,6 +424,10 @@
             width: 15vw;
         }
     
+    .pago {
+        display: block;
+        width: auto;
+    }
     .h2Carrito {
         font-size: 1.25rem;
     }
